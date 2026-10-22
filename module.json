@@ -5,7 +5,7 @@
     "version": "0.1.0",
     "authors": [
         {
-            "name": "<автор>"
+            "name": "Dezodemius"
         }
     ],
     "compatibility": {
@@ -64,7 +64,7 @@
             ]
         }
     },
-    "url": "https://github.com/<owner>/lss-to-foundry",
-    "manifest": "https://github.com/<owner>/lss-to-foundry/releases/latest/download/module.json",
-    "download": "https://github.com/<owner>/lss-to-foundry/releases/download/v0.1.0/module.zip"
+    "url": "https://github.com/Dezodemius/lss-to-foundry",
+    "manifest": "https://github.com/Dezodemius/lss-to-foundry/releases/latest/download/module.json",
+    "download": "https://github.com/Dezodemius/lss-to-foundry/releases/download/v0.1.0/module.zip"
 }
