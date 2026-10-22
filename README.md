@@ -1,6 +1,6 @@
 # LSS to Foundry
 
-Модуль для Foundry VTT: импорт персонажей из Long Story Short (LSS) в систему dnd5e.
+Модуль для Foundry VTT: импорт персонажей из Long Story Short (LSS) в Foundry VTT (dnd5e).
 
 Этап 1. Установка через манифест опубликованного релиза или вручную (см. ниже).
 
@@ -19,12 +19,12 @@
 - Рекомендуется Babele и модуль перевода `ru-ru` (см. раздел «Перевод заклинаний»).
 
 ## Установка
-
-После публикации первого релиза в Foundry откройте установку модулей и вставьте в поле Manifest URL:
-
+1. Копируем ссылку:
 ```text
 https://github.com/Dezodemius/lss-to-foundry/releases/latest/download/module.json
 ```
+2. Вставляем в Foundry <img width="929" height="106" alt="image" src="https://github.com/user-attachments/assets/46903a87-73a9-486f-aabd-6a59e6329ba9" />
+
 
 Для ручной установки:
 
