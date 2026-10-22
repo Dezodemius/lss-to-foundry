@@ -1,0 +1,70 @@
+{
+    "id": "lss-to-foundry",
+    "title": "LSS to Foundry",
+    "description": "Импорт персонажей Long Story Short в систему dnd5e.",
+    "version": "0.1.0",
+    "authors": [
+        {
+            "name": "<автор>"
+        }
+    ],
+    "compatibility": {
+        "minimum": "13",
+        "verified": "13.348"
+    },
+    "relationships": {
+        "systems": [
+            {
+                "id": "dnd5e",
+                "type": "system",
+                "compatibility": {
+                    "minimum": "5.1.0",
+                    "verified": "5.1.8"
+                }
+            }
+        ],
+        "recommends": [
+            {
+                "id": "babele",
+                "type": "module"
+            }
+        ]
+    },
+    "esmodules": [
+        "scripts/main.mjs"
+    ],
+    "styles": [
+        "styles/lss-to-foundry.css"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        },
+        {
+            "lang": "ru",
+            "name": "Русский",
+            "path": "lang/ru.json"
+        }
+    ],
+    "flags": {
+        "hotReload": {
+            "extensions": [
+                "mjs",
+                "css",
+                "hbs",
+                "json"
+            ],
+            "paths": [
+                "scripts",
+                "styles",
+                "templates",
+                "lang"
+            ]
+        }
+    },
+    "url": "https://github.com/<owner>/lss-to-foundry",
+    "manifest": "https://github.com/<owner>/lss-to-foundry/releases/latest/download/module.json",
+    "download": "https://github.com/<owner>/lss-to-foundry/releases/download/v0.1.0/module.zip"
+}

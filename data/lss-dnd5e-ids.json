@@ -1,0 +1,847 @@
+{
+  "2014": {
+    "classes": [
+      {
+        "lssId": "barbarian",
+        "identifier": "barbarian",
+        "en": "Barbarian",
+        "ru": "Варвар"
+      },
+      {
+        "lssId": "bard",
+        "identifier": "bard",
+        "en": "Bard",
+        "ru": "Бард"
+      },
+      {
+        "lssId": "cleric",
+        "identifier": "cleric",
+        "en": "Cleric",
+        "ru": "Жрец"
+      },
+      {
+        "lssId": "druid",
+        "identifier": "druid",
+        "en": "Druid",
+        "ru": "Друид"
+      },
+      {
+        "lssId": "fighter",
+        "identifier": "fighter",
+        "en": "Fighter",
+        "ru": "Воин"
+      },
+      {
+        "lssId": "monk",
+        "identifier": "monk",
+        "en": "Monk",
+        "ru": "Монах"
+      },
+      {
+        "lssId": "paladin",
+        "identifier": "paladin",
+        "en": "Paladin",
+        "ru": "Паладин"
+      },
+      {
+        "lssId": "ranger",
+        "identifier": "ranger",
+        "en": "Ranger",
+        "ru": "Следопыт"
+      },
+      {
+        "lssId": "rogue",
+        "identifier": "rogue",
+        "en": "Rogue",
+        "ru": "Плут"
+      },
+      {
+        "lssId": "sorcerer",
+        "identifier": "sorcerer",
+        "en": "Sorcerer",
+        "ru": "Чародей"
+      },
+      {
+        "lssId": "warlock",
+        "identifier": "warlock",
+        "en": "Warlock",
+        "ru": "Колдун"
+      },
+      {
+        "lssId": "wizard",
+        "identifier": "wizard",
+        "en": "Wizard",
+        "ru": "Волшебник"
+      }
+    ],
+    "subclasses": [
+      {
+        "lssId": "berserker",
+        "classIdentifier": "barbarian",
+        "identifier": "path-of-the-berserker",
+        "en": "Path of the Berserker",
+        "ru": "Путь берсерка"
+      },
+      {
+        "lssId": "lore",
+        "classIdentifier": "bard",
+        "identifier": "college-of-lore",
+        "en": "College of Lore",
+        "ru": "Коллегия знаний"
+      },
+      {
+        "lssId": "life-domain",
+        "classIdentifier": "cleric",
+        "identifier": "life-domain",
+        "en": "Life Domain",
+        "ru": "Домен жизни"
+      },
+      {
+        "lssId": "land",
+        "classIdentifier": "druid",
+        "identifier": "circle-of-the-land",
+        "en": "Circle of the Land",
+        "ru": "Круг земли"
+      },
+      {
+        "lssId": "champion",
+        "classIdentifier": "fighter",
+        "identifier": "champion",
+        "en": "Champion",
+        "ru": "Чемпион"
+      },
+      {
+        "lssId": "open-hand",
+        "classIdentifier": "monk",
+        "identifier": "way-of-the-open-hand",
+        "en": "Way of the Open Hand",
+        "ru": "Путь открытой ладони"
+      },
+      {
+        "lssId": "devotion",
+        "classIdentifier": "paladin",
+        "identifier": "oath-of-devotion",
+        "en": "Oath of Devotion",
+        "ru": "Клятва преданности"
+      },
+      {
+        "lssId": "hunter",
+        "classIdentifier": "ranger",
+        "identifier": "hunter",
+        "en": "Hunter",
+        "ru": "Охотник"
+      },
+      {
+        "lssId": "thief",
+        "classIdentifier": "rogue",
+        "identifier": "thief",
+        "en": "Thief",
+        "ru": "Вор"
+      },
+      {
+        "lssId": "draconic-bloodline",
+        "classIdentifier": "sorcerer",
+        "identifier": "draconic-bloodline",
+        "en": "Draconic Bloodline",
+        "ru": "Драконья кровь"
+      },
+      {
+        "lssId": "fiend",
+        "classIdentifier": "warlock",
+        "identifier": "the-fiend",
+        "en": "The Fiend",
+        "ru": "Исчадие"
+      },
+      {
+        "lssId": "evocation",
+        "classIdentifier": "wizard",
+        "identifier": "school-of-evocation",
+        "en": "School of Evocation",
+        "ru": "Школа воплощения"
+      }
+    ],
+    "races": [
+      {
+        "lssId": "human",
+        "subraceId": null,
+        "identifier": "human",
+        "en": "Human",
+        "ru": "Человек"
+      },
+      {
+        "lssId": "human",
+        "subraceId": "human-standard",
+        "identifier": "human",
+        "en": "Human",
+        "ru": "Стандартный"
+      },
+      {
+        "lssId": "human",
+        "subraceId": "human-alternative",
+        "identifier": null,
+        "en": null,
+        "ru": "Альтернативный",
+        "_comment": "Variant human is not in the SRD 5.1 races pack of dnd5e 5.1.8. Falls back to human."
+      },
+      {
+        "lssId": "elf",
+        "subraceId": null,
+        "identifier": "high-elf",
+        "en": "High Elf",
+        "ru": "Эльф",
+        "_comment": "SRD 5.1 has only one elf (High Elf). Base race maps to it."
+      },
+      {
+        "lssId": "elf",
+        "subraceId": "elf-high",
+        "identifier": "high-elf",
+        "en": "High Elf",
+        "ru": "Высший эльф"
+      },
+      {
+        "lssId": "dwarf",
+        "subraceId": null,
+        "identifier": "hill-dwarf",
+        "en": "Hill Dwarf",
+        "ru": "Дварф",
+        "_comment": "SRD 5.1 has only one dwarf (Hill Dwarf). Base race maps to it."
+      },
+      {
+        "lssId": "dwarf",
+        "subraceId": "dwarf-hill",
+        "identifier": "hill-dwarf",
+        "en": "Hill Dwarf",
+        "ru": "Холмовой дварф"
+      },
+      {
+        "lssId": "halfling",
+        "subraceId": null,
+        "identifier": "lightfoot-halfling",
+        "en": "Lightfoot Halfling",
+        "ru": "Полурослик",
+        "_comment": "SRD 5.1 has only one halfling (Lightfoot). Base race maps to it."
+      },
+      {
+        "lssId": "halfling",
+        "subraceId": "halfling-lightfoot",
+        "identifier": "lightfoot-halfling",
+        "en": "Lightfoot Halfling",
+        "ru": "Легконогий полурослик"
+      },
+      {
+        "lssId": "gnome",
+        "subraceId": null,
+        "identifier": "rock-gnome",
+        "en": "Rock Gnome",
+        "ru": "Гном",
+        "_comment": "SRD 5.1 has only one gnome (Rock Gnome). Base race maps to it."
+      },
+      {
+        "lssId": "gnome",
+        "subraceId": "gnome-rock",
+        "identifier": "rock-gnome",
+        "en": "Rock Gnome",
+        "ru": "Скальный гном"
+      },
+      {
+        "lssId": "half-elf",
+        "subraceId": null,
+        "identifier": "half-elf",
+        "en": "Half-Elf",
+        "ru": "Полуэльф"
+      },
+      {
+        "lssId": "half-orc",
+        "subraceId": null,
+        "identifier": "half-orc",
+        "en": "Half-Orc",
+        "ru": "Полуорк"
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": null,
+        "identifier": "dragonborn",
+        "en": "Dragonborn",
+        "ru": "Драконорождённый"
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-gold",
+        "identifier": null,
+        "en": null,
+        "ru": "Золотой дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-red",
+        "identifier": null,
+        "en": null,
+        "ru": "Красный дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-silver",
+        "identifier": null,
+        "en": null,
+        "ru": "Серебряный дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-blue",
+        "identifier": null,
+        "en": null,
+        "ru": "Синий дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-bronze",
+        "identifier": null,
+        "en": null,
+        "ru": "Бронзовый дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-green",
+        "identifier": null,
+        "en": null,
+        "ru": "Зелёный дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-copper",
+        "identifier": null,
+        "en": null,
+        "ru": "Медный дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-black",
+        "identifier": null,
+        "en": null,
+        "ru": "Чёрный дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-brass",
+        "identifier": null,
+        "en": null,
+        "ru": "Латунный дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-white",
+        "identifier": null,
+        "en": null,
+        "ru": "Белый дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "tiefling",
+        "subraceId": null,
+        "identifier": "tiefling",
+        "en": "Tiefling",
+        "ru": "Тифлинг"
+      }
+    ],
+    "backgrounds": [
+      {
+        "lssId": "acolyte",
+        "identifier": "acolyte",
+        "en": "Acolyte",
+        "ru": "Прислужник"
+      }
+    ],
+    "feats": [
+      {
+        "lssId": "grappler",
+        "identifier": null,
+        "en": null,
+        "ru": "Борец",
+        "_comment": "No feats pack for 2014 in dnd5e 5.1.8 (PACKS[2014].feats is empty). The 2024 grappler is not used for a 2014 character."
+      }
+    ]
+  },
+  "2024": {
+    "classes": [
+      {
+        "lssId": "barbarian",
+        "identifier": "barbarian",
+        "en": "Barbarian",
+        "ru": "Варвар"
+      },
+      {
+        "lssId": "bard",
+        "identifier": "bard",
+        "en": "Bard",
+        "ru": "Бард"
+      },
+      {
+        "lssId": "cleric",
+        "identifier": "cleric",
+        "en": "Cleric",
+        "ru": "Жрец"
+      },
+      {
+        "lssId": "druid",
+        "identifier": "druid",
+        "en": "Druid",
+        "ru": "Друид"
+      },
+      {
+        "lssId": "fighter",
+        "identifier": "fighter",
+        "en": "Fighter",
+        "ru": "Воин"
+      },
+      {
+        "lssId": "monk",
+        "identifier": "monk",
+        "en": "Monk",
+        "ru": "Монах"
+      },
+      {
+        "lssId": "paladin",
+        "identifier": "paladin",
+        "en": "Paladin",
+        "ru": "Паладин"
+      },
+      {
+        "lssId": "ranger",
+        "identifier": "ranger",
+        "en": "Ranger",
+        "ru": "Следопыт"
+      },
+      {
+        "lssId": "rogue",
+        "identifier": "rogue",
+        "en": "Rogue",
+        "ru": "Плут"
+      },
+      {
+        "lssId": "sorcerer",
+        "identifier": "sorcerer",
+        "en": "Sorcerer",
+        "ru": "Чародей"
+      },
+      {
+        "lssId": "warlock",
+        "identifier": "warlock",
+        "en": "Warlock",
+        "ru": "Колдун"
+      },
+      {
+        "lssId": "wizard",
+        "identifier": "wizard",
+        "en": "Wizard",
+        "ru": "Волшебник"
+      }
+    ],
+    "subclasses": [
+      {
+        "lssId": "berserker",
+        "classIdentifier": "barbarian",
+        "identifier": "berserker",
+        "en": "Path of the Berserker",
+        "ru": "Путь берсерка"
+      },
+      {
+        "lssId": "lore",
+        "classIdentifier": "bard",
+        "identifier": "lore",
+        "en": "College of Lore",
+        "ru": "Коллегия знаний"
+      },
+      {
+        "lssId": "life-domain",
+        "classIdentifier": "cleric",
+        "identifier": "life",
+        "en": "Life Domain",
+        "ru": "Домен жизни"
+      },
+      {
+        "lssId": "land",
+        "classIdentifier": "druid",
+        "identifier": "land",
+        "en": "Circle of the Land",
+        "ru": "Круг земли"
+      },
+      {
+        "lssId": "champion",
+        "classIdentifier": "fighter",
+        "identifier": "champion",
+        "en": "Champion",
+        "ru": "Чемпион"
+      },
+      {
+        "lssId": "open-hand",
+        "classIdentifier": "monk",
+        "identifier": "hand",
+        "en": "Warrior of the Open Hand",
+        "ru": "Воин открытой ладони"
+      },
+      {
+        "lssId": "devotion",
+        "classIdentifier": "paladin",
+        "identifier": "devotion",
+        "en": "Oath of Devotion",
+        "ru": "Клятва преданности"
+      },
+      {
+        "lssId": "hunter",
+        "classIdentifier": "ranger",
+        "identifier": "hunter",
+        "en": "Hunter",
+        "ru": "Охотник"
+      },
+      {
+        "lssId": "thief",
+        "classIdentifier": "rogue",
+        "identifier": "thief",
+        "en": "Thief",
+        "ru": "Вор"
+      },
+      {
+        "lssId": "draconic-sorcery",
+        "classIdentifier": "sorcerer",
+        "identifier": "draconic",
+        "en": "Draconic Sorcery",
+        "ru": "Драконье чародейство"
+      },
+      {
+        "lssId": "fiend",
+        "classIdentifier": "warlock",
+        "identifier": "fiend",
+        "en": "Fiend Patron",
+        "ru": "Исчадие"
+      },
+      {
+        "lssId": "evoker",
+        "classIdentifier": "wizard",
+        "identifier": "evoker",
+        "en": "Evoker",
+        "ru": "Воплотитель"
+      }
+    ],
+    "races": [
+      {
+        "lssId": "dragonborn",
+        "subraceId": null,
+        "identifier": "dragonborn",
+        "en": "Dragonborn",
+        "ru": "Драконорождённый"
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-gold",
+        "identifier": null,
+        "en": null,
+        "ru": "Золотой дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-red",
+        "identifier": null,
+        "en": null,
+        "ru": "Красный дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-silver",
+        "identifier": null,
+        "en": null,
+        "ru": "Серебряный дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-blue",
+        "identifier": null,
+        "en": null,
+        "ru": "Синий дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-bronze",
+        "identifier": null,
+        "en": null,
+        "ru": "Бронзовый дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-green",
+        "identifier": null,
+        "en": null,
+        "ru": "Зелёный дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-copper",
+        "identifier": null,
+        "en": null,
+        "ru": "Медный дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-black",
+        "identifier": null,
+        "en": null,
+        "ru": "Чёрный дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-brass",
+        "identifier": null,
+        "en": null,
+        "ru": "Латунный дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dragonborn",
+        "subraceId": "dragonborn-white",
+        "identifier": null,
+        "en": null,
+        "ru": "Белый дракон",
+        "_comment": "Draconic ancestry is a choice inside the dragonborn race in dnd5e 5.1.8; no separate item. Falls back to dragonborn."
+      },
+      {
+        "lssId": "dwarf",
+        "subraceId": null,
+        "identifier": "dwarf",
+        "en": "Dwarf",
+        "ru": "Дварф"
+      },
+      {
+        "lssId": "elf",
+        "subraceId": null,
+        "identifier": null,
+        "en": null,
+        "ru": "Эльф",
+        "_comment": "Lineage is required: dnd5e 5.1.8 has no base race, only the lineages listed in subraces. Not guessed."
+      },
+      {
+        "lssId": "elf",
+        "subraceId": "elf-drow",
+        "identifier": "elf-drow",
+        "en": "Elf, Drow",
+        "ru": "Дроу"
+      },
+      {
+        "lssId": "elf",
+        "subraceId": "elf-high",
+        "identifier": "elf-high",
+        "en": "Elf, High",
+        "ru": "Высший эльф"
+      },
+      {
+        "lssId": "elf",
+        "subraceId": "elf-wood",
+        "identifier": "elf-wood",
+        "en": "Elf, Wood",
+        "ru": "Лесной эльф"
+      },
+      {
+        "lssId": "gnome",
+        "subraceId": null,
+        "identifier": null,
+        "en": null,
+        "ru": "Гном",
+        "_comment": "Lineage is required: dnd5e 5.1.8 has no base race, only the lineages listed in subraces. Not guessed."
+      },
+      {
+        "lssId": "gnome",
+        "subraceId": "gnome-forest",
+        "identifier": "gnome-forest",
+        "en": "Gnome, Forest",
+        "ru": "Лесной гном"
+      },
+      {
+        "lssId": "gnome",
+        "subraceId": "gnome-rock",
+        "identifier": "gnome-rock",
+        "en": "Gnome, Rock",
+        "ru": "Скальный гном"
+      },
+      {
+        "lssId": "goliath",
+        "subraceId": null,
+        "identifier": "goliath",
+        "en": "Goliath",
+        "ru": "Голиаф"
+      },
+      {
+        "lssId": "goliath",
+        "subraceId": "goliath-cloud",
+        "identifier": null,
+        "en": null,
+        "ru": "Наследие Облачного гиганта",
+        "_comment": "Giant ancestry is a choice inside the goliath race in dnd5e 5.1.8; no separate item. Falls back to goliath."
+      },
+      {
+        "lssId": "goliath",
+        "subraceId": "goliath-fire",
+        "identifier": null,
+        "en": null,
+        "ru": "Наследие Огненного гиганта",
+        "_comment": "Giant ancestry is a choice inside the goliath race in dnd5e 5.1.8; no separate item. Falls back to goliath."
+      },
+      {
+        "lssId": "goliath",
+        "subraceId": "goliath-frost",
+        "identifier": null,
+        "en": null,
+        "ru": "Наследие Ледяного гиганта",
+        "_comment": "Giant ancestry is a choice inside the goliath race in dnd5e 5.1.8; no separate item. Falls back to goliath."
+      },
+      {
+        "lssId": "goliath",
+        "subraceId": "goliath-hill",
+        "identifier": null,
+        "en": null,
+        "ru": "Наследие Холмового гиганта",
+        "_comment": "Giant ancestry is a choice inside the goliath race in dnd5e 5.1.8; no separate item. Falls back to goliath."
+      },
+      {
+        "lssId": "goliath",
+        "subraceId": "goliath-stone",
+        "identifier": null,
+        "en": null,
+        "ru": "Наследие Каменного гиганта",
+        "_comment": "Giant ancestry is a choice inside the goliath race in dnd5e 5.1.8; no separate item. Falls back to goliath."
+      },
+      {
+        "lssId": "halfling",
+        "subraceId": null,
+        "identifier": "halfling",
+        "en": "Halfling",
+        "ru": "Полурослик"
+      },
+      {
+        "lssId": "human",
+        "subraceId": null,
+        "identifier": "human",
+        "en": "Human",
+        "ru": "Человек"
+      },
+      {
+        "lssId": "orc",
+        "subraceId": null,
+        "identifier": "orc",
+        "en": "Orc",
+        "ru": "Орк"
+      },
+      {
+        "lssId": "tiefling",
+        "subraceId": null,
+        "identifier": null,
+        "en": null,
+        "ru": "Тифлинг",
+        "_comment": "Lineage is required: dnd5e 5.1.8 has no base race, only the lineages listed in subraces. Not guessed."
+      },
+      {
+        "lssId": "tiefling",
+        "subraceId": "tiefling-abyssal",
+        "identifier": "tiefling-abyssal",
+        "en": "Tiefling, Abyssal",
+        "ru": "Наследие Бездны"
+      },
+      {
+        "lssId": "tiefling",
+        "subraceId": "tiefling-chthonic",
+        "identifier": "tiefling-chthonic",
+        "en": "Tiefling, Chthonic",
+        "ru": "Хтоническое наследие"
+      },
+      {
+        "lssId": "tiefling",
+        "subraceId": "tiefling-infernal",
+        "identifier": "tiefling-infernal",
+        "en": "Tiefling, Infernal",
+        "ru": "Инфернальное наследие"
+      }
+    ],
+    "backgrounds": [
+      {
+        "lssId": "acolyte",
+        "identifier": "acolyte",
+        "en": "Acolyte",
+        "ru": "Послушник"
+      },
+      {
+        "lssId": "criminal",
+        "identifier": "criminal",
+        "en": "Criminal",
+        "ru": "Преступник"
+      },
+      {
+        "lssId": "sage",
+        "identifier": "sage",
+        "en": "Sage",
+        "ru": "Мудрец"
+      },
+      {
+        "lssId": "soldier",
+        "identifier": "soldier",
+        "en": "Soldier",
+        "ru": "Солдат"
+      }
+    ],
+    "feats": [
+      {
+        "lssId": "alert",
+        "identifier": "alert",
+        "en": "Alert",
+        "ru": "Бдительный"
+      },
+      {
+        "lssId": "savage-attacker",
+        "identifier": "savage-attacker",
+        "en": "Savage Attacker",
+        "ru": "Неистово атакующий"
+      },
+      {
+        "lssId": "skilled",
+        "identifier": "skilled",
+        "en": "Skilled",
+        "ru": "Одарённый"
+      },
+      {
+        "lssId": "magic-initiate-cleric",
+        "identifier": "magic-initiate",
+        "en": "Magic Initiate",
+        "ru": "Посвящённый в магию (Жрец)",
+        "_comment": "Class of the spell list (cleric/wizard/druid) is a choice of the feat in dnd5e and is not encoded in the identifier."
+      },
+      {
+        "lssId": "magic-initiate-wizard",
+        "identifier": "magic-initiate",
+        "en": "Magic Initiate",
+        "ru": "Посвящённый в магию (Волшебник)",
+        "_comment": "Class of the spell list (cleric/wizard/druid) is a choice of the feat in dnd5e and is not encoded in the identifier."
+      },
+      {
+        "lssId": "magic-initiate-druid",
+        "identifier": "magic-initiate",
+        "en": "Magic Initiate",
+        "ru": "Посвящённый в магию (Друид)",
+        "_comment": "Class of the spell list (cleric/wizard/druid) is a choice of the feat in dnd5e and is not encoded in the identifier."
+      }
+    ]
+  },
+  "_comment": "Maps LSS ids to dnd5e 5.1.8 identifiers per rules edition. LSS ids and ru labels come from the LSS SRD datasets (srd-2014, srd-2024); identifiers and en names come from docs/research/dnd5e-5.1.8-compendium-ids.json. identifier null means no dnd5e item: see _comment. Used by scripts/core/ids.mjs."
+}

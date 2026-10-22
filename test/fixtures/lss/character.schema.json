@@ -1,0 +1,3139 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://longstoryshort.app/schema/v1/character.json",
+  "title": "Long Story Short — character data",
+  "description": "The shape of the character's `data` field (a JSON string on the backend document; parse it to validate against this schema, stringify this shape to produce it). Does NOT cover the handful of sibling top-level columns (`edition`, `sheetEdition`, `spells` spellbook settings, `disabledBlocks`) or the `wizard` column — see docs/plans/character-toolkit.md (storyview repo) for those and for the full import envelope.",
+  "$comment": "Schema checks SHAPE, not correctness. It cannot catch: a `charClass.id` that names no real dataset class, a `weapon.<id>.attack` bonus whose `<id>` matches no weapon in `weaponsList`, a `resources.*.location` naming no real `text` block, or an unparseable formula string. Validate the shape here, sanity-check cross-references yourself.",
+  "definitions": {
+    "CharacterBonus": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "target": {
+          "$ref": "#/definitions/BonusTarget"
+        },
+        "mode": {
+          "$ref": "#/definitions/BonusMode",
+          "description": "Layer operation. Replaces the legacy `kind`. Default: derived from `kind` for old data ('modifier'→'add', 'override'→'set'@100).\n\n`add`/`set` and the roll modes `advantage`/`disadvantage` are what the manual bonus editor creates — its `+`/`_`/`=` and `↑`/`↓` buttons. `upgrade`/`downgrade`/`multiply` are dataset/grant-authoring primitives (e.g. proficiency-ordinal merging across independent grants); a bonus with one of these modes renders read-only in the sheet UI (no edit controls), regardless of `source.kind`."
+        },
+        "priority": {
+          "type": "number",
+          "description": "Stack priority (lower = applied first). Default: derived from `mode` via DEFAULT_PRIORITY; 'override' maps to LOCK_PRIORITY."
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "modifier",
+            "override"
+          ],
+          "deprecated": "Use mode instead. Kept for backward compat with stored data."
+        },
+        "value": {
+          "type": "number",
+          "description": "Numeric value. Exactly one of value | expr should be set."
+        },
+        "expr": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Formula string evaluated via evaluateExpression."
+        },
+        "source": {
+          "$ref": "#/definitions/BonusSource"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "Per-bonus mute toggle without deleting."
+        },
+        "stackingType": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "string"
+        },
+        "conditional": {
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string"
+            },
+            "default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "key"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "target",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "BonusTarget": {
+      "description": "Куда бьёт числовой бонус. Перечислены только ЖИВЫЕ таргеты — те, что лист действительно читает.",
+      "$comment": "Injected from bonusTargets.ts. Declared but unread families are omitted on purpose (a bonus there is a silent no-op): stat.modifier, hp.temp, vitality.darkvision, speed.other, attack.kind, damage.spell, proficiency, carry.",
+      "anyOf": [
+        {
+          "type": "string",
+          "enum": [
+            "ac",
+            "attack.all",
+            "check.all",
+            "damage.weapon",
+            "hp.max",
+            "initiative",
+            "pactSlot.1",
+            "pactSlot.2",
+            "pactSlot.3",
+            "pactSlot.4",
+            "pactSlot.5",
+            "pactSlot.6",
+            "pactSlot.7",
+            "pactSlot.8",
+            "pactSlot.9",
+            "passive.insight",
+            "passive.investigation",
+            "passive.perception",
+            "prof.armor-heavy",
+            "prof.armor-label",
+            "prof.armor-light",
+            "prof.armor-medium",
+            "prof.save.cha",
+            "prof.save.con",
+            "prof.save.cor",
+            "prof.save.dex",
+            "prof.save.int",
+            "prof.save.str",
+            "prof.save.wis",
+            "prof.skill.acrobatics",
+            "prof.skill.animal handling",
+            "prof.skill.arcana",
+            "prof.skill.athletics",
+            "prof.skill.deception",
+            "prof.skill.history",
+            "prof.skill.insight",
+            "prof.skill.intimidation",
+            "prof.skill.investigation",
+            "prof.skill.medicine",
+            "prof.skill.nature",
+            "prof.skill.perception",
+            "prof.skill.performance",
+            "prof.skill.persuasion",
+            "prof.skill.religion",
+            "prof.skill.riddle",
+            "prof.skill.shadow-lore",
+            "prof.skill.sleight of hand",
+            "prof.skill.stealth",
+            "prof.skill.survival",
+            "prof.weapon-martial",
+            "prof.weapon-other",
+            "prof.weapon-simple",
+            "save.all",
+            "save.cha",
+            "save.con",
+            "save.cor",
+            "save.dex",
+            "save.int",
+            "save.str",
+            "save.wis",
+            "shield",
+            "skill.acrobatics",
+            "skill.animal handling",
+            "skill.arcana",
+            "skill.athletics",
+            "skill.deception",
+            "skill.history",
+            "skill.insight",
+            "skill.intimidation",
+            "skill.investigation",
+            "skill.medicine",
+            "skill.nature",
+            "skill.perception",
+            "skill.performance",
+            "skill.persuasion",
+            "skill.religion",
+            "skill.riddle",
+            "skill.shadow-lore",
+            "skill.sleight of hand",
+            "skill.stealth",
+            "skill.survival",
+            "speed.walk",
+            "spellAttack",
+            "spellDC",
+            "spellSlot.1",
+            "spellSlot.2",
+            "spellSlot.3",
+            "spellSlot.4",
+            "spellSlot.5",
+            "spellSlot.6",
+            "spellSlot.7",
+            "spellSlot.8",
+            "spellSlot.9",
+            "stat.cha.attack",
+            "stat.cha.check",
+            "stat.cha.damage",
+            "stat.cha.score",
+            "stat.con.attack",
+            "stat.con.check",
+            "stat.con.damage",
+            "stat.con.score",
+            "stat.dex.attack",
+            "stat.dex.check",
+            "stat.dex.damage",
+            "stat.dex.score",
+            "stat.int.attack",
+            "stat.int.check",
+            "stat.int.damage",
+            "stat.int.score",
+            "stat.sha.check",
+            "stat.sha.score",
+            "stat.str.attack",
+            "stat.str.check",
+            "stat.str.damage",
+            "stat.str.score",
+            "stat.wis.attack",
+            "stat.wis.check",
+            "stat.wis.damage",
+            "stat.wis.score"
+          ]
+        },
+        {
+          "type": "string",
+          "pattern": "^weapon\\..+\\.attack$",
+          "description": "Открытое семейство «weapon.attack» — ключ приходит из данных персонажа."
+        },
+        {
+          "type": "string",
+          "pattern": "^weapon\\..+\\.damage$",
+          "description": "Открытое семейство «weapon.damage» — ключ приходит из данных персонажа."
+        }
+      ]
+    },
+    "BonusMode": {
+      "type": "string",
+      "enum": [
+        "add",
+        "set",
+        "upgrade",
+        "downgrade",
+        "multiply",
+        "advantage",
+        "disadvantage"
+      ],
+      "description": "Layer operation. Replaces the legacy `kind` field. `advantage` / `disadvantage` carry no value: the numeric fold skips them, the roll reads them (rollMode.ts, bonuses-and-items.md §1.4)."
+    },
+    "BonusSource": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "$ref": "#/definitions/BonusSourceKind"
+        },
+        "refId": {
+          "type": "string",
+          "description": "Foreign id of the owning entity. Absent for 'user'."
+        },
+        "label": {
+          "type": "string",
+          "description": "Caption shown under source-owned rows (e.g. \"Пояс силы великана\")."
+        }
+      },
+      "required": [
+        "kind"
+      ],
+      "additionalProperties": false
+    },
+    "BonusSourceKind": {
+      "type": "string",
+      "enum": [
+        "user",
+        "origin",
+        "background",
+        "attunement",
+        "item",
+        "classFeature",
+        "spell",
+        "feat",
+        "condition",
+        "effect",
+        "derived"
+      ]
+    },
+    "CharacterEffect": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "disabled": {
+          "type": "boolean",
+          "description": "Off: its bonuses don't count, their own per-bonus mute untouched."
+        },
+        "icon": {
+          "type": "string",
+          "description": "Key of the effect icon set (EffectIcon/constants.ts); absent — derived from its first bonus."
+        },
+        "tone": {
+          "$ref": "#/definitions/StatusTone",
+          "description": "What the effect means for the character — the icon's muted colour. Absent — neutral."
+        },
+        "ends": {
+          "$ref": "#/definitions/EffectEnds",
+          "description": "Which rest turns it off: `short-rest` — either rest, `long-rest` — a long one; off, not deleted. Absent — until the player turns it off."
+        },
+        "shown": {
+          "type": "boolean",
+          "description": "Shown as a status while on (the sheet box, the table). Absent — shown: an effect switched on by hand is news. `false` — the player hid it: a ring, armour, already seen in the fields it changes."
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "additionalProperties": false,
+      "description": "A named set of bonuses switched on and off as a whole: Stone of Good Luck, Bless, a cloak. The record holds the effect's own state; its numeric changes are ordinary layers in `data.bonuses` with `source: { kind: 'effect', refId: id }`. The effect lives on with no bonuses — it isn't derived from them."
+    },
+    "StatusTone": {
+      "type": "string",
+      "enum": [
+        "buff",
+        "debuff"
+      ],
+      "description": "Buff or debuff: a meaning, not a colour — each theme picks its own muted shade."
+    },
+    "EffectEnds": {
+      "type": "string",
+      "enum": [
+        "short-rest",
+        "long-rest"
+      ]
+    },
+    "RawStat": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "score": {
+          "type": "number"
+        },
+        "bonuses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CharacterBonus"
+          },
+          "description": "Per-stat targeted bonuses (reducer `stat-bonus-*`); kept if present."
+        },
+        "shadowTemp": {
+          "type": "number",
+          "description": "sha-only: manual \"temporary\" shadow value (post Phase-1 rename of `modifier`)."
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false,
+      "description": "A single ability stat as persisted.\n\nDropped as DERIVED (recomputed by Stats.tsx on read): modifier · check · total · extraBonusComputed · race (legacy).\n\nDropped as DECOMMISSIONED (Phase 5): origin · extraBonusExpr — parallel score scalars removed from the live calc. Racial/background ASI is to be expressed as a `stat.X.score` bonus (source `origin`) when the wizard is wired; see docs/plans/data-hygiene.md.\n\nNOTE on `sha` (shadow stat): its manual \"temporary\" value lives in `shadowTemp` AFTER the Phase 1 rename (was overloaded onto `modifier`). For every normal stat `modifier` is purely derived — hence it is intentionally absent from the whitelist. Do not wire `pickRawStat` for `sha` before that rename, or the temporary is lost."
+    },
+    "RawWeapon": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "dmg": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false,
+          "description": "Damage formula, e.g. `2к6+[str]`. Parsed by `@tldrpg/dice` (`prepareSheetFormula` in `src/utils/rollService`), which looks variables up case-insensitively — `[str]`/`[STR]`/`[Str]` are all equivalent here. This differs from the numeric-context formula fields elsewhere on the character (AC, speed, save/skill overrides, …), which are read by `evaluateExpression()` and do NOT case-fold — those require the exact `[UPPERCASE]` spelling. See `docs/plans/character-toolkit.md`."
+        },
+        "ability": {
+          "type": "string",
+          "description": "Ability the attack scales off ('str'|'dex'|…|'none')."
+        },
+        "isProf": {
+          "type": "boolean"
+        },
+        "dmgType": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "notes": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "notesVisibility": {
+          "type": "boolean"
+        },
+        "modCustom": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false,
+          "description": "Legacy manual attack modifier of the old 'none' mode. Accepted on import; converted into `modBonus` on load (migrateWeaponModCustom)."
+        },
+        "modBonus": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false,
+          "description": "Legacy flat attack bonus (pre-bonus-system); kept until converted."
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "additionalProperties": false,
+      "description": "A `weaponsList` entry as persisted.\n\nDropped as DERIVED (rebuilt by Weapons.tsx on read):   mod (the {value,bonus} object — raw input is modBonus) ·   damageBonus · damageRoll · displayDamage · damageDisplay ·   hasAttackOverride · hasDamageOverride"
+    }
+  },
+  "type": "object",
+  "properties": {
+    "jsonType": {
+      "const": "character"
+    },
+    "template": {
+      "type": "string",
+      "enum": [
+        "default",
+        "hg",
+        "ph",
+        "dndr",
+        "aime",
+        "aime-pbs",
+        "by",
+        "ua",
+        "en"
+      ],
+      "default": "default",
+      "description": "Visual/label skin. `aime`/`aime-pbs` additionally unlock the `sha` stat, `cor` save, `riddle`/`shadow-lore` skills, and a 3-denomination (gp/sp/cp) coin purse instead of 5. Everything else is cosmetic labels, not new mechanics."
+    },
+    "name": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ],
+      "additionalProperties": false
+    },
+    "info": {
+      "type": "object",
+      "description": "Header fields. All are the `{ name, value }` wrapper.",
+      "properties": {
+        "charClass": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "charClass"
+            },
+            "value": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string",
+              "description": "Optional dataset classId reference; free text is fine without it. Bare id, no dataset-source prefix — `cleric`, not `srd-2024:cleric`. This differs from `bonuses[*].source.refId`, which IS prefixed (`srd-2024:cleric`) — that field identifies dataset CONTENT provenance across sources with the same bare id, a different lookup than this one."
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "charSubclass": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "charSubclass"
+            },
+            "value": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string",
+              "description": "Optional dataset subclassId reference; free text is fine without it. Bare id, no dataset-source prefix — `cleric`, not `srd-2024:cleric`. This differs from `bonuses[*].source.refId`, which IS prefixed (`srd-2024:cleric`) — that field identifies dataset CONTENT provenance across sources with the same bare id, a different lookup than this one."
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "level": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "level"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "background": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "background"
+            },
+            "value": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string",
+              "description": "Optional dataset backgroundId reference; free text is fine without it. Bare id, no dataset-source prefix — `cleric`, not `srd-2024:cleric`. This differs from `bonuses[*].source.refId`, which IS prefixed (`srd-2024:cleric`) — that field identifies dataset CONTENT provenance across sources with the same bare id, a different lookup than this one."
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "playerName": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "playerName"
+            },
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "race": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "race"
+            },
+            "value": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string",
+              "description": "Optional dataset raceId reference; free text is fine without it. Bare id, no dataset-source prefix — `cleric`, not `srd-2024:cleric`. This differs from `bonuses[*].source.refId`, which IS prefixed (`srd-2024:cleric`) — that field identifies dataset CONTENT provenance across sources with the same bare id, a different lookup than this one."
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "subrace": {
+          "type": "object",
+          "description": "Optional. Not the `{ name, value }` wrapper like its siblings — just `id`/`value`.",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Bare dataset subraceId — same convention as `race.id`."
+            },
+            "value": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "alignment": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "alignment"
+            },
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "experience": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "experience"
+            },
+            "value": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "const": ""
+                }
+              ],
+              "description": "Total XP. `\"\"` is the only valid string value — the unset default on a fresh character. The UI and leveling math treat this as a number; do not write formatted/free-text values (e.g. \"34 000\")."
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "size": {
+          "type": "object",
+          "description": "Optional. Drives carry/drag/food/water. Absent = treated as no size (all zero).",
+          "properties": {
+            "value": {
+              "type": "string",
+              "enum": [
+                "tiny",
+                "small",
+                "medium",
+                "large",
+                "huge"
+              ]
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "charClass",
+        "charSubclass",
+        "level",
+        "background",
+        "playerName",
+        "race",
+        "alignment",
+        "experience"
+      ],
+      "additionalProperties": false
+    },
+    "subInfo": {
+      "type": "object",
+      "description": "Flavor fields, all optional-in-practice `{ name, value }` strings.",
+      "properties": {
+        "age": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "age"
+            },
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "height": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "height"
+            },
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "weight": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "weight"
+            },
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "eyes": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "eyes"
+            },
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "skin": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "skin"
+            },
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "hair": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "hair"
+            },
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "spellsInfo": {
+      "type": "object",
+      "description": "Spellcasting stat block — display/override fields, not spell content.",
+      "properties": {
+        "base": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "base"
+            },
+            "value": {
+              "type": "string"
+            },
+            "code": {
+              "type": "string",
+              "enum": [
+                "str",
+                "dex",
+                "con",
+                "int",
+                "wis",
+                "cha"
+              ],
+              "description": "Ability driving spellcasting."
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "save": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "save"
+            },
+            "value": {
+              "type": "string"
+            },
+            "customModifier": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Full override of the computed spell save DC. `null` when the override has been cleared in the UI — clearing does not delete the key."
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "mod": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "mod"
+            },
+            "value": {
+              "type": "string"
+            },
+            "customModifier": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Full override of the computed spell attack modifier. `null` when the override has been cleared in the UI — clearing does not delete the key."
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "charges": {
+          "type": "object",
+          "description": "Spell id → resource id (`data.resources`). The counter a spell is paid with when it is cast without a slot — «once per long rest» and the like (docs/plans/spell-casting-modes.md §3). Deliberately a reference rather than a counter of its own: several spells may share one pool, and rest recovery, copy/paste identity and hand-editing are already solved for resources. A resource referenced here needs no editor node — the load-time orphan sweep treats a binding as reachability.",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "abilities": {
+          "type": "object",
+          "description": "Spell id → ability code (`str`|`dex`|`con`|`int`|`wis`|`cha`). Which ability casts THIS spell, when it differs from the sheet-wide `base.code` (docs/plans/spell-casting-modes.md §5). A missing key means «inherit the sheet's». Lives on the character rather than on the spell because the spell collection is deduplicated by content hash across all players — «cast with Charisma» would leak into every other player's copy. Fixes multiclassing too: a cleric/wizard casts cleric spells with Wisdom and wizard spells with Intelligence, and one sheet-wide field cannot say both.",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "available": {
+          "type": "object",
+          "description": "Extra dataset classIds to widen the spell-list query beyond `info.charClass.id` (e.g. a feat granting a second casting class). Rarely needed for a fresh character. `spells` (docs/plans/spellcasting-model.md §7) widens it per-spell instead of per-class — individual spell ids that should be visible in the picker regardless of class list.",
+          "properties": {
+            "classes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Bare dataset classIds, same form as `info.charClass.id` (e.g. `warlock`, not `srd-2024:warlock`) — see that field for why."
+            },
+            "spells": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Spell ids (Spells collection)."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "spells": {
+      "type": "object",
+      "description": "Spell-slot COUNTS only — not spell content. Keys are `slots-<circle>` for circles 0–9, where 0 is cantrips (always inert bookkeeping — cantrips cost no slot, so `slots-0` never carries a meaningful `value`) and 1–9 are real spell levels (spellbook contents — which spells are known/prepared — live in a separate backend column referencing real Spell documents by database id; this schema does not cover them, see docs/plans/character-toolkit.md). `value` may be absent: rest recovery writes `filled` for every circle unconditionally, including circles the character has no slots in yet, so a generator producing a fresh character should normally omit any circle with zero slots entirely, but a validator checking a real export must accept `{ \"filled\": 0 }` with no `value` as valid.",
+      "patternProperties": {
+        "^slots-[0-9]$": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number",
+              "description": "Total slots of this level. Absent = the character has none at this circle yet."
+            },
+            "filled": {
+              "type": "number",
+              "description": "Slots currently expended."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "spellsPact": {
+      "type": "object",
+      "description": "Spell-slot COUNTS only — not spell content. Keys are `slots-<circle>` for circles 0–9, where 0 is cantrips (always inert bookkeeping — cantrips cost no slot, so `slots-0` never carries a meaningful `value`) and 1–9 are real spell levels (spellbook contents — which spells are known/prepared — live in a separate backend column referencing real Spell documents by database id; this schema does not cover them, see docs/plans/character-toolkit.md). `value` may be absent: rest recovery writes `filled` for every circle unconditionally, including circles the character has no slots in yet, so a generator producing a fresh character should normally omit any circle with zero slots entirely, but a validator checking a real export must accept `{ \"filled\": 0 }` with no `value` as valid. This tracker is for Warlock pact-magic slots specifically; same shape as `spells`.",
+      "patternProperties": {
+        "^slots-[0-9]$": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number",
+              "description": "Total slots of this level. Absent = the character has none at this circle yet."
+            },
+            "filled": {
+              "type": "number",
+              "description": "Slots currently expended."
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "bonuses": {
+      "type": "array",
+      "description": "Numeric modifiers from any source (manual, wizard-granted feature, attunement, condition, …). This is the ONLY bonus channel to author. `bonusesSkills`/`bonusesStats` are a separate, deprecated map-shaped channel — not superseded yet, still live for a couple of UI toggles — intentionally not part of this schema because their replacement (folding into `bonuses` here, in an as-yet-undecided shape) hasn't shipped. Do not author them; a validator checking a real export should tolerate seeing them.",
+      "items": {
+        "$ref": "#/definitions/CharacterBonus"
+      }
+    },
+    "effects": {
+      "type": "array",
+      "description": "Named sets of bonuses switched on and off as a whole (Stone of Good Luck, Bless). The record holds the name, description and on/off; its numeric changes are ordinary `bonuses[]` entries with `source: { kind: 'effect', refId: <effect id>, label: <effect name> }`. An effect that is off, or missing, switches its bonuses off.",
+      "items": {
+        "$ref": "#/definitions/CharacterEffect"
+      }
+    },
+    "proficiency": {
+      "type": "number",
+      "default": 2,
+      "description": "Base proficiency bonus (normally level-derived: 2 at 1–4, +1 every 4 levels)."
+    },
+    "proficiencyCustom": {
+      "type": "number",
+      "description": "Override of `proficiency` if set. Every reader treats this as `proficiencyCustom || proficiency` — `0` is falsy, so it reads as ABSENT, not as an override to zero. There is currently no way to force proficiency to 0 through this field."
+    },
+    "stats": {
+      "type": "object",
+      "description": "`str/dex/con/int/wis/cha` are required. `sha` (Пункты Тени) only applies to aime templates — its `shadowTemp` field (not `score`) holds the manual \"temporary\" value.",
+      "properties": {
+        "str": {
+          "allOf": [
+            {
+              "$ref": "#/definitions/RawStat"
+            },
+            {
+              "properties": {
+                "name": {
+                  "const": "str"
+                }
+              }
+            }
+          ]
+        },
+        "dex": {
+          "allOf": [
+            {
+              "$ref": "#/definitions/RawStat"
+            },
+            {
+              "properties": {
+                "name": {
+                  "const": "dex"
+                }
+              }
+            }
+          ]
+        },
+        "con": {
+          "allOf": [
+            {
+              "$ref": "#/definitions/RawStat"
+            },
+            {
+              "properties": {
+                "name": {
+                  "const": "con"
+                }
+              }
+            }
+          ]
+        },
+        "int": {
+          "allOf": [
+            {
+              "$ref": "#/definitions/RawStat"
+            },
+            {
+              "properties": {
+                "name": {
+                  "const": "int"
+                }
+              }
+            }
+          ]
+        },
+        "wis": {
+          "allOf": [
+            {
+              "$ref": "#/definitions/RawStat"
+            },
+            {
+              "properties": {
+                "name": {
+                  "const": "wis"
+                }
+              }
+            }
+          ]
+        },
+        "cha": {
+          "allOf": [
+            {
+              "$ref": "#/definitions/RawStat"
+            },
+            {
+              "properties": {
+                "name": {
+                  "const": "cha"
+                }
+              }
+            }
+          ]
+        },
+        "sha": {
+          "allOf": [
+            {
+              "$ref": "#/definitions/RawStat"
+            },
+            {
+              "properties": {
+                "name": {
+                  "const": "sha"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "str",
+        "dex",
+        "con",
+        "int",
+        "wis",
+        "cha"
+      ],
+      "additionalProperties": false
+    },
+    "saves": {
+      "type": "object",
+      "description": "`str/dex/con/int/wis/cha` are required. `cor` (Соблазн) only applies to aime templates.",
+      "properties": {
+        "str": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "str"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise (saving-throw expertise is rare but the field accepts it).",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number",
+              "description": "Flat numeric override/add, legacy alongside `bonuses[]`."
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the save bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed save total."
+            }
+          },
+          "required": [
+            "name",
+            "isProf"
+          ],
+          "additionalProperties": false
+        },
+        "dex": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "dex"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise (saving-throw expertise is rare but the field accepts it).",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number",
+              "description": "Flat numeric override/add, legacy alongside `bonuses[]`."
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the save bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed save total."
+            }
+          },
+          "required": [
+            "name",
+            "isProf"
+          ],
+          "additionalProperties": false
+        },
+        "con": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "con"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise (saving-throw expertise is rare but the field accepts it).",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number",
+              "description": "Flat numeric override/add, legacy alongside `bonuses[]`."
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the save bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed save total."
+            }
+          },
+          "required": [
+            "name",
+            "isProf"
+          ],
+          "additionalProperties": false
+        },
+        "int": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "int"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise (saving-throw expertise is rare but the field accepts it).",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number",
+              "description": "Flat numeric override/add, legacy alongside `bonuses[]`."
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the save bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed save total."
+            }
+          },
+          "required": [
+            "name",
+            "isProf"
+          ],
+          "additionalProperties": false
+        },
+        "wis": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "wis"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise (saving-throw expertise is rare but the field accepts it).",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number",
+              "description": "Flat numeric override/add, legacy alongside `bonuses[]`."
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the save bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed save total."
+            }
+          },
+          "required": [
+            "name",
+            "isProf"
+          ],
+          "additionalProperties": false
+        },
+        "cha": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "cha"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise (saving-throw expertise is rare but the field accepts it).",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number",
+              "description": "Flat numeric override/add, legacy alongside `bonuses[]`."
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the save bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed save total."
+            }
+          },
+          "required": [
+            "name",
+            "isProf"
+          ],
+          "additionalProperties": false
+        },
+        "cor": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "cor"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise (saving-throw expertise is rare but the field accepts it).",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number",
+              "description": "Flat numeric override/add, legacy alongside `bonuses[]`."
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the save bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed save total."
+            }
+          },
+          "required": [
+            "name",
+            "isProf"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "str",
+        "dex",
+        "con",
+        "int",
+        "wis",
+        "cha"
+      ],
+      "additionalProperties": false
+    },
+    "skills": {
+      "type": "object",
+      "description": "The 18 SRD skills (required) plus the two aime-only skills (optional, only meaningful when `template` is an aime variant). Keys are the persisted contract, spaces and lowercase included — `sleight of hand`, not `sleightOfHand`.",
+      "properties": {
+        "athletics": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "athletics"
+            },
+            "baseStat": {
+              "const": "str"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "acrobatics": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "acrobatics"
+            },
+            "baseStat": {
+              "const": "dex"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "sleight of hand": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "sleight of hand"
+            },
+            "baseStat": {
+              "const": "dex"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "stealth": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "stealth"
+            },
+            "baseStat": {
+              "const": "dex"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "arcana": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "arcana"
+            },
+            "baseStat": {
+              "const": "int"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "history": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "history"
+            },
+            "baseStat": {
+              "const": "int"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "investigation": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "investigation"
+            },
+            "baseStat": {
+              "const": "int"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "nature": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "nature"
+            },
+            "baseStat": {
+              "const": "int"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "religion": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "religion"
+            },
+            "baseStat": {
+              "const": "int"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "animal handling": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "animal handling"
+            },
+            "baseStat": {
+              "const": "wis"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "insight": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "insight"
+            },
+            "baseStat": {
+              "const": "wis"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "medicine": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "medicine"
+            },
+            "baseStat": {
+              "const": "wis"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "perception": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "perception"
+            },
+            "baseStat": {
+              "const": "wis"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "survival": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "survival"
+            },
+            "baseStat": {
+              "const": "wis"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "deception": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "deception"
+            },
+            "baseStat": {
+              "const": "cha"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "intimidation": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "intimidation"
+            },
+            "baseStat": {
+              "const": "cha"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "performance": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "performance"
+            },
+            "baseStat": {
+              "const": "cha"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "persuasion": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "persuasion"
+            },
+            "baseStat": {
+              "const": "cha"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "riddle": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "riddle"
+            },
+            "baseStat": {
+              "const": "int"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        },
+        "shadow-lore": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "const": "shadow-lore"
+            },
+            "baseStat": {
+              "const": "wis"
+            },
+            "isProf": {
+              "description": "0/false = not proficient, 1/true = proficient, 2 = expertise.",
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer",
+                  "enum": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              ]
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "bonusExpr": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula override for the skill bonus."
+            },
+            "customModifier": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "description": "Full override of the computed skill total."
+            },
+            "customPassive": {
+              "type": "number",
+              "description": "Full override of the computed passive score (only reads for perception/insight/investigation)."
+            }
+          },
+          "required": [
+            "name",
+            "baseStat"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "athletics",
+        "acrobatics",
+        "sleight of hand",
+        "stealth",
+        "arcana",
+        "history",
+        "investigation",
+        "nature",
+        "religion",
+        "animal handling",
+        "insight",
+        "medicine",
+        "perception",
+        "survival",
+        "deception",
+        "intimidation",
+        "performance",
+        "persuasion"
+      ],
+      "additionalProperties": false
+    },
+    "vitality": {
+      "type": "object",
+      "description": "A fixed bag of named fields (not a keyed map). AC/speed/shield/initiative are formula strings, evaluated in NUMERIC context (dice terms become 0) — a straight integer string like `\"16\"` also works.",
+      "properties": {
+        "hp-current": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "hp-temp": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "hp-max": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number",
+              "description": "Base max HP before `hp-max-bonus` and any `hp.max` bonuses."
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "hp-max-bonus": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "hit-die": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string",
+              "description": "Hit die label, e.g. `d10`."
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "hp-dice-current": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number",
+              "description": "Hit dice remaining (capped at level, auto-corrected on read)."
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "hp-dice-multi": {
+          "type": "object",
+          "description": "Per-die-type hit-dice pool for multiclass characters, keyed by die label (e.g. `d10`).",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "max": {
+                "type": "number"
+              },
+              "current": {
+                "type": "number"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "darkvision": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "speed": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`."
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "ac": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`."
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "shield": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "boolean",
+              "description": "Is a shield equipped/toggled on."
+            },
+            "mod": {
+              "type": "string",
+              "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Shield AC bonus, added on top of `ac` when `value` is true."
+            }
+          },
+          "additionalProperties": false
+        },
+        "initiative": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Custom override formula. `null` = use DEX modifier (default)."
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "isDying": {
+          "type": "boolean"
+        },
+        "deathFails": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "deathSuccesses": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        }
+      },
+      "additionalProperties": false
+    },
+    "attunementsList": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "checked": {
+            "type": "boolean",
+            "description": "Attunement slot filled. Also gates any bonus whose `source.kind` is `attunement` with a matching `refId`."
+          },
+          "value": {
+            "type": "string",
+            "description": "Item name (free text)."
+          }
+        },
+        "required": [
+          "id",
+          "checked",
+          "value"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "weaponsList": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/definitions/RawWeapon"
+          },
+          {
+            "properties": {
+              "ability": {
+                "type": "string",
+                "enum": [
+                  "str",
+                  "dex",
+                  "con",
+                  "int",
+                  "wis",
+                  "cha",
+                  "none"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "text": {
+      "type": "object",
+      "description": "Rich-text blocks (traits, features, equipment, personality, notes…). Keys are template-defined block ids, not a fixed set — common ones: `attacks`, `weapons`, `traits`, `feats`, `equipment`, `attunement`, `prof`, `personality`, `ideals`, `bonds`, `flaws`, `features`, `background`, `quests`, `allies`, `appearance`, `notes-1`…`notes-6`, `items`.",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "object",
+            "properties": {
+              "data": {
+                "type": "object",
+                "description": "A Tiptap/ProseMirror document. Minimal valid shape: `{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"text\",\"text\":\"...\"}]}]}`. Marks (bold/italic/underline/link) live on `text` nodes as a `marks` array. Special node types (`roller`, `formula`, `resource`, `divider`, `spoiler`/`spoilerSummary`/`spoilerContent`, `taskList`/`taskItem`) exist but are not validated here — if unsure, stick to `paragraph`/`text`/`bulletList`/`orderedList`/`listItem`. `blockquote` is NOT currently a registered node type despite looking like a standard one — do not use it. An unrecognized node type is not a soft failure: the editor has no error boundary, so it throws and takes down the whole text block's rendering, not just that one node.",
+                "properties": {
+                  "type": {
+                    "const": "doc"
+                  },
+                  "content": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                },
+                "required": [
+                  "type"
+                ]
+              }
+            },
+            "required": [
+              "data"
+            ],
+            "additionalProperties": false
+          },
+          "size": {
+            "description": "Template-specific layout hint (e.g. column span). Optional, template-defined."
+          },
+          "customLabel": {
+            "type": "string"
+          },
+          "isHidden": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "value"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "coins": {
+      "type": "object",
+      "description": "Denominations, each optional. `total` is DERIVED (computed in gp) — never author it.",
+      "properties": {
+        "gp": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "sp": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "cp": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "pp": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "ep": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "resources": {
+      "type": "object",
+      "description": "Keyed by the resource's own `id` (matching the key is expected, not enforced by this schema).",
+      "additionalProperties": {
+        "type": "object",
+        "description": "A counter (ki points, arrows, rage uses, …). Exactly one of `max`/`maxExpr` should be set. Do not author `resolvedMax`/`resolvedShortRegain` (derived — as of this schema version no longer written by the app either, but older saved resources may still carry it) or `orphanedAt`/`isDeleted` (present below only because a real export legitimately has them, always absent/false on a freshly authored resource).",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "current": {
+            "type": "number"
+          },
+          "max": {
+            "type": "number"
+          },
+          "maxExpr": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Formula for max; mutually exclusive with `max`. `null` when the field has been cleared in the UI — clearing does not delete the key."
+          },
+          "location": {
+            "type": "string",
+            "description": "The `text` block key whose doc contains this resource's node."
+          },
+          "isShortRest": {
+            "type": "boolean",
+            "description": "Refills on a short rest."
+          },
+          "isLongRest": {
+            "type": "boolean",
+            "description": "Refills on a long rest."
+          },
+          "shortRestRegain": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Formula string, evaluated in NUMERIC context. Ability-modifier variables MUST be written `[UPPERCASE]` — `[DEX]`, not `[dex]` or `[Dex]`: this field is read by an evaluator that does not case-fold the variable name, so anything but the exact uppercase spelling silently resolves to nothing and the field computes as 0. Available: `[STR]`/`[DEX]`/`[CON]`/`[INT]`/`[WIS]`/`[CHA]` (ability MODIFIER, not score), `[PROF]`, `[LVL]`. The rest of the string is evaluated with mathjs, so e.g. half-proficiency is `round([PROF]/2)` — dice notation (`1d6`) is NOT specially handled here (unlike weapon `dmg`), don't use it. Example: `10+[DEX]`. Partial short-rest refill amount; omit/null = full refill on short rest."
+          },
+          "icon": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "notesVisibility": {
+            "type": "boolean"
+          },
+          "source": {
+            "type": "string",
+            "description": "Provenance tag when granted by the wizard (e.g. a class feature id). Omit for player-authored counters."
+          },
+          "sourceRev": {
+            "type": "string"
+          },
+          "orphanedAt": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Text-editor undo/cut-paste lifecycle state. Never author this on a fresh resource — omit it."
+          },
+          "isDeleted": {
+            "type": "boolean",
+            "description": "Text-editor undo/cut-paste lifecycle state. Never author this on a fresh resource — omit it."
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "current"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Active condition keys. The valid set depends on `template`'s rules edition (2014 vs 2024 condition lists differ) — see the template's `listConditions` in the app; not enumerated here because it is edition-dependent."
+    },
+    "exhaustion": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "default": 0
+    },
+    "inspiration": {
+      "type": "boolean"
+    },
+    "avatar": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "jpeg": {
+              "type": "string"
+            },
+            "webp": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "prof": {
+      "type": "object",
+      "description": "Armor/weapon proficiency checkboxes. `armor-label` is the shield-proficiency slot (legacy key name, captioned \"Shield\" in the UI). All keys optional — absent means unchecked.",
+      "properties": {
+        "armor-light": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "armor-medium": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "armor-heavy": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "armor-label": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "weapon-simple": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "weapon-martial": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "weapon-other": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "living": {
+      "type": "string",
+      "description": "\"Standard of living\" flavor text (classic/builder sheet)."
+    },
+    "miserable": {
+      "type": "boolean",
+      "description": "Flavor flag (classic/builder sheet)."
+    },
+    "createdAt": {
+      "type": "string",
+      "description": "Read-only. The backend's single-character GET endpoint stamps the sibling `createdAt` column into this blob before returning it, so any downloaded/fetched export carries it — a generator never needs to author it, and sending it back on save has no effect (the backend column is the source of truth, not this copy)."
+    }
+  },
+  "required": [
+    "jsonType",
+    "name",
+    "info",
+    "stats",
+    "saves",
+    "skills"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,65 @@
+{
+    "LSS_TO_FOUNDRY": {
+        "Import": {
+            "Title": "Import from Long Story Short",
+            "Button": "Import from LSS",
+            "Start": "Import",
+            "Again": "Import more",
+            "Preparing": "Preparing the import…",
+            "Progress": "Character {index} of {total}: {name} — {stage}",
+            "Selected": "Selected: {selected} of {total}",
+            "Characters": "Characters: {count}",
+            "Level": "lvl {level}",
+            "Edition": "edition {edition}",
+            "Warnings": "Warnings: {count}",
+            "Grimoire": "Custom spells from the Grimoire: {count}",
+            "NoFiles": "Choose .json files exported from Long Story Short.",
+            "NoCharacters": "The selected files contain no characters.",
+            "NothingSelected": "Select at least one character.",
+            "EditionMismatch": "The character's edition ({character}) does not match the world rules ({world}). The import can continue, but numbers and items may differ.",
+            "FileError": "{file}: {error}",
+            "Done": "Import finished. Created: {ok}, failed: {failed}.",
+            "Failed": "Import aborted: {error}",
+            "BusyClose": "The import is still running. Wait for it to finish.",
+            "ActorNotFound": "Actor not found: it may have been deleted.",
+            "Files": {
+                "Label": "Character and Grimoire files (.json)",
+                "Hint": "You can select several files. The files are read in the browser and are not sent anywhere."
+            },
+            "Report": {
+                "StatusOk": "Created",
+                "StatusError": "Error",
+                "OpenSheet": "Open sheet",
+                "Missing": "Not found in compendiums: {count}",
+                "Custom": "Created from the Grimoire: {count}"
+            }
+        },
+        "Stage": {
+            "writing": "writing",
+            "done": "done",
+            "error": "error"
+        },
+        "Settings": {
+            "ActorFolder": {
+                "Name": "Actors folder",
+                "Hint": "World folder for imported characters. Leave empty for the root."
+            },
+            "SpellFolder": {
+                "Name": "Custom spells folder",
+                "Hint": "World folder for spells from the Grimoire. Each such spell is created once, and characters get copies of it."
+            },
+            "ClassFeatures": {
+                "Name": "Class and race features",
+                "Hint": "Add class, subclass, race and background features available at the character's current level."
+            },
+            "UseAvatar": {
+                "Name": "Avatar from LSS",
+                "Hint": "Use the portrait from the LSS file as the actor image and token texture."
+            },
+            "ExtraSpellPacks": {
+                "Name": "Extra spell compendiums",
+                "Hint": "Compendium IDs separated by commas, for example world.my-spells. They are searched before the standard dnd5e compendiums."
+            }
+        }
+    }
+}

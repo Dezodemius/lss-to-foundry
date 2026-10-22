@@ -1,0 +1,173 @@
+{{!-- Import window body. One template for three states: select, running, report. --}}
+<div class="lss-to-foundry__body" data-stage="{{stage}}">
+
+    {{#if importError}}
+    <div class="lss-to-foundry__banner is-error" role="alert">
+        <i class="fa-solid fa-circle-exclamation" inert></i>
+        <span>{{importError}}</span>
+    </div>
+    {{/if}}
+
+    {{#if isSelect}}
+    <div class="form-group">
+        <label for="lss-to-foundry-files">{{localize "LSS_TO_FOUNDRY.Import.Files.Label"}}</label>
+        <div class="form-fields">
+            <input id="lss-to-foundry-files" type="file" name="files" accept=".json,application/json" multiple>
+        </div>
+        <p class="hint">{{localize "LSS_TO_FOUNDRY.Import.Files.Hint"}}</p>
+    </div>
+
+    {{#if fileList}}
+    <p class="lss-to-foundry__files" title="{{fileList}}">{{fileList}}</p>
+    {{/if}}
+
+    {{#if fileErrors.length}}
+    <div class="lss-to-foundry__banner is-error" role="alert">
+        <i class="fa-solid fa-circle-exclamation" inert></i>
+        <ul class="lss-to-foundry__issues">
+            {{#each fileErrors}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/if}}
+
+    {{#if hasEntries}}
+    <h3 class="lss-to-foundry__heading">{{localize "LSS_TO_FOUNDRY.Import.Characters" count=totalCount}}</h3>
+    <ul class="lss-to-foundry__list">
+        {{#each entries}}
+        <li class="lss-to-foundry__item">
+            <label class="lss-to-foundry__pick">
+                <input type="checkbox" name="pick" value="{{key}}"{{#if selected}} checked{{/if}}>
+                <span class="lss-to-foundry__name">{{name}}</span>
+            </label>
+            <div class="lss-to-foundry__meta">
+                {{#if className}}<span>{{className}}</span>{{/if}}
+                {{#if level}}<span>{{localize "LSS_TO_FOUNDRY.Import.Level" level=level}}</span>{{/if}}
+                <span>{{localize "LSS_TO_FOUNDRY.Import.Edition" edition=edition}}</span>
+                <span class="lss-to-foundry__file">{{fileName}}</span>
+            </div>
+            {{#if noteCount}}
+            <details class="lss-to-foundry__notes">
+                <summary>{{localize "LSS_TO_FOUNDRY.Import.Warnings" count=noteCount}}</summary>
+                <ul>
+                    {{#each notes}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </details>
+            {{/if}}
+        </li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p class="hint">
+        {{#if fileList}}{{localize "LSS_TO_FOUNDRY.Import.NoCharacters"}}{{else}}{{localize "LSS_TO_FOUNDRY.Import.NoFiles"}}{{/if}}
+    </p>
+    {{/if}}
+
+    <p class="lss-to-foundry__grimoire">{{localize "LSS_TO_FOUNDRY.Import.Grimoire" count=grimoireCount}}</p>
+
+    <footer class="form-footer">
+        <span class="lss-to-foundry__counter" data-role="selected-count">{{localize "LSS_TO_FOUNDRY.Import.Selected" selected=selectedCount total=totalCount}}</span>
+        <button type="submit" data-role="start"{{#unless canImport}} disabled{{/unless}}>
+            <i class="fa-solid fa-file-import" inert></i> {{localize "LSS_TO_FOUNDRY.Import.Start"}}
+        </button>
+    </footer>
+    {{/if}}
+
+    {{#if isRunning}}
+    <div class="lss-to-foundry__progress">
+        <p>{{progressLabel}}</p>
+        {{#if progress.total}}
+        <progress value="{{progress.index}}" max="{{progress.total}}"></progress>
+        {{else}}
+        <progress></progress>
+        {{/if}}
+    </div>
+
+    <footer class="form-footer">
+        <button type="submit" disabled>
+            <i class="fa-solid fa-spinner fa-spin" inert></i> {{localize "LSS_TO_FOUNDRY.Import.Start"}}
+        </button>
+    </footer>
+    {{/if}}
+
+    {{#if isReport}}
+    <p class="lss-to-foundry__summary">{{reportSummary}}</p>
+
+    {{#if report.warnings.length}}
+    <details class="lss-to-foundry__notes">
+        <summary>{{localize "LSS_TO_FOUNDRY.Import.Warnings" count=report.warnings.length}}</summary>
+        <ul>
+            {{#each report.warnings}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </details>
+    {{/if}}
+
+    <ul class="lss-to-foundry__list">
+        {{#each report.results}}
+        <li class="lss-to-foundry__item lss-to-foundry__result{{#if ok}} is-ok{{else}} is-error{{/if}}">
+            <div class="lss-to-foundry__result-head">
+                <i class="fa-solid {{#if ok}}fa-circle-check{{else}}fa-circle-xmark{{/if}}" inert></i>
+                <span class="lss-to-foundry__name">{{name}}</span>
+                <span class="lss-to-foundry__status">
+                    {{#if ok}}{{localize "LSS_TO_FOUNDRY.Import.Report.StatusOk"}}{{else}}{{localize "LSS_TO_FOUNDRY.Import.Report.StatusError"}}{{/if}}
+                </span>
+                {{#if actorUuid}}
+                <button type="button" data-action="openSheet" data-uuid="{{actorUuid}}">
+                    <i class="fa-solid fa-arrow-up-right-from-square" inert></i> {{localize "LSS_TO_FOUNDRY.Import.Report.OpenSheet"}}
+                </button>
+                {{/if}}
+            </div>
+
+            {{#if error}}
+            <p class="lss-to-foundry__error">{{error}}</p>
+            {{/if}}
+
+            {{#if warnings.length}}
+            <details class="lss-to-foundry__notes">
+                <summary>{{localize "LSS_TO_FOUNDRY.Import.Warnings" count=warnings.length}}</summary>
+                <ul>
+                    {{#each warnings}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </details>
+            {{/if}}
+
+            {{#if missingSpells.length}}
+            <details class="lss-to-foundry__notes">
+                <summary>{{localize "LSS_TO_FOUNDRY.Import.Report.Missing" count=missingSpells.length}}</summary>
+                <ul>
+                    {{#each missingSpells}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </details>
+            {{/if}}
+
+            {{#if customSpells.length}}
+            <details class="lss-to-foundry__notes">
+                <summary>{{localize "LSS_TO_FOUNDRY.Import.Report.Custom" count=customSpells.length}}</summary>
+                <ul>
+                    {{#each customSpells}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            </details>
+            {{/if}}
+        </li>
+        {{/each}}
+    </ul>
+
+    <footer class="form-footer">
+        <button type="button" data-action="reset">
+            <i class="fa-solid fa-rotate-left" inert></i> {{localize "LSS_TO_FOUNDRY.Import.Again"}}
+        </button>
+    </footer>
+    {{/if}}
+
+</div>

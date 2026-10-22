@@ -1,0 +1,2500 @@
+{
+  "classes": [
+    {
+      "name": "Barbarian",
+      "identifier": "barbarian",
+      "type": "class",
+      "_id": "pvEzGSv71zBhaolc"
+    },
+    {
+      "name": "Bard",
+      "identifier": "bard",
+      "type": "class",
+      "_id": "ILvRZGEx3aXqSVUt"
+    },
+    {
+      "name": "Cleric",
+      "identifier": "cleric",
+      "type": "class",
+      "_id": "tlwBnN8GmqJcTgub"
+    },
+    {
+      "name": "Druid",
+      "identifier": "druid",
+      "type": "class",
+      "_id": "ygVYgPbJkaH0tH1N"
+    },
+    {
+      "name": "Fighter",
+      "identifier": "fighter",
+      "type": "class",
+      "_id": "ABEBgWyRhVlDUIfq"
+    },
+    {
+      "name": "Monk",
+      "identifier": "monk",
+      "type": "class",
+      "_id": "6VoZrWxhOEKGYhnq"
+    },
+    {
+      "name": "Paladin",
+      "identifier": "paladin",
+      "type": "class",
+      "_id": "gZiUvbXWLs0pOp0c"
+    },
+    {
+      "name": "Ranger",
+      "identifier": "ranger",
+      "type": "class",
+      "_id": "VkRQ7glQvTWWiOCS"
+    },
+    {
+      "name": "Rogue",
+      "identifier": "rogue",
+      "type": "class",
+      "_id": "xEb8jmA5HlNs7xTF"
+    },
+    {
+      "name": "Sorcerer",
+      "identifier": "sorcerer",
+      "type": "class",
+      "_id": "6T08zzKtmmpVwlXU"
+    },
+    {
+      "name": "Warlock",
+      "identifier": "warlock",
+      "type": "class",
+      "_id": "7WJp9vhi6F6SlAFa"
+    },
+    {
+      "name": "Wizard",
+      "identifier": "wizard",
+      "type": "class",
+      "_id": "wZK2Q0rXB0AQo8h3"
+    }
+  ],
+  "classes24": [
+    {
+      "name": "Barbarian",
+      "identifier": "barbarian",
+      "type": "class",
+      "_id": "phbbrbBarbarian0"
+    },
+    {
+      "name": "Bard",
+      "identifier": "bard",
+      "type": "class",
+      "_id": "phbbrdBard000000"
+    },
+    {
+      "name": "Cleric",
+      "identifier": "cleric",
+      "type": "class",
+      "_id": "phbclcCleric0000"
+    },
+    {
+      "name": "Druid",
+      "identifier": "druid",
+      "type": "class",
+      "_id": "phbdrdDruid00000"
+    },
+    {
+      "name": "Fighter",
+      "identifier": "fighter",
+      "type": "class",
+      "_id": "phbftrFighter000"
+    },
+    {
+      "name": "Monk",
+      "identifier": "monk",
+      "type": "class",
+      "_id": "phbmnkMonk000000"
+    },
+    {
+      "name": "Paladin",
+      "identifier": "paladin",
+      "type": "class",
+      "_id": "phbpdnPaladin000"
+    },
+    {
+      "name": "Ranger",
+      "identifier": "ranger",
+      "type": "class",
+      "_id": "phbrgrRanger0000"
+    },
+    {
+      "name": "Rogue",
+      "identifier": "rogue",
+      "type": "class",
+      "_id": "phbrgeRogue00000"
+    },
+    {
+      "name": "Sorcerer",
+      "identifier": "sorcerer",
+      "type": "class",
+      "_id": "phbscrSorcerer00"
+    },
+    {
+      "name": "Warlock",
+      "identifier": "warlock",
+      "type": "class",
+      "_id": "phbwlkWarlock000"
+    },
+    {
+      "name": "Wizard",
+      "identifier": "wizard",
+      "type": "class",
+      "_id": "phbwzdWizard0000"
+    },
+    {
+      "name": "Abjure Foes",
+      "identifier": "abjure-foes",
+      "type": "feat",
+      "_id": "phbpdnAbjureFoes"
+    },
+    {
+      "name": "Acrobatic Movement",
+      "identifier": "acrobatic-movement",
+      "type": "feat",
+      "_id": "phbmnkAcrobaticM"
+    },
+    {
+      "name": "Action Surge",
+      "identifier": "action-surge",
+      "type": "feat",
+      "_id": "phbftrActionSurg"
+    },
+    {
+      "name": "Additional Fighting Style",
+      "identifier": "additional-fighting-style",
+      "type": "feat",
+      "_id": "phbftrAdditional"
+    },
+    {
+      "name": "Agonizing Blast",
+      "identifier": "agonizing-blast",
+      "type": "feat",
+      "_id": "phbinvAgonizingB"
+    },
+    {
+      "name": "Arcane Apotheosis",
+      "identifier": "arcane-apotheosis",
+      "type": "feat",
+      "_id": "phbscrArcaneApot"
+    },
+    {
+      "name": "Arcane Recovery",
+      "identifier": "arcane-recovery",
+      "type": "feat",
+      "_id": "phbwzdArcaneReco"
+    },
+    {
+      "name": "Archdruid",
+      "identifier": "archdruid",
+      "type": "feat",
+      "_id": "phbdrdArchdruid0"
+    },
+    {
+      "name": "Armor of Shadows",
+      "identifier": "armor-of-shadows",
+      "type": "feat",
+      "_id": "phbinvArmorofSha"
+    },
+    {
+      "name": "Ascendant Step",
+      "identifier": "ascendant-step",
+      "type": "feat",
+      "_id": "phbinvAscendantS"
+    },
+    {
+      "name": "Aura Expansion",
+      "identifier": "aura-expansion",
+      "type": "feat",
+      "_id": "phbpdnAuraExpans"
+    },
+    {
+      "name": "Aura of Courage",
+      "identifier": "aura-of-courage",
+      "type": "feat",
+      "_id": "phbpdnCourageAur"
+    },
+    {
+      "name": "Aura of Devotion",
+      "identifier": "aura-of-devotion",
+      "type": "feat",
+      "_id": "phbpdnDevotionAu"
+    },
+    {
+      "name": "Aura of Protection",
+      "identifier": "aura-of-protection",
+      "type": "feat",
+      "_id": "phbpdnProtection"
+    },
+    {
+      "name": "Bardic Inspiration",
+      "identifier": "bardic-inspiration",
+      "type": "feat",
+      "_id": "phbbrdBardicInsp"
+    },
+    {
+      "name": "Beast Spells",
+      "identifier": "beast-spells",
+      "type": "feat",
+      "_id": "phbdrdBeastSpell"
+    },
+    {
+      "name": "Blessed Healer",
+      "identifier": "blessed-healer",
+      "type": "feat",
+      "_id": "phbclcBlessedHea"
+    },
+    {
+      "name": "Blessed Strikes",
+      "identifier": "blessed-strikes",
+      "type": "feat",
+      "_id": "phbclcBlessedStr"
+    },
+    {
+      "name": "Blessed Strikes: Divine Strike",
+      "identifier": "blessed-strikes-divine-strike",
+      "type": "feat",
+      "_id": "phbDivineStrike0"
+    },
+    {
+      "name": "Blessed Strikes: Potent Spellcasting",
+      "identifier": "blessed-strikes-potent-spellcasting",
+      "type": "feat",
+      "_id": "phbClcPotentSpel"
+    },
+    {
+      "name": "Blessed Warrior",
+      "identifier": "blessed-warrior",
+      "type": "feat",
+      "_id": "phbfstBlessedWar"
+    },
+    {
+      "name": "Body and Mind",
+      "identifier": "body-and-mind",
+      "type": "feat",
+      "_id": "phbmnkBodyAndMin"
+    },
+    {
+      "name": "Bonus Proficiencies",
+      "identifier": "bonus-proficiencies",
+      "type": "feat",
+      "_id": "phbbrdBonusProfi"
+    },
+    {
+      "name": "Brutal Strike",
+      "identifier": "brutal-strike",
+      "type": "feat",
+      "_id": "phbbrbBrutalStri"
+    },
+    {
+      "name": "Careful Spell",
+      "identifier": "careful-spell",
+      "type": "feat",
+      "_id": "phbmmoCarefulSpe"
+    },
+    {
+      "name": "Channel Divinity",
+      "identifier": "channel-divinity",
+      "type": "feat",
+      "_id": "phbclcChannelDiv"
+    },
+    {
+      "name": "Channel Divinity",
+      "identifier": "channel-divinity",
+      "type": "feat",
+      "_id": "phbpdnChannelDiv"
+    },
+    {
+      "name": "Circle of the Land Spells",
+      "identifier": "circle-of-the-land-spells",
+      "type": "feat",
+      "_id": "phbdrdLandSpells"
+    },
+    {
+      "name": "Contact Patron",
+      "identifier": "contact-patron",
+      "type": "feat",
+      "_id": "phbwlkContactPat"
+    },
+    {
+      "name": "Countercharm",
+      "identifier": "countercharm",
+      "type": "feat",
+      "_id": "phbbrdCountercha"
+    },
+    {
+      "name": "Cunning Action",
+      "identifier": "cunning-action",
+      "type": "feat",
+      "_id": "phbrgeCunningAct"
+    },
+    {
+      "name": "Cunning Strike",
+      "identifier": "cunning-strike",
+      "type": "feat",
+      "_id": "phbrgeCunningStr"
+    },
+    {
+      "name": "Cutting Words",
+      "identifier": "cutting-words",
+      "type": "feat",
+      "_id": "phbbrdCuttingWor"
+    },
+    {
+      "name": "Danger Sense",
+      "identifier": "danger-sense",
+      "type": "feat",
+      "_id": "phbbrbDangerSens"
+    },
+    {
+      "name": "Dark One's Blessing",
+      "identifier": "dark-ones-blessing",
+      "type": "feat",
+      "_id": "phbwlkDarkOnesBl"
+    },
+    {
+      "name": "Dark One's Own Luck",
+      "identifier": "dark-ones-own-luck",
+      "type": "feat",
+      "_id": "phbwlkDarkOnesOw"
+    },
+    {
+      "name": "Defensive Tactics",
+      "identifier": "defensive-tactics",
+      "type": "feat",
+      "_id": "phbrgrDefensiveT"
+    },
+    {
+      "name": "Deflect Attacks",
+      "identifier": "deflect-attacks",
+      "type": "feat",
+      "_id": "phbmnkDeflectAtt"
+    },
+    {
+      "name": "Deflect Energy",
+      "identifier": "deflect-energy",
+      "type": "feat",
+      "_id": "phbmnkDeflectEne"
+    },
+    {
+      "name": "Deft Explorer",
+      "identifier": "deft-explorer",
+      "type": "feat",
+      "_id": "phbrgrDeftExplor"
+    },
+    {
+      "name": "Devil's Sight",
+      "identifier": "devils-sight",
+      "type": "feat",
+      "_id": "phbinvDevilsSigh"
+    },
+    {
+      "name": "Devious Strikes",
+      "identifier": "devious-strikes",
+      "type": "feat",
+      "_id": "phbrgeDeviousStr"
+    },
+    {
+      "name": "Devouring Blade",
+      "identifier": "devouring-blade",
+      "type": "feat",
+      "_id": "phbinvDevouringB"
+    },
+    {
+      "name": "Disciple of Life",
+      "identifier": "disciple-of-life",
+      "type": "feat",
+      "_id": "phbclcDiscipleOf"
+    },
+    {
+      "name": "Disciplined Survivor",
+      "identifier": "disciplined-survivor",
+      "type": "feat",
+      "_id": "phbmnkDiscipline"
+    },
+    {
+      "name": "Distant Spell",
+      "identifier": "distant-spell",
+      "type": "feat",
+      "_id": "phbmmoDistantSpe"
+    },
+    {
+      "name": "Divine Intervention",
+      "identifier": "divine-intervention",
+      "type": "feat",
+      "_id": "phbclcDivineInte"
+    },
+    {
+      "name": "Divine Order",
+      "identifier": "divine-order",
+      "type": "feat",
+      "_id": "phbclcDivineOrde"
+    },
+    {
+      "name": "Divine Order: Protector",
+      "identifier": "divine-order-protector",
+      "type": "feat",
+      "_id": "phbDivineOrderPr"
+    },
+    {
+      "name": "Divine Order: Thaumaturge",
+      "identifier": "divine-order-thaumaturge",
+      "type": "feat",
+      "_id": "phbDivineOrderTh"
+    },
+    {
+      "name": "Draconic Resilience",
+      "identifier": "draconic-resilience",
+      "type": "feat",
+      "_id": "phbscrDraconicRe"
+    },
+    {
+      "name": "Draconic Spells",
+      "identifier": "draconic-spells",
+      "type": "feat",
+      "_id": "phbscrDraconicSp"
+    },
+    {
+      "name": "Dragon Companion",
+      "identifier": "dragon-companion",
+      "type": "feat",
+      "_id": "phbscrDragonComp"
+    },
+    {
+      "name": "Dragon Wings",
+      "identifier": "dragon-wings",
+      "type": "feat",
+      "_id": "phbscrDragonWing"
+    },
+    {
+      "name": "Druidic",
+      "identifier": "druidic",
+      "type": "feat",
+      "_id": "phbdrdDruidic000"
+    },
+    {
+      "name": "Druidic Warrior",
+      "identifier": "druidic-warrior",
+      "type": "feat",
+      "_id": "phbfstDruidicWar"
+    },
+    {
+      "name": "Eldritch Invocations",
+      "identifier": "eldritch-invocations",
+      "type": "feat",
+      "_id": "phbwlkEldritchIn"
+    },
+    {
+      "name": "Eldritch Master",
+      "identifier": "eldritch-master",
+      "type": "feat",
+      "_id": "phbwlkEldritchMa"
+    },
+    {
+      "name": "Eldritch Mind",
+      "identifier": "eldritch-mind",
+      "type": "feat",
+      "_id": "phbinvEldritchMi"
+    },
+    {
+      "name": "Eldritch Smite",
+      "identifier": "eldritch-smite",
+      "type": "feat",
+      "_id": "phbinvEldritchSm"
+    },
+    {
+      "name": "Eldritch Spear",
+      "identifier": "eldritch-spear",
+      "type": "feat",
+      "_id": "phbinvEldritchSp"
+    },
+    {
+      "name": "Elemental Affinity",
+      "identifier": "elemental-affinity",
+      "type": "feat",
+      "_id": "phbscrElementalA"
+    },
+    {
+      "name": "Elemental Fury",
+      "identifier": "elemental-fury",
+      "type": "feat",
+      "_id": "phbdrdElementalF"
+    },
+    {
+      "name": "Elemental Fury: Potent Spellcasting",
+      "identifier": "elemental-fury-potent-spellcasting",
+      "type": "feat",
+      "_id": "phbFuryPotentSpe"
+    },
+    {
+      "name": "Elemental Fury: Primal Strike",
+      "identifier": "elemental-fury-primal-strike",
+      "type": "feat",
+      "_id": "phbFuryPrimalStr"
+    },
+    {
+      "name": "Elusive",
+      "identifier": "elusive",
+      "type": "feat",
+      "_id": "phbrgeElusive000"
+    },
+    {
+      "name": "Empowered Evocation",
+      "identifier": "empowered-evocation",
+      "type": "feat",
+      "_id": "phbwzdEmpoweredE"
+    },
+    {
+      "name": "Empowered Spell",
+      "identifier": "empowered-spell",
+      "type": "feat",
+      "_id": "phbmmoEmpoweredS"
+    },
+    {
+      "name": "Empowered Strikes",
+      "identifier": "empowered-strikes",
+      "type": "feat",
+      "_id": "phbmnkEmpoweredS"
+    },
+    {
+      "name": "Epic Boon",
+      "identifier": "epic-boon",
+      "type": "feat",
+      "_id": "phbbrbEpicBoon00"
+    },
+    {
+      "name": "Epic Boon",
+      "identifier": "epic-boon",
+      "type": "feat",
+      "_id": "phbbrdEpicBoon00"
+    },
+    {
+      "name": "Epic Boon",
+      "identifier": "epic-boon",
+      "type": "feat",
+      "_id": "phbclcEpicBoon00"
+    },
+    {
+      "name": "Epic Boon",
+      "identifier": "epic-boon",
+      "type": "feat",
+      "_id": "phbdrdEpicBoon00"
+    },
+    {
+      "name": "Epic Boon",
+      "identifier": "epic-boon",
+      "type": "feat",
+      "_id": "phbftrEpicBoon00"
+    },
+    {
+      "name": "Epic Boon",
+      "identifier": "epic-boon",
+      "type": "feat",
+      "_id": "phbmnkEpicBoon00"
+    },
+    {
+      "name": "Epic Boon",
+      "identifier": "epic-boon",
+      "type": "feat",
+      "_id": "phbpdnEpicBoon00"
+    },
+    {
+      "name": "Epic Boon",
+      "identifier": "epic-boon",
+      "type": "feat",
+      "_id": "phbrgrEpicBoon00"
+    },
+    {
+      "name": "Epic Boon",
+      "identifier": "epic-boon",
+      "type": "feat",
+      "_id": "phbrgeEpicBoon00"
+    },
+    {
+      "name": "Epic Boon",
+      "identifier": "epic-boon",
+      "type": "feat",
+      "_id": "phbscrEpicBoon00"
+    },
+    {
+      "name": "Epic Boon",
+      "identifier": "epic-boon",
+      "type": "feat",
+      "_id": "phbwlkEpicBoon00"
+    },
+    {
+      "name": "Epic Boon",
+      "identifier": "epic-boon",
+      "type": "feat",
+      "_id": "phbwzdEpicBoon00"
+    },
+    {
+      "name": "Evasion",
+      "identifier": "evasion",
+      "type": "feat",
+      "_id": "phbmnkEvasion000"
+    },
+    {
+      "name": "Evasion",
+      "identifier": "evasion",
+      "type": "feat",
+      "_id": "phbrgeEvasion000"
+    },
+    {
+      "name": "Evocation Savant",
+      "identifier": "evocation-savant",
+      "type": "feat",
+      "_id": "phbwzdEvocationS"
+    },
+    {
+      "name": "Expertise",
+      "identifier": "expertise",
+      "type": "feat",
+      "_id": "phbbrdExpertise0"
+    },
+    {
+      "name": "Expertise",
+      "identifier": "expertise",
+      "type": "feat",
+      "_id": "phbrgrExpertise0"
+    },
+    {
+      "name": "Expertise",
+      "identifier": "expertise",
+      "type": "feat",
+      "_id": "phbrgeExpertise0"
+    },
+    {
+      "name": "Extended Spell",
+      "identifier": "extended-spell",
+      "type": "feat",
+      "_id": "phbmmoExtendedSp"
+    },
+    {
+      "name": "Extra Attack",
+      "identifier": "extra-attack",
+      "type": "feat",
+      "_id": "phbbrbExtraAttac"
+    },
+    {
+      "name": "Extra Attack",
+      "identifier": "extra-attack",
+      "type": "feat",
+      "_id": "phbftrExtraAttac"
+    },
+    {
+      "name": "Extra Attack",
+      "identifier": "extra-attack",
+      "type": "feat",
+      "_id": "phbmnkExtraAttac"
+    },
+    {
+      "name": "Extra Attack",
+      "identifier": "extra-attack",
+      "type": "feat",
+      "_id": "phbpdnExtraAttac"
+    },
+    {
+      "name": "Extra Attack",
+      "identifier": "extra-attack",
+      "type": "feat",
+      "_id": "phbrgrExtraAttac"
+    },
+    {
+      "name": "Faithful Steed",
+      "identifier": "faithful-steed",
+      "type": "feat",
+      "_id": "phbpdnFaithfulSt"
+    },
+    {
+      "name": "Fast Hands",
+      "identifier": "fast-hands",
+      "type": "feat",
+      "_id": "phbrgeFastHands0"
+    },
+    {
+      "name": "Fast Movement",
+      "identifier": "fast-movement",
+      "type": "feat",
+      "_id": "phbbrbFastMoveme"
+    },
+    {
+      "name": "Favored Enemy",
+      "identifier": "favored-enemy",
+      "type": "feat",
+      "_id": "phbrgrFavoredEne"
+    },
+    {
+      "name": "Feral Instinct",
+      "identifier": "feral-instinct",
+      "type": "feat",
+      "_id": "phbbrbFeralInsti"
+    },
+    {
+      "name": "Feral Senses",
+      "identifier": "feral-senses",
+      "type": "feat",
+      "_id": "phbrgrFeralSense"
+    },
+    {
+      "name": "Fiend Spells",
+      "identifier": "fiend-spells",
+      "type": "feat",
+      "_id": "phbwlkFiendSpell"
+    },
+    {
+      "name": "Fiendish Resilience",
+      "identifier": "fiendish-resilience",
+      "type": "feat",
+      "_id": "phbwlkFiendishRe"
+    },
+    {
+      "name": "Fiendish Vigor",
+      "identifier": "fiendish-vigor",
+      "type": "feat",
+      "_id": "phbinvFiendishVi"
+    },
+    {
+      "name": "Fighting Style",
+      "identifier": "fighting-style",
+      "type": "feat",
+      "_id": "phbftrFightingSt"
+    },
+    {
+      "name": "Fighting Style",
+      "identifier": "fighting-style",
+      "type": "feat",
+      "_id": "phbpdnFightingSt"
+    },
+    {
+      "name": "Fighting Style",
+      "identifier": "fighting-style",
+      "type": "feat",
+      "_id": "phbrgrFightingSt"
+    },
+    {
+      "name": "Fleet Step",
+      "identifier": "fleet-step",
+      "type": "feat",
+      "_id": "phbmnkFleetStep0"
+    },
+    {
+      "name": "Foe Slayer",
+      "identifier": "foe-slayer",
+      "type": "feat",
+      "_id": "phbrgrFoeSlayer0"
+    },
+    {
+      "name": "Font of Inspiration",
+      "identifier": "font-of-inspiration",
+      "type": "feat",
+      "_id": "phbbrdFontOfInsp"
+    },
+    {
+      "name": "Font of Magic",
+      "identifier": "font-of-magic",
+      "type": "feat",
+      "_id": "phbscrFontOfMagi"
+    },
+    {
+      "name": "Frenzy",
+      "identifier": "frenzy",
+      "type": "feat",
+      "_id": "phbbrbFrenzy0000"
+    },
+    {
+      "name": "Gaze of Two Minds",
+      "identifier": "gaze-of-two-minds",
+      "type": "feat",
+      "_id": "phbinvGazeofTwoM"
+    },
+    {
+      "name": "Gift of the Depths",
+      "identifier": "gift-of-the-depths",
+      "type": "feat",
+      "_id": "phbinvGiftoftheD"
+    },
+    {
+      "name": "Gift of the Protectors",
+      "identifier": "gift-of-the-protectors",
+      "type": "feat",
+      "_id": "phbinvGiftoftheP"
+    },
+    {
+      "name": "Greater Divine Intervention",
+      "identifier": "greater-divine-intervention",
+      "type": "feat",
+      "_id": "phbclcGreaterDiv"
+    },
+    {
+      "name": "Heightened Focus",
+      "identifier": "heightened-focus",
+      "type": "feat",
+      "_id": "phbmnkHeightened"
+    },
+    {
+      "name": "Heightened Spell",
+      "identifier": "heightened-spell",
+      "type": "feat",
+      "_id": "phbmmoHeightened"
+    },
+    {
+      "name": "Heroic Warrior",
+      "identifier": "heroic-warrior",
+      "type": "feat",
+      "_id": "phbftrHeroicWarr"
+    },
+    {
+      "name": "Holy Nimbus",
+      "identifier": "holy-nimbus",
+      "type": "feat",
+      "_id": "phbpdnHolyNimbus"
+    },
+    {
+      "name": "Hunter's Lore",
+      "identifier": "hunters-lore",
+      "type": "feat",
+      "_id": "phbrgrHuntersLor"
+    },
+    {
+      "name": "Hunter's Prey",
+      "identifier": "hunters-prey",
+      "type": "feat",
+      "_id": "phbrgrHuntersPre"
+    },
+    {
+      "name": "Hurl Through Hell",
+      "identifier": "hurl-through-hell",
+      "type": "feat",
+      "_id": "phbwlkHurlThroug"
+    },
+    {
+      "name": "Improved Blessed Strikes",
+      "identifier": "improved-blessed-strikes",
+      "type": "feat",
+      "_id": "phbclcImprovedBl"
+    },
+    {
+      "name": "Improved Brutal Strike",
+      "identifier": "improved-brutal-strike",
+      "type": "feat",
+      "_id": "phbbrbImpBrutalS"
+    },
+    {
+      "name": "Improved Brutal Strike (2)",
+      "identifier": "improved-brutal-strike-2",
+      "type": "feat",
+      "_id": "phbbrbImp2Brutal"
+    },
+    {
+      "name": "Improved Critical",
+      "identifier": "improved-critical",
+      "type": "feat",
+      "_id": "phbftrImprovedCr"
+    },
+    {
+      "name": "Improved Cunning Strike",
+      "identifier": "improved-cunning-strike",
+      "type": "feat",
+      "_id": "phbrgeImprovedCu"
+    },
+    {
+      "name": "Improved Elemental Fury",
+      "identifier": "improved-elemental-fury",
+      "type": "feat",
+      "_id": "phbdrdImprovedEl"
+    },
+    {
+      "name": "Indomitable",
+      "identifier": "indomitable",
+      "type": "feat",
+      "_id": "phbftrIndomitabl"
+    },
+    {
+      "name": "Indomitable Might",
+      "identifier": "indomitable-might",
+      "type": "feat",
+      "_id": "phbbrbIndomitabl"
+    },
+    {
+      "name": "Innate Sorcery",
+      "identifier": "innate-sorcery",
+      "type": "feat",
+      "_id": "phbscrInnateSorc"
+    },
+    {
+      "name": "Instinctive Pounce",
+      "identifier": "instinctive-pounce",
+      "type": "feat",
+      "_id": "phbbrbInstinctiv"
+    },
+    {
+      "name": "Intimidating Presence",
+      "identifier": "intimidating-presence",
+      "type": "feat",
+      "_id": "phbbrbIntimidati"
+    },
+    {
+      "name": "Investment of the Chain Master",
+      "identifier": "investment-of-the-chain-master",
+      "type": "feat",
+      "_id": "phbinvInvestment"
+    },
+    {
+      "name": "Jack of All Trades",
+      "identifier": "jack-of-all-trades",
+      "type": "feat",
+      "_id": "phbbrdJackOfAllT"
+    },
+    {
+      "name": "Land's Aid",
+      "identifier": "lands-aid",
+      "type": "feat",
+      "_id": "phbdrdLandsAid00"
+    },
+    {
+      "name": "Lay on Hands",
+      "identifier": "lay-on-hands",
+      "type": "feat",
+      "_id": "phbpdnLayOnHands"
+    },
+    {
+      "name": "Lessons of the First Ones",
+      "identifier": "lessons-of-the-first-ones",
+      "type": "feat",
+      "_id": "phbinvLessonsoft"
+    },
+    {
+      "name": "Life Domain Spells",
+      "identifier": "life-domain-spells",
+      "type": "feat",
+      "_id": "phbclcLifeSpells"
+    },
+    {
+      "name": "Lifedrinker",
+      "identifier": "lifedrinker",
+      "type": "feat",
+      "_id": "phbinvLifedrinke"
+    },
+    {
+      "name": "Magical Cunning",
+      "identifier": "magical-cunning",
+      "type": "feat",
+      "_id": "phbwlkMagicalCun"
+    },
+    {
+      "name": "Magical Discoveries",
+      "identifier": "magical-discoveries",
+      "type": "feat",
+      "_id": "phbbrdMagicalDis"
+    },
+    {
+      "name": "Magical Secrets",
+      "identifier": "magical-secrets",
+      "type": "feat",
+      "_id": "phbbrdMagicalSec"
+    },
+    {
+      "name": "Martial Arts",
+      "identifier": "martial-arts",
+      "type": "feat",
+      "_id": "phbmnkMartialArt"
+    },
+    {
+      "name": "Mask of Many Faces",
+      "identifier": "mask-of-many-faces",
+      "type": "feat",
+      "_id": "phbinvMaskofMany"
+    },
+    {
+      "name": "Master of Myriad Forms",
+      "identifier": "master-of-myriad-forms",
+      "type": "feat",
+      "_id": "phbinvMasterofMy"
+    },
+    {
+      "name": "Memorize Spell",
+      "identifier": "memorize-spell",
+      "type": "feat",
+      "_id": "phbwzdMemorizeSp"
+    },
+    {
+      "name": "Metamagic",
+      "identifier": "metamagic",
+      "type": "feat",
+      "_id": "phbscrMetamagic0"
+    },
+    {
+      "name": "Mindless Rage",
+      "identifier": "mindless-rage",
+      "type": "feat",
+      "_id": "phbbrbMindlessRa"
+    },
+    {
+      "name": "Misty Visions",
+      "identifier": "misty-visions",
+      "type": "feat",
+      "_id": "phbinvMistyVisio"
+    },
+    {
+      "name": "Monk's Focus",
+      "identifier": "monks-focus",
+      "type": "feat",
+      "_id": "phbmnkMonksFocus"
+    },
+    {
+      "name": "Mystic Arcanum",
+      "identifier": "mystic-arcanum",
+      "type": "feat",
+      "_id": "phbwlkMysticArca"
+    },
+    {
+      "name": "Natural Recovery",
+      "identifier": "natural-recovery",
+      "type": "feat",
+      "_id": "phbdrdNaturalRec"
+    },
+    {
+      "name": "Nature's Sanctuary",
+      "identifier": "natures-sanctuary",
+      "type": "feat",
+      "_id": "phbdrdNaturesSan"
+    },
+    {
+      "name": "Nature's Veil",
+      "identifier": "natures-veil",
+      "type": "feat",
+      "_id": "phbrgrNaturesVei"
+    },
+    {
+      "name": "Nature's Ward",
+      "identifier": "natures-ward",
+      "type": "feat",
+      "_id": "phbdrdNaturesWar"
+    },
+    {
+      "name": "Oath of Devotion Spells",
+      "identifier": "oath-of-devotion-spells",
+      "type": "feat",
+      "_id": "phbpdnDevotionSp"
+    },
+    {
+      "name": "One with Shadows",
+      "identifier": "one-with-shadows",
+      "type": "feat",
+      "_id": "phbinvOnewithSha"
+    },
+    {
+      "name": "Open Hand Technique",
+      "identifier": "open-hand-technique",
+      "type": "feat",
+      "_id": "phbmnkOpenHandTe"
+    },
+    {
+      "name": "Otherworldly Leap",
+      "identifier": "otherworldly-leap",
+      "type": "feat",
+      "_id": "phbinvOtherworld"
+    },
+    {
+      "name": "Overchannel",
+      "identifier": "overchannel",
+      "type": "feat",
+      "_id": "phbwzdOverchanne"
+    },
+    {
+      "name": "Pact Magic",
+      "identifier": "pact-magic",
+      "type": "feat",
+      "_id": "phbwlkPactMagic0"
+    },
+    {
+      "name": "Pact of the Blade",
+      "identifier": "pact-of-the-blade",
+      "type": "feat",
+      "_id": "phbinvPactBlade0"
+    },
+    {
+      "name": "Pact of the Chain",
+      "identifier": "pact-of-the-chain",
+      "type": "feat",
+      "_id": "phbinvPactChain0"
+    },
+    {
+      "name": "Pact of the Tome",
+      "identifier": "pact-of-the-tome",
+      "type": "feat",
+      "_id": "phbinvPactTome00"
+    },
+    {
+      "name": "Paladin's Smite",
+      "identifier": "paladins-smite",
+      "type": "feat",
+      "_id": "phbpdnPaladinsSm"
+    },
+    {
+      "name": "Peerless Skill",
+      "identifier": "peerless-skill",
+      "type": "feat",
+      "_id": "phbbrdPeerlessSk"
+    },
+    {
+      "name": "Perfect Focus",
+      "identifier": "perfect-focus",
+      "type": "feat",
+      "_id": "phbmnkPerfectFoc"
+    },
+    {
+      "name": "Persistent Rage",
+      "identifier": "persistent-rage",
+      "type": "feat",
+      "_id": "phbbrbPersistent"
+    },
+    {
+      "name": "Potent Cantrip",
+      "identifier": "potent-cantrip",
+      "type": "feat",
+      "_id": "phbwzdPotentCant"
+    },
+    {
+      "name": "Precise Hunter",
+      "identifier": "precise-hunter",
+      "type": "feat",
+      "_id": "phbrgrPreciseHun"
+    },
+    {
+      "name": "Preserve Life",
+      "identifier": "preserve-life",
+      "type": "feat",
+      "_id": "phbclcPreserveLi"
+    },
+    {
+      "name": "Primal Champion",
+      "identifier": "primal-champion",
+      "type": "feat",
+      "_id": "phbbrbPrimalCham"
+    },
+    {
+      "name": "Primal Knowledge",
+      "identifier": "primal-knowledge",
+      "type": "feat",
+      "_id": "phbbrbPrimalKnow"
+    },
+    {
+      "name": "Primal Order",
+      "identifier": "primal-order",
+      "type": "feat",
+      "_id": "phbdrdPrimalOrde"
+    },
+    {
+      "name": "Primal Order: Magician",
+      "identifier": "primal-order-magician",
+      "type": "feat",
+      "_id": "phbPrimalOrderMa"
+    },
+    {
+      "name": "Primal Order: Warden",
+      "identifier": "primal-order-warden",
+      "type": "feat",
+      "_id": "phbPrimalOrderWa"
+    },
+    {
+      "name": "Quickened Spell",
+      "identifier": "quickened-spell",
+      "type": "feat",
+      "_id": "phbmmoQuickenedS"
+    },
+    {
+      "name": "Quivering Palm",
+      "identifier": "quivering-palm",
+      "type": "feat",
+      "_id": "phbmnkQuiveringP"
+    },
+    {
+      "name": "Radiant Strikes",
+      "identifier": "radiant-strikes",
+      "type": "feat",
+      "_id": "phbpdnRadiantStr"
+    },
+    {
+      "name": "Rage",
+      "identifier": "rage",
+      "type": "feat",
+      "_id": "phbbrbRage000000"
+    },
+    {
+      "name": "Reckless Attack",
+      "identifier": "reckless-attack",
+      "type": "feat",
+      "_id": "phbbrbRecklessAt"
+    },
+    {
+      "name": "Relentless Hunter",
+      "identifier": "relentless-hunter",
+      "type": "feat",
+      "_id": "phbrgrRelentless"
+    },
+    {
+      "name": "Relentless Rage",
+      "identifier": "relentless-rage",
+      "type": "feat",
+      "_id": "phbbrbRelentless"
+    },
+    {
+      "name": "Reliable Talent",
+      "identifier": "reliable-talent",
+      "type": "feat",
+      "_id": "phbrgeReliableTa"
+    },
+    {
+      "name": "Remarkable Athlete",
+      "identifier": "remarkable-athlete",
+      "type": "feat",
+      "_id": "phbftrRemarkable"
+    },
+    {
+      "name": "Repelling Blast",
+      "identifier": "repelling-blast",
+      "type": "feat",
+      "_id": "phbinvRepellingB"
+    },
+    {
+      "name": "Restoring Touch",
+      "identifier": "restoring-touch",
+      "type": "feat",
+      "_id": "phbpdnRestoringT"
+    },
+    {
+      "name": "Retaliation",
+      "identifier": "retaliation",
+      "type": "feat",
+      "_id": "phbbrbRetaliatio"
+    },
+    {
+      "name": "Ritual Adept",
+      "identifier": "ritual-adept",
+      "type": "feat",
+      "_id": "phbwzdRitualAdep"
+    },
+    {
+      "name": "Roving",
+      "identifier": "roving",
+      "type": "feat",
+      "_id": "phbrgrRoving0000"
+    },
+    {
+      "name": "Sacred Weapon",
+      "identifier": "sacred-weapon",
+      "type": "feat",
+      "_id": "phbpdnSacredWeap"
+    },
+    {
+      "name": "Scholar",
+      "identifier": "scholar",
+      "type": "feat",
+      "_id": "phbwzdScholar000"
+    },
+    {
+      "name": "Sculpt Spells",
+      "identifier": "sculpt-spells",
+      "type": "feat",
+      "_id": "phbwzdSculptSpel"
+    },
+    {
+      "name": "Sear Undead",
+      "identifier": "sear-undead",
+      "type": "feat",
+      "_id": "phbclcSearUndead"
+    },
+    {
+      "name": "Second Wind",
+      "identifier": "second-wind",
+      "type": "feat",
+      "_id": "phbftrSecondWind"
+    },
+    {
+      "name": "Second-Story Work",
+      "identifier": "second-story-work",
+      "type": "feat",
+      "_id": "phbrgeSecondstor"
+    },
+    {
+      "name": "Seeking Spell",
+      "identifier": "seeking-spell",
+      "type": "feat",
+      "_id": "phbmmoSeekingSpe"
+    },
+    {
+      "name": "Signature Spells",
+      "identifier": "signature-spells",
+      "type": "feat",
+      "_id": "phbwzdSignatureS"
+    },
+    {
+      "name": "Slippery Mind",
+      "identifier": "slippery-mind",
+      "type": "feat",
+      "_id": "phbrgeSlipperyMi"
+    },
+    {
+      "name": "Slow Fall",
+      "identifier": "slow-fall",
+      "type": "feat",
+      "_id": "phbmnkSlowFall00"
+    },
+    {
+      "name": "Smite of Protection",
+      "identifier": "smite-of-protection",
+      "type": "feat",
+      "_id": "phbpdnSmiteOfPro"
+    },
+    {
+      "name": "Sneak Attack",
+      "identifier": "sneak-attack",
+      "type": "feat",
+      "_id": "phbrgeSneakAttac"
+    },
+    {
+      "name": "Sorcerous Restoration",
+      "identifier": "sorcerous-restoration",
+      "type": "feat",
+      "_id": "phbscrSorcerousR"
+    },
+    {
+      "name": "Sorcery Incarnate",
+      "identifier": "sorcery-incarnate",
+      "type": "feat",
+      "_id": "phbscrSorceryInc"
+    },
+    {
+      "name": "Spell Mastery",
+      "identifier": "spell-mastery",
+      "type": "feat",
+      "_id": "phbwzdSpellMaste"
+    },
+    {
+      "name": "Spellcasting",
+      "identifier": "spellcasting",
+      "type": "feat",
+      "_id": "phbbrdSpellcasti"
+    },
+    {
+      "name": "Spellcasting",
+      "identifier": "spellcasting",
+      "type": "feat",
+      "_id": "phbclcSpellcasti"
+    },
+    {
+      "name": "Spellcasting",
+      "identifier": "spellcasting",
+      "type": "feat",
+      "_id": "phbdrdSpellcasti"
+    },
+    {
+      "name": "Spellcasting",
+      "identifier": "spellcasting",
+      "type": "feat",
+      "_id": "phbpdnSpellcasti"
+    },
+    {
+      "name": "Spellcasting",
+      "identifier": "spellcasting",
+      "type": "feat",
+      "_id": "phbrgrSpellcasti"
+    },
+    {
+      "name": "Spellcasting",
+      "identifier": "spellcasting",
+      "type": "feat",
+      "_id": "phbscrSpellcasti"
+    },
+    {
+      "name": "Spellcasting",
+      "identifier": "spellcasting",
+      "type": "feat",
+      "_id": "phbwzdSpellcasti"
+    },
+    {
+      "name": "Steady Aim",
+      "identifier": "steady-aim",
+      "type": "feat",
+      "_id": "phbrgeSteadyAim0"
+    },
+    {
+      "name": "Stroke of Luck",
+      "identifier": "stroke-of-luck",
+      "type": "feat",
+      "_id": "phbrgeStrokeOfLu"
+    },
+    {
+      "name": "Studied Attacks",
+      "identifier": "studied-attacks",
+      "type": "feat",
+      "_id": "phbftrStudiedAtt"
+    },
+    {
+      "name": "Stunning Strike",
+      "identifier": "stunning-strike",
+      "type": "feat",
+      "_id": "phbmnkStunningSt"
+    },
+    {
+      "name": "Subtle Spell",
+      "identifier": "subtle-spell",
+      "type": "feat",
+      "_id": "phbmmoSubtleSpel"
+    },
+    {
+      "name": "Superior Critical",
+      "identifier": "superior-critical",
+      "type": "feat",
+      "_id": "phbftrSuperiorCr"
+    },
+    {
+      "name": "Superior Defense",
+      "identifier": "superior-defense",
+      "type": "feat",
+      "_id": "phbmnkSuperiorDe"
+    },
+    {
+      "name": "Superior Hunter's Defense",
+      "identifier": "superior-hunters-defense",
+      "type": "feat",
+      "_id": "phbrgrSuperiorDe"
+    },
+    {
+      "name": "Superior Hunter's Prey",
+      "identifier": "superior-hunters-prey",
+      "type": "feat",
+      "_id": "phbrgrSuperiorHu"
+    },
+    {
+      "name": "Superior Inspiration",
+      "identifier": "superior-inspiration",
+      "type": "feat",
+      "_id": "phbbrdSuperiorIn"
+    },
+    {
+      "name": "Supreme Healing",
+      "identifier": "supreme-healing",
+      "type": "feat",
+      "_id": "phbclcSupremeHea"
+    },
+    {
+      "name": "Supreme Sneak",
+      "identifier": "supreme-sneak",
+      "type": "feat",
+      "_id": "phbrgeSupremeSne"
+    },
+    {
+      "name": "Survivor",
+      "identifier": "survivor",
+      "type": "feat",
+      "_id": "phbftrSurvivor00"
+    },
+    {
+      "name": "Tactical Master",
+      "identifier": "tactical-master",
+      "type": "feat",
+      "_id": "phbftrTacticalMa"
+    },
+    {
+      "name": "Tactical Mind",
+      "identifier": "tactical-mind",
+      "type": "feat",
+      "_id": "phbftrTacticalMi"
+    },
+    {
+      "name": "Tactical Shift",
+      "identifier": "tactical-shift",
+      "type": "feat",
+      "_id": "phbftrTacticalSh"
+    },
+    {
+      "name": "Thief's Reflexes",
+      "identifier": "thiefs-reflexes",
+      "type": "feat",
+      "_id": "phbrgeThiefsRefl"
+    },
+    {
+      "name": "Thieves' Cant",
+      "identifier": "thieves-cant",
+      "type": "feat",
+      "_id": "phbrgeThievesCan"
+    },
+    {
+      "name": "Thirsting Blade",
+      "identifier": "thirsting-blade",
+      "type": "feat",
+      "_id": "phbinvThirstingB"
+    },
+    {
+      "name": "Three Extra Attacks",
+      "identifier": "three-extra-attacks",
+      "type": "feat",
+      "_id": "phbftrThreeExtra"
+    },
+    {
+      "name": "Tireless",
+      "identifier": "tireless",
+      "type": "feat",
+      "_id": "phbrgrTireless00"
+    },
+    {
+      "name": "Transmuted Spell",
+      "identifier": "transmuted-spell",
+      "type": "feat",
+      "_id": "phbmmoTransmuted"
+    },
+    {
+      "name": "Twinned Spell",
+      "identifier": "twinned-spell",
+      "type": "feat",
+      "_id": "phbmmoTwinnedSpe"
+    },
+    {
+      "name": "Two Extra Attacks",
+      "identifier": "two-extra-attacks",
+      "type": "feat",
+      "_id": "phbftrTwoExtraAt"
+    },
+    {
+      "name": "Unarmored Defense",
+      "identifier": "unarmored-defense",
+      "type": "feat",
+      "_id": "phbbrbUnarmoredD"
+    },
+    {
+      "name": "Unarmored Defense",
+      "identifier": "unarmored-defense",
+      "type": "feat",
+      "_id": "phbmnkUnarmoredD"
+    },
+    {
+      "name": "Unarmored Movement",
+      "identifier": "unarmored-movement",
+      "type": "feat",
+      "_id": "phbmnkUnarmoredM"
+    },
+    {
+      "name": "Uncanny Dodge",
+      "identifier": "uncanny-dodge",
+      "type": "feat",
+      "_id": "phbrgeUncannyDod"
+    },
+    {
+      "name": "Uncanny Metabolism",
+      "identifier": "uncanny-metabolism",
+      "type": "feat",
+      "_id": "phbmnkUncannyMet"
+    },
+    {
+      "name": "Use Magic Device",
+      "identifier": "use-magic-device",
+      "type": "feat",
+      "_id": "phbrgeUseMagicDe"
+    },
+    {
+      "name": "Visions of Distant Realms",
+      "identifier": "visions-of-distant-realms",
+      "type": "feat",
+      "_id": "phbinvVisionsOfD"
+    },
+    {
+      "name": "Weapon Mastery",
+      "identifier": "weapon-mastery",
+      "type": "feat",
+      "_id": "phbbrbWeaponMast"
+    },
+    {
+      "name": "Weapon Mastery",
+      "identifier": "weapon-mastery",
+      "type": "feat",
+      "_id": "phbftrWeaponMast"
+    },
+    {
+      "name": "Weapon Mastery",
+      "identifier": "weapon-mastery",
+      "type": "feat",
+      "_id": "phbpdnWeaponMast"
+    },
+    {
+      "name": "Weapon Mastery",
+      "identifier": "weapon-mastery",
+      "type": "feat",
+      "_id": "phbrgrWeaponMast"
+    },
+    {
+      "name": "Weapon Mastery",
+      "identifier": "weapon-mastery",
+      "type": "feat",
+      "_id": "phbrgeWeaponMast"
+    },
+    {
+      "name": "Whispers of the Grave",
+      "identifier": "whispers-of-the-grave",
+      "type": "feat",
+      "_id": "phbinvWhispersOf"
+    },
+    {
+      "name": "Wholeness of Body",
+      "identifier": "wholeness-of-body",
+      "type": "feat",
+      "_id": "phbmnkWholenessO"
+    },
+    {
+      "name": "Wild Companion",
+      "identifier": "wild-companion",
+      "type": "feat",
+      "_id": "phbdrdWildCompan"
+    },
+    {
+      "name": "Wild Resurgence",
+      "identifier": "wild-resurgence",
+      "type": "feat",
+      "_id": "phbdrdWildResurg"
+    },
+    {
+      "name": "Wild Shape",
+      "identifier": "wild-shape",
+      "type": "feat",
+      "_id": "phbdrdWildShape0"
+    },
+    {
+      "name": "Witch Sight",
+      "identifier": "witch-sight",
+      "type": "feat",
+      "_id": "phbinvWitchSight"
+    },
+    {
+      "name": "Words of Creation",
+      "identifier": "words-of-creation",
+      "type": "feat",
+      "_id": "phbbrdWordsOfCre"
+    },
+    {
+      "name": "Champion",
+      "identifier": "champion",
+      "type": "subclass",
+      "_id": "phbftrChampion00"
+    },
+    {
+      "name": "Circle of the Land",
+      "identifier": "land",
+      "type": "subclass",
+      "_id": "phbdrdCirland000"
+    },
+    {
+      "name": "College of Lore",
+      "identifier": "lore",
+      "type": "subclass",
+      "_id": "phbbrdLore000000"
+    },
+    {
+      "name": "Draconic Sorcery",
+      "identifier": "draconic",
+      "type": "subclass",
+      "_id": "phbscrDraconicSo"
+    },
+    {
+      "name": "Evoker",
+      "identifier": "evoker",
+      "type": "subclass",
+      "_id": "phbwzdEvoker0000"
+    },
+    {
+      "name": "Fiend Patron",
+      "identifier": "fiend",
+      "type": "subclass",
+      "_id": "phbwlkFiendPatro"
+    },
+    {
+      "name": "Hunter",
+      "identifier": "hunter",
+      "type": "subclass",
+      "_id": "phbrgrHunter0000"
+    },
+    {
+      "name": "Life Domain",
+      "identifier": "life",
+      "type": "subclass",
+      "_id": "phbclcLifeDomain"
+    },
+    {
+      "name": "Oath of Devotion",
+      "identifier": "devotion",
+      "type": "subclass",
+      "_id": "phbpdnOathOfDevo"
+    },
+    {
+      "name": "Path of the Berserker",
+      "identifier": "berserker",
+      "type": "subclass",
+      "_id": "phbbrbBerserker0"
+    },
+    {
+      "name": "Thief",
+      "identifier": "thief",
+      "type": "subclass",
+      "_id": "phbrgeThief00000"
+    },
+    {
+      "name": "Warrior of the Open Hand",
+      "identifier": "hand",
+      "type": "subclass",
+      "_id": "phbmnkOpenHandWa"
+    },
+    {
+      "name": "Book of Shadows",
+      "identifier": "book-of-shadows",
+      "type": "weapon",
+      "_id": "phbwlkBookOfShad"
+    },
+    {
+      "name": "Unarmed Strike",
+      "identifier": "unarmed-strike",
+      "type": "weapon",
+      "_id": "phbbrbUnarmedStr"
+    },
+    {
+      "name": "Unarmed Strike",
+      "identifier": "unarmed-strike",
+      "type": "weapon",
+      "_id": "phbmnkUnarmedStr"
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Champion",
+      "identifier": "champion",
+      "type": "subclass",
+      "_id": "sprHbe7cRg9osTzf"
+    },
+    {
+      "name": "Circle of the Land",
+      "identifier": "circle-of-the-land",
+      "type": "subclass",
+      "_id": "4Ae2SPZRXEVbVs0M"
+    },
+    {
+      "name": "College of Lore",
+      "identifier": "college-of-lore",
+      "type": "subclass",
+      "_id": "MNvsEc4D2ccX7dQT"
+    },
+    {
+      "name": "Draconic Bloodline",
+      "identifier": "draconic-bloodline",
+      "type": "subclass",
+      "_id": "2nadB2MBSHTQ0kcl"
+    },
+    {
+      "name": "Hunter",
+      "identifier": "hunter",
+      "type": "subclass",
+      "_id": "uqd2q6WjVfcsaaGb"
+    },
+    {
+      "name": "Life Domain",
+      "identifier": "life-domain",
+      "type": "subclass",
+      "_id": "H3RYLGqCiqm8BP3q"
+    },
+    {
+      "name": "Oath of Devotion",
+      "identifier": "oath-of-devotion",
+      "type": "subclass",
+      "_id": "sZ86mbX8D5PfYuhl"
+    },
+    {
+      "name": "Path of the Berserker",
+      "identifier": "path-of-the-berserker",
+      "type": "subclass",
+      "_id": "uGuDQX9Mz3oHNHkU"
+    },
+    {
+      "name": "School of Evocation",
+      "identifier": "school-of-evocation",
+      "type": "subclass",
+      "_id": "Ye5f3FReEnuXfi0y"
+    },
+    {
+      "name": "The Fiend",
+      "identifier": "the-fiend",
+      "type": "subclass",
+      "_id": "WPFVBg589uI8iOMH"
+    },
+    {
+      "name": "Thief",
+      "identifier": "thief",
+      "type": "subclass",
+      "_id": "k8iuefRorWOjb9gR"
+    },
+    {
+      "name": "Way of the Open Hand",
+      "identifier": "way-of-the-open-hand",
+      "type": "subclass",
+      "_id": "IvlpKMXX3PmW1NY2"
+    }
+  ],
+  "races": [
+    {
+      "name": "Artificer's Lore",
+      "identifier": "artificers-lore",
+      "type": "feat",
+      "_id": "OQA1sHxKnSJq01dL"
+    },
+    {
+      "name": "Brave",
+      "identifier": "brave",
+      "type": "feat",
+      "_id": "7Yoo9hG0hfPSmBoC"
+    },
+    {
+      "name": "Breath Weapon - Black",
+      "identifier": "breath-weapon-black",
+      "type": "feat",
+      "_id": "NnSZlrsHCFeH3cCq"
+    },
+    {
+      "name": "Breath Weapon - Blue",
+      "identifier": "breath-weapon-blue",
+      "type": "feat",
+      "_id": "KVgvW5yhKcmQUanz"
+    },
+    {
+      "name": "Breath Weapon - Brass",
+      "identifier": "breath-weapon-brass",
+      "type": "feat",
+      "_id": "JrUcwLR2aQC09iUM"
+    },
+    {
+      "name": "Breath Weapon - Bronze",
+      "identifier": "breath-weapon-bronze",
+      "type": "feat",
+      "_id": "pJzMSk9qYywYy65w"
+    },
+    {
+      "name": "Breath Weapon - Copper",
+      "identifier": "breath-weapon-copper",
+      "type": "feat",
+      "_id": "bFpLM0N3uTeHLdzu"
+    },
+    {
+      "name": "Breath Weapon - Gold",
+      "identifier": "breath-weapon-gold",
+      "type": "feat",
+      "_id": "YPQQBZAuRiSwuBfh"
+    },
+    {
+      "name": "Breath Weapon - Green",
+      "identifier": "breath-weapon-green",
+      "type": "feat",
+      "_id": "lXIxndsBaQglHBtO"
+    },
+    {
+      "name": "Breath Weapon - Red",
+      "identifier": "breath-weapon-red",
+      "type": "feat",
+      "_id": "kB61JPKQrDBbSNU7"
+    },
+    {
+      "name": "Breath Weapon - Silver",
+      "identifier": "breath-weapon-silver",
+      "type": "feat",
+      "_id": "pAYTdRGftNr8AitK"
+    },
+    {
+      "name": "Breath Weapon - White",
+      "identifier": "breath-weapon-white",
+      "type": "feat",
+      "_id": "KL7wx9Q8XNJQir0k"
+    },
+    {
+      "name": "Dwarven Resilience",
+      "identifier": "dwarven-resilience",
+      "type": "feat",
+      "_id": "ufysTkqet2Ctmtyi"
+    },
+    {
+      "name": "Fey Ancestry",
+      "identifier": "fey-ancestry",
+      "type": "feat",
+      "_id": "cnTbpPPeGW7vGjOV"
+    },
+    {
+      "name": "Gnome Cunning",
+      "identifier": "gnome-cunning",
+      "type": "feat",
+      "_id": "EHhr9umJ5kxJFCQH"
+    },
+    {
+      "name": "Halfling Nimbleness",
+      "identifier": "halfling-nimbleness",
+      "type": "feat",
+      "_id": "PqxZgcJzp1VVgP8t"
+    },
+    {
+      "name": "Hellish Resistance",
+      "identifier": "hellish-resistance",
+      "type": "feat",
+      "_id": "q71Pe1F8RRtEJt8Q"
+    },
+    {
+      "name": "Infernal Legacy",
+      "identifier": "infernal-legacy",
+      "type": "feat",
+      "_id": "wJc88B8OP1y1xzMw"
+    },
+    {
+      "name": "Lucky",
+      "identifier": "lucky",
+      "type": "feat",
+      "_id": "LOMdcNAGWh5xpfm4"
+    },
+    {
+      "name": "Naturally Stealthy",
+      "identifier": "naturally-stealthy",
+      "type": "feat",
+      "_id": "GWPjKFeIthBBeCFJ"
+    },
+    {
+      "name": "Relentless Endurance",
+      "identifier": "relentless-endurance",
+      "type": "feat",
+      "_id": "97c8i9Z28thvZuA8"
+    },
+    {
+      "name": "Savage Attacks",
+      "identifier": "savage-attacks",
+      "type": "feat",
+      "_id": "0kUsT4sMUOr5FcoX"
+    },
+    {
+      "name": "Stonecunning",
+      "identifier": "stonecunning",
+      "type": "feat",
+      "_id": "mQPZDRbUhgYTbXKa"
+    },
+    {
+      "name": "Tinker",
+      "identifier": "tinker",
+      "type": "feat",
+      "_id": "koRPOLtj8XAFMwnW"
+    },
+    {
+      "name": "Trance",
+      "identifier": "trance",
+      "type": "feat",
+      "_id": "4v2PiBrAbqDizdSJ"
+    },
+    {
+      "name": "Dragonborn",
+      "identifier": "dragonborn",
+      "type": "race",
+      "_id": "K4DNDcR6vngbp0pf"
+    },
+    {
+      "name": "Half-Elf",
+      "identifier": "half-elf",
+      "type": "race",
+      "_id": "Hye5IZwPOSwV0qRR"
+    },
+    {
+      "name": "Half-Orc",
+      "identifier": "half-orc",
+      "type": "race",
+      "_id": "n5L000DkNBU6h2oJ"
+    },
+    {
+      "name": "High Elf",
+      "identifier": "high-elf",
+      "type": "race",
+      "_id": "A69KxdH1renVPrQV"
+    },
+    {
+      "name": "Hill Dwarf",
+      "identifier": "hill-dwarf",
+      "type": "race",
+      "_id": "UQiRQUTBcsz8gZU1"
+    },
+    {
+      "name": "Human",
+      "identifier": "human",
+      "type": "race",
+      "_id": "ydP3QzCmur55mtY2"
+    },
+    {
+      "name": "Lightfoot Halfling",
+      "identifier": "lightfoot-halfling",
+      "type": "race",
+      "_id": "ZgYBjYYfiUstQD6f"
+    },
+    {
+      "name": "Rock Gnome",
+      "identifier": "rock-gnome",
+      "type": "race",
+      "_id": "TZtarkKs6cgGD7z2"
+    },
+    {
+      "name": "Tiefling",
+      "identifier": "tiefling",
+      "type": "race",
+      "_id": "aHTokZ151W0ASSmo"
+    }
+  ],
+  "origins24": [
+    {
+      "name": "Acolyte",
+      "identifier": "acolyte",
+      "type": "background",
+      "_id": "phbbgAcolyte0000"
+    },
+    {
+      "name": "Criminal",
+      "identifier": "criminal",
+      "type": "background",
+      "_id": "phbbgCriminal000"
+    },
+    {
+      "name": "Sage",
+      "identifier": "sage",
+      "type": "background",
+      "_id": "phbbgSage0000000"
+    },
+    {
+      "name": "Soldier",
+      "identifier": "soldier",
+      "type": "background",
+      "_id": "phbbgSoldier0000"
+    },
+    {
+      "name": "Adrenaline Rush",
+      "identifier": "adrenaline-rush",
+      "type": "feat",
+      "_id": "phbsptAdrenaline"
+    },
+    {
+      "name": "Brave",
+      "identifier": "brave",
+      "type": "feat",
+      "_id": "phbsptBrave00000"
+    },
+    {
+      "name": "Breath Weapon",
+      "identifier": "breath-weapon",
+      "type": "feat",
+      "_id": "phbsptBreathWeap"
+    },
+    {
+      "name": "Cloud's Jaunt",
+      "identifier": "clouds-jaunt",
+      "type": "feat",
+      "_id": "phbsptCloudsJaun"
+    },
+    {
+      "name": "Draconic Flight",
+      "identifier": "draconic-flight",
+      "type": "feat",
+      "_id": "phbsptDraconicFl"
+    },
+    {
+      "name": "Dwarven Resilience",
+      "identifier": "dwarven-resilience",
+      "type": "feat",
+      "_id": "phbsptDwarvenRes"
+    },
+    {
+      "name": "Dwarven Toughness",
+      "identifier": "dwarven-toughness",
+      "type": "feat",
+      "_id": "phbsptDwarvenTou"
+    },
+    {
+      "name": "Elven Lineage, Drow",
+      "identifier": "elven-lineage-drow",
+      "type": "feat",
+      "_id": "phbsptDrowElfLin"
+    },
+    {
+      "name": "Elven Lineage, High Elf",
+      "identifier": "elven-lineage-high-elf",
+      "type": "feat",
+      "_id": "phbsptHighElfLin"
+    },
+    {
+      "name": "Elven Lineage, Wood Elf",
+      "identifier": "elven-lineage-wood-elf",
+      "type": "feat",
+      "_id": "phbsptWoodElfLin"
+    },
+    {
+      "name": "Fey Ancestry",
+      "identifier": "fey-ancestry",
+      "type": "feat",
+      "_id": "phbsptFeyAncestr"
+    },
+    {
+      "name": "Fiendish Legacy, Abyssal",
+      "identifier": "fiendish-legacy-abyssal",
+      "type": "feat",
+      "_id": "phbsptAbyssalLeg"
+    },
+    {
+      "name": "Fiendish Legacy, Chthonic",
+      "identifier": "fiendish-legacy-chthonic",
+      "type": "feat",
+      "_id": "phbsptChthonicLe"
+    },
+    {
+      "name": "Fiendish Legacy, Infernal",
+      "identifier": "fiendish-legacy-infernal",
+      "type": "feat",
+      "_id": "phbsptInfernalLe"
+    },
+    {
+      "name": "Fire's Burn",
+      "identifier": "fires-burn",
+      "type": "feat",
+      "_id": "phbsptFiresBurn0"
+    },
+    {
+      "name": "Frost's Chill",
+      "identifier": "frosts-chill",
+      "type": "feat",
+      "_id": "phbsptFrostsChil"
+    },
+    {
+      "name": "Giant Ancestry",
+      "identifier": "giant-ancestry",
+      "type": "feat",
+      "_id": "phbsptGiantAnces"
+    },
+    {
+      "name": "Gnomish Cunning",
+      "identifier": "gnomish-cunning",
+      "type": "feat",
+      "_id": "phbsptGnomishCun"
+    },
+    {
+      "name": "Gnomish Lineage, Forest",
+      "identifier": "gnomish-lineage-forest",
+      "type": "feat",
+      "_id": "phbsptForestGnom"
+    },
+    {
+      "name": "Gnomish Lineage, Rock",
+      "identifier": "gnomish-lineage-rock",
+      "type": "feat",
+      "_id": "phbsptRockGnomeL"
+    },
+    {
+      "name": "Halfling Nimbleness",
+      "identifier": "halfling-nimbleness",
+      "type": "feat",
+      "_id": "phbsptHalflingNi"
+    },
+    {
+      "name": "Hill's Tumble",
+      "identifier": "hills-tumble",
+      "type": "feat",
+      "_id": "phbsptHillsTumbl"
+    },
+    {
+      "name": "Keen Senses",
+      "identifier": "keen-senses",
+      "type": "feat",
+      "_id": "phbsptKeenSenses"
+    },
+    {
+      "name": "Large Form",
+      "identifier": "large-form",
+      "type": "feat",
+      "_id": "phbsptLargeForm0"
+    },
+    {
+      "name": "Luck",
+      "identifier": "luck",
+      "type": "feat",
+      "_id": "phbsptLuck000000"
+    },
+    {
+      "name": "Naturally Stealthy",
+      "identifier": "naturally-stealthy",
+      "type": "feat",
+      "_id": "phbsptNaturallyS"
+    },
+    {
+      "name": "Otherworldly Presence",
+      "identifier": "otherworldly-presence",
+      "type": "feat",
+      "_id": "phbsptOtherworld"
+    },
+    {
+      "name": "Powerful Build",
+      "identifier": "powerful-build",
+      "type": "feat",
+      "_id": "phbsptPowerfulBu"
+    },
+    {
+      "name": "Relentless Endurance",
+      "identifier": "relentless-endurance",
+      "type": "feat",
+      "_id": "phbsptRelentless"
+    },
+    {
+      "name": "Resourceful",
+      "identifier": "resourceful",
+      "type": "feat",
+      "_id": "phbsptResourcefu"
+    },
+    {
+      "name": "Skillful",
+      "identifier": "skillful",
+      "type": "feat",
+      "_id": "phbsptSkillful00"
+    },
+    {
+      "name": "Stone's Endurance",
+      "identifier": "stones-endurance",
+      "type": "feat",
+      "_id": "phbsptStonesEndu"
+    },
+    {
+      "name": "Stonecunning",
+      "identifier": "stonecunning",
+      "type": "feat",
+      "_id": "phbsptStonecunni"
+    },
+    {
+      "name": "Storm's Thunder",
+      "identifier": "storms-thunder",
+      "type": "feat",
+      "_id": "phbsptStormsThun"
+    },
+    {
+      "name": "Trance",
+      "identifier": "trance",
+      "type": "feat",
+      "_id": "phbsptTrance0000"
+    },
+    {
+      "name": "Versatile",
+      "identifier": "versatile",
+      "type": "feat",
+      "_id": "phbsptVersatile0"
+    },
+    {
+      "name": "Dragonborn",
+      "identifier": "dragonborn",
+      "type": "race",
+      "_id": "phbspDragonborn0"
+    },
+    {
+      "name": "Dwarf",
+      "identifier": "dwarf",
+      "type": "race",
+      "_id": "phbspDwarf000000"
+    },
+    {
+      "name": "Elf, Drow",
+      "identifier": "elf-drow",
+      "type": "race",
+      "_id": "phbspDrow0000000"
+    },
+    {
+      "name": "Elf, High",
+      "identifier": "elf-high",
+      "type": "race",
+      "_id": "phbspHighElf0000"
+    },
+    {
+      "name": "Elf, Wood",
+      "identifier": "elf-wood",
+      "type": "race",
+      "_id": "phbspWoodElf0000"
+    },
+    {
+      "name": "Gnome, Forest",
+      "identifier": "gnome-forest",
+      "type": "race",
+      "_id": "phbspForestGnome"
+    },
+    {
+      "name": "Gnome, Rock",
+      "identifier": "gnome-rock",
+      "type": "race",
+      "_id": "phbspRockGnome00"
+    },
+    {
+      "name": "Goliath",
+      "identifier": "goliath",
+      "type": "race",
+      "_id": "phbspGoliath0000"
+    },
+    {
+      "name": "Halfling",
+      "identifier": "halfling",
+      "type": "race",
+      "_id": "phbspHalfling000"
+    },
+    {
+      "name": "Human",
+      "identifier": "human",
+      "type": "race",
+      "_id": "phbspHuman000000"
+    },
+    {
+      "name": "Orc",
+      "identifier": "orc",
+      "type": "race",
+      "_id": "phbspOrc00000000"
+    },
+    {
+      "name": "Tiefling, Abyssal",
+      "identifier": "tiefling-abyssal",
+      "type": "race",
+      "_id": "phbspAbyssalTief"
+    },
+    {
+      "name": "Tiefling, Chthonic",
+      "identifier": "tiefling-chthonic",
+      "type": "race",
+      "_id": "phbspChthonicTie"
+    },
+    {
+      "name": "Tiefling, Infernal",
+      "identifier": "tiefling-infernal",
+      "type": "race",
+      "_id": "phbspInfernalTie"
+    }
+  ],
+  "backgrounds": [
+    {
+      "name": "Acolyte",
+      "identifier": "acolyte",
+      "type": "background",
+      "_id": "IgJkSnLiLJOWH7eK"
+    },
+    {
+      "name": "Coin Pouch",
+      "identifier": "coin-pouch",
+      "type": "container",
+      "_id": "dQaOdm9dbVN0RZYP"
+    },
+    {
+      "name": "Shelter of the Faithful",
+      "identifier": "shelter-of-the-faithful",
+      "type": "feat",
+      "_id": "64N1NWh9kC1dI7zN"
+    }
+  ],
+  "feats24": [
+    {
+      "name": "Ability Score Improvement",
+      "identifier": "ability-score-improvement",
+      "type": "feat",
+      "_id": "phbftAbilityScor"
+    },
+    {
+      "name": "Alert",
+      "identifier": "alert",
+      "type": "feat",
+      "_id": "phbftAlert000000"
+    },
+    {
+      "name": "Archery",
+      "identifier": "archery",
+      "type": "feat",
+      "_id": "phbfstArchery000"
+    },
+    {
+      "name": "Boon of Combat Prowess",
+      "identifier": "boon-of-combat-prowess",
+      "type": "feat",
+      "_id": "phbBoonofCombatP"
+    },
+    {
+      "name": "Boon of Dimensional Travel",
+      "identifier": "boon-of-dimensional-travel",
+      "type": "feat",
+      "_id": "phbBoonofDimensi"
+    },
+    {
+      "name": "Boon of Fate",
+      "identifier": "boon-of-fate",
+      "type": "feat",
+      "_id": "phbBoonofFate000"
+    },
+    {
+      "name": "Boon of Irresistible Offense",
+      "identifier": "boon-of-irresistible-offense",
+      "type": "feat",
+      "_id": "phbBoonofIrresis"
+    },
+    {
+      "name": "Boon of Spell Recall",
+      "identifier": "boon-of-spell-recall",
+      "type": "feat",
+      "_id": "phbBoonofSpellRe"
+    },
+    {
+      "name": "Boon of the Night Spirit",
+      "identifier": "boon-of-the-night-spirit",
+      "type": "feat",
+      "_id": "phbBoonoftheNigh"
+    },
+    {
+      "name": "Boon of Truesight",
+      "identifier": "boon-of-truesight",
+      "type": "feat",
+      "_id": "phbBoonofTruesig"
+    },
+    {
+      "name": "Defense",
+      "identifier": "defense",
+      "type": "feat",
+      "_id": "phbfstDefense000"
+    },
+    {
+      "name": "Grappler",
+      "identifier": "grappler",
+      "type": "feat",
+      "_id": "phbftGrappler000"
+    },
+    {
+      "name": "Great Weapon Fighting",
+      "identifier": "great-weapon-fighting",
+      "type": "feat",
+      "_id": "phbfstGreatWeapo"
+    },
+    {
+      "name": "Magic Initiate",
+      "identifier": "magic-initiate",
+      "type": "feat",
+      "_id": "phbftMagicInitia"
+    },
+    {
+      "name": "Savage Attacker",
+      "identifier": "savage-attacker",
+      "type": "feat",
+      "_id": "phbftSavageAttac"
+    },
+    {
+      "name": "Skilled",
+      "identifier": "skilled",
+      "type": "feat",
+      "_id": "phbftSkilled0000"
+    },
+    {
+      "name": "Two-Weapon Fighting",
+      "identifier": "two-weapon-fighting",
+      "type": "feat",
+      "_id": "phbfstTwoWeaponF"
+    }
+  ]
+}

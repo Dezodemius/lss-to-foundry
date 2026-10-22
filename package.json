@@ -1,0 +1,15 @@
+{
+  "name": "lss-to-foundry",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Foundry VTT module: import Long Story Short characters into the dnd5e system.",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build:spell-index": "node tools/build-spell-index.mjs"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}

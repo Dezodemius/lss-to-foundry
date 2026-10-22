@@ -1,0 +1,3677 @@
+[
+  {
+    "id": "698197c3a5dc6923c7028cb6",
+    "slug": "acid-arrow",
+    "englishName": "Acid Arrow",
+    "level": 2,
+    "classes": [
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b6a5dc6923c7028ae8",
+    "slug": "acid-splash",
+    "englishName": "Acid Splash",
+    "level": 0,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d8a5dc6923c7028f79",
+    "slug": "aid",
+    "englishName": "Aid",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197e4a5dc6923c7029116",
+    "slug": "alarm",
+    "englishName": "Alarm",
+    "level": 1,
+    "classes": [
+      "artificer",
+      "ranger",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c1a5dc6923c7028c70",
+    "slug": "alter-self",
+    "englishName": "Alter Self",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197baa5dc6923c7028b7b",
+    "slug": "animal-friendship",
+    "englishName": "Animal Friendship",
+    "level": 1,
+    "classes": [
+      "bard",
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197bca5dc6923c7028bb3",
+    "slug": "animal-messenger",
+    "englishName": "Animal Messenger",
+    "level": 2,
+    "classes": [
+      "bard",
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197bca5dc6923c7028bba",
+    "slug": "animal-shapes",
+    "englishName": "Animal Shapes",
+    "level": 8,
+    "classes": [
+      "druid"
+    ]
+  },
+  {
+    "id": "698197d0a5dc6923c7028e68",
+    "slug": "animate-dead",
+    "englishName": "Animate Dead",
+    "level": 3,
+    "classes": [
+      "cleric",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d0a5dc6923c7028e6f",
+    "slug": "animate-objects",
+    "englishName": "Animate Objects",
+    "level": 5,
+    "classes": [
+      "artificer",
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b0a5dc6923c7028a24",
+    "slug": "antilife-shell",
+    "englishName": "Antilife Shell",
+    "level": 5,
+    "classes": [
+      "druid"
+    ]
+  },
+  {
+    "id": "698197d7a5dc6923c7028f56",
+    "slug": "antimagic-field",
+    "englishName": "Antimagic Field",
+    "level": 8,
+    "classes": [
+      "cleric",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197afa5dc6923c7028a08",
+    "slug": "antipathy-sympathy",
+    "englishName": "Antipathy/Sympathy",
+    "level": 8,
+    "classes": [
+      "bard",
+      "druid",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b4a5dc6923c7028ab7",
+    "slug": "arcane-eye",
+    "englishName": "Arcane Eye",
+    "level": 4,
+    "classes": [
+      "artificer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e3a5dc6923c70290e5",
+    "slug": "arcane-hand",
+    "englishName": "Arcane Hand",
+    "level": 5,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b5a5dc6923c7028abe",
+    "slug": "arcane-lock",
+    "englishName": "Arcane Lock",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b5a5dc6923c7028ac5",
+    "slug": "arcane-sword",
+    "englishName": "Arcane Sword",
+    "level": 7,
+    "classes": [
+      "bard",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c7a5dc6923c7028d34",
+    "slug": "arcanists-magic-aura",
+    "englishName": "Arcanist's Magic Aura",
+    "level": 2,
+    "classes": [
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197afa5dc6923c7028a0f",
+    "slug": "astral-projection",
+    "englishName": "Astral Projection",
+    "level": 9,
+    "classes": [
+      "cleric",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b7a5dc6923c7028b0b",
+    "slug": "augury",
+    "englishName": "Augury",
+    "level": 2,
+    "classes": [
+      "cleric",
+      "druid",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197afa5dc6923c7028a16",
+    "slug": "aura-of-life",
+    "englishName": "Aura of Life",
+    "level": 4,
+    "classes": [
+      "cleric",
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197dda5dc6923c702902f",
+    "slug": "awaken",
+    "englishName": "Awaken",
+    "level": 5,
+    "classes": [
+      "bard",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197d8a5dc6923c7028f87",
+    "slug": "bane",
+    "englishName": "Bane",
+    "level": 1,
+    "classes": [
+      "bard",
+      "cleric",
+      "warlock"
+    ]
+  },
+  {
+    "id": "698197c0a5dc6923c7028c3f",
+    "slug": "banishment",
+    "englishName": "Banishment",
+    "level": 4,
+    "classes": [
+      "cleric",
+      "paladin",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197baa5dc6923c7028b89",
+    "slug": "barkskin",
+    "englishName": "Barkskin",
+    "level": 2,
+    "classes": [
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197e3a5dc6923c70290f3",
+    "slug": "beacon-of-hope",
+    "englishName": "Beacon of Hope",
+    "level": 3,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197dfa5dc6923c7029052",
+    "slug": "befuddlement",
+    "englishName": "Befuddlement",
+    "level": 8,
+    "classes": [
+      "bard",
+      "druid",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197dea5dc6923c7029044",
+    "slug": "bestow-curse",
+    "englishName": "Bestow Curse",
+    "level": 3,
+    "classes": [
+      "bard",
+      "cleric",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f4a5dc6923c7029300",
+    "slug": "black-tentacles",
+    "englishName": "Black Tentacles",
+    "level": 4,
+    "classes": [
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197eba5dc6923c70291f6",
+    "slug": "blade-barrier",
+    "englishName": "Blade Barrier",
+    "level": 6,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197b0a5dc6923c7028a39",
+    "slug": "bless",
+    "englishName": "Bless",
+    "level": 1,
+    "classes": [
+      "cleric",
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197f0a5dc6923c7029289",
+    "slug": "blight",
+    "englishName": "Blight",
+    "level": 4,
+    "classes": [
+      "artificer",
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e6a5dc6923c7029155",
+    "slug": "blindness-deafness",
+    "englishName": "Blindness/Deafness",
+    "level": 2,
+    "classes": [
+      "bard",
+      "cleric",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c9a5dc6923c7028d8f",
+    "slug": "blink",
+    "englishName": "Blink",
+    "level": 3,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e1a5dc6923c70290b4",
+    "slug": "blur",
+    "englishName": "Blur",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e0a5dc6923c702907c",
+    "slug": "burning-hands",
+    "englishName": "Burning Hands",
+    "level": 1,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b6a5dc6923c7028aef",
+    "slug": "call-lightning",
+    "englishName": "Call Lightning",
+    "level": 3,
+    "classes": [
+      "druid"
+    ]
+  },
+  {
+    "id": "698197eba5dc6923c70291e8",
+    "slug": "calm-emotions",
+    "englishName": "Calm Emotions",
+    "level": 2,
+    "classes": [
+      "bard",
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197f3a5dc6923c70292eb",
+    "slug": "chain-lightning",
+    "englishName": "Chain Lightning",
+    "level": 6,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197dba5dc6923c7028fcd",
+    "slug": "charm-monster",
+    "englishName": "Charm Monster",
+    "level": 4,
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197daa5dc6923c7028fc6",
+    "slug": "charm-person",
+    "englishName": "Charm Person",
+    "level": 1,
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c5a5dc6923c7028cfc",
+    "slug": "chill-touch",
+    "englishName": "Chill Touch",
+    "level": 0,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f2a5dc6923c70292dd",
+    "slug": "chromatic-orb",
+    "englishName": "Chromatic Orb",
+    "level": 1,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c4a5dc6923c7028cd9",
+    "slug": "circle-of-death",
+    "englishName": "Circle of Death",
+    "level": 6,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f5a5dc6923c7029331",
+    "slug": "clairvoyance",
+    "englishName": "Clairvoyance",
+    "level": 3,
+    "classes": [
+      "bard",
+      "cleric",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c3a5dc6923c7028cbd",
+    "slug": "clone",
+    "englishName": "Clone",
+    "level": 8,
+    "classes": [
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e8a5dc6923c702917f",
+    "slug": "cloudkill",
+    "englishName": "Cloudkill",
+    "level": 5,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f3a5dc6923c70292e4",
+    "slug": "color-spray",
+    "englishName": "Color Spray",
+    "level": 1,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197dda5dc6923c7029021",
+    "slug": "command",
+    "englishName": "Command",
+    "level": 1,
+    "classes": [
+      "bard",
+      "cleric",
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197b1a5dc6923c7028a47",
+    "slug": "commune",
+    "englishName": "Commune",
+    "level": 5,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197bba5dc6923c7028b9e",
+    "slug": "commune-with-nature",
+    "englishName": "Commune with Nature",
+    "level": 5,
+    "classes": [
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197d8a5dc6923c7028f80",
+    "slug": "comprehend-languages",
+    "englishName": "Comprehend Languages",
+    "level": 1,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197dda5dc6923c7029028",
+    "slug": "compulsion",
+    "englishName": "Compulsion",
+    "level": 4,
+    "classes": [
+      "bard"
+    ]
+  },
+  {
+    "id": "698197c4a5dc6923c7028cd2",
+    "slug": "cone-of-cold",
+    "englishName": "Cone of Cold",
+    "level": 5,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197bda5dc6923c7028beb",
+    "slug": "confusion",
+    "englishName": "Confusion",
+    "level": 4,
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197dba5dc6923c7028fe9",
+    "slug": "conjure-animals",
+    "englishName": "Conjure Animals",
+    "level": 3,
+    "classes": [
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197dca5dc6923c7028ffe",
+    "slug": "conjure-celestial",
+    "englishName": "Conjure Celestial",
+    "level": 7,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197dda5dc6923c702901a",
+    "slug": "conjure-elemental",
+    "englishName": "Conjure Elemental",
+    "level": 5,
+    "classes": [
+      "druid",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197dda5dc6923c7029013",
+    "slug": "conjure-fey",
+    "englishName": "Conjure Fey",
+    "level": 6,
+    "classes": [
+      "druid"
+    ]
+  },
+  {
+    "id": "698197dca5dc6923c7028ff7",
+    "slug": "conjure-minor-elementals",
+    "englishName": "Conjure Minor Elementals",
+    "level": 4,
+    "classes": [
+      "druid",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197dca5dc6923c7028ff0",
+    "slug": "conjure-woodland-beings",
+    "englishName": "Conjure Woodland Beings",
+    "level": 4,
+    "classes": [
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197e4a5dc6923c7029101",
+    "slug": "contact-other-plane",
+    "englishName": "Contact Other Plane",
+    "level": 5,
+    "classes": [
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b2a5dc6923c7028a5c",
+    "slug": "contagion",
+    "englishName": "Contagion",
+    "level": 5,
+    "classes": [
+      "cleric",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197bda5dc6923c7028bd6",
+    "slug": "contingency",
+    "englishName": "Contingency",
+    "level": 6,
+    "classes": [
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b3a5dc6923c7028a86",
+    "slug": "continual-flame",
+    "englishName": "Continual Flame",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "cleric",
+      "druid",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f1a5dc6923c70292a5",
+    "slug": "control-water",
+    "englishName": "Control Water",
+    "level": 4,
+    "classes": [
+      "cleric",
+      "druid",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f1a5dc6923c70292ac",
+    "slug": "control-weather",
+    "englishName": "Control Weather",
+    "level": 8,
+    "classes": [
+      "cleric",
+      "druid",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c4a5dc6923c7028ccb",
+    "slug": "counterspell",
+    "englishName": "Counterspell",
+    "level": 3,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e8a5dc6923c702919b",
+    "slug": "create-food-and-water",
+    "englishName": "Create Food and Water",
+    "level": 3,
+    "classes": [
+      "artificer",
+      "cleric",
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197e9a5dc6923c70291a2",
+    "slug": "create-or-destroy-water",
+    "englishName": "Create or Destroy Water",
+    "level": 1,
+    "classes": [
+      "cleric",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197e9a5dc6923c70291a9",
+    "slug": "create-undead",
+    "englishName": "Create Undead",
+    "level": 6,
+    "classes": [
+      "cleric",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197eda5dc6923c7029235",
+    "slug": "creation",
+    "englishName": "Creation",
+    "level": 5,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c2a5dc6923c7028c8c",
+    "slug": "cure-wounds",
+    "englishName": "Cure Wounds",
+    "level": 1,
+    "classes": [
+      "artificer",
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197d5a5dc6923c7028f17",
+    "slug": "dancing-lights",
+    "englishName": "Dancing Lights",
+    "level": 0,
+    "classes": [
+      "artificer",
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197efa5dc6923c702926d",
+    "slug": "darkness",
+    "englishName": "Darkness",
+    "level": 2,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197cca5dc6923c7028df8",
+    "slug": "darkvision",
+    "englishName": "Darkvision",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b9a5dc6923c7028b66",
+    "slug": "daylight",
+    "englishName": "Daylight",
+    "level": 3,
+    "classes": [
+      "artificer",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger",
+      "sorcerer"
+    ]
+  },
+  {
+    "id": "698197bea5dc6923c7028c07",
+    "slug": "death-ward",
+    "englishName": "Death Ward",
+    "level": 4,
+    "classes": [
+      "cleric",
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197d2a5dc6923c7028ea7",
+    "slug": "delayed-blast-fireball",
+    "englishName": "Delayed Blast Fireball",
+    "level": 7,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b9a5dc6923c7028b58",
+    "slug": "demiplane",
+    "englishName": "Demiplane",
+    "level": 8,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197cda5dc6923c7028e0d",
+    "slug": "detect-evil-and-good",
+    "englishName": "Detect Evil and Good",
+    "level": 1,
+    "classes": [
+      "cleric",
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197cda5dc6923c7028e1b",
+    "slug": "detect-magic",
+    "englishName": "Detect Magic",
+    "level": 1,
+    "classes": [
+      "artificer",
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197cea5dc6923c7028e29",
+    "slug": "detect-poison-and-disease",
+    "englishName": "Detect Poison and Disease",
+    "level": 1,
+    "classes": [
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197cea5dc6923c7028e22",
+    "slug": "detect-thoughts",
+    "englishName": "Detect Thoughts",
+    "level": 2,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b8a5dc6923c7028b43",
+    "slug": "dimension-door",
+    "englishName": "Dimension Door",
+    "level": 4,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c0a5dc6923c7028c54",
+    "slug": "disguise-self",
+    "englishName": "Disguise Self",
+    "level": 1,
+    "classes": [
+      "artificer",
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b9a5dc6923c7028b51",
+    "slug": "disintegrate",
+    "englishName": "Disintegrate",
+    "level": 6,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e2a5dc6923c70290bb",
+    "slug": "dispel-evil-and-good",
+    "englishName": "Dispel Evil and Good",
+    "level": 5,
+    "classes": [
+      "cleric",
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197e2a5dc6923c70290c2",
+    "slug": "dispel-magic",
+    "englishName": "Dispel Magic",
+    "level": 3,
+    "classes": [
+      "artificer",
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b9a5dc6923c7028b5f",
+    "slug": "dissonant-whispers",
+    "englishName": "Dissonant Whispers",
+    "level": 1,
+    "classes": [
+      "bard"
+    ]
+  },
+  {
+    "id": "698197dea5dc6923c702904b",
+    "slug": "divination",
+    "englishName": "Divination",
+    "level": 4,
+    "classes": [
+      "cleric",
+      "druid",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197caa5dc6923c7028db2",
+    "slug": "divine-favor",
+    "englishName": "Divine Favor",
+    "level": 1,
+    "classes": [
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197b0a5dc6923c7028a40",
+    "slug": "divine-smite",
+    "englishName": "Divine Smite",
+    "level": 1,
+    "classes": [
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197b1a5dc6923c7028a4e",
+    "slug": "divine-word",
+    "englishName": "Divine Word",
+    "level": 7,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197d6a5dc6923c7028f2c",
+    "slug": "dominate-beast",
+    "englishName": "Dominate Beast",
+    "level": 4,
+    "classes": [
+      "druid",
+      "ranger",
+      "sorcerer"
+    ]
+  },
+  {
+    "id": "698197d6a5dc6923c7028f33",
+    "slug": "dominate-monster",
+    "englishName": "Dominate Monster",
+    "level": 8,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d6a5dc6923c7028f25",
+    "slug": "dominate-person",
+    "englishName": "Dominate Person",
+    "level": 5,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197bba5dc6923c7028b90",
+    "slug": "dragons-breath",
+    "englishName": "Dragon's Breath",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e8a5dc6923c702918d",
+    "slug": "dream",
+    "englishName": "Dream",
+    "level": 5,
+    "classes": [
+      "bard",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197baa5dc6923c7028b82",
+    "slug": "druidcraft",
+    "englishName": "Druidcraft",
+    "level": 0,
+    "classes": [
+      "druid"
+    ]
+  },
+  {
+    "id": "698197bfa5dc6923c7028c2a",
+    "slug": "earthquake",
+    "englishName": "Earthquake",
+    "level": 8,
+    "classes": [
+      "cleric",
+      "druid",
+      "sorcerer"
+    ]
+  },
+  {
+    "id": "698197daa5dc6923c7028faa",
+    "slug": "eldritch-blast",
+    "englishName": "Eldritch Blast",
+    "level": 0,
+    "classes": [
+      "warlock"
+    ]
+  },
+  {
+    "id": "698197bca5dc6923c7028bcf",
+    "slug": "elementalism",
+    "englishName": "Elementalism",
+    "level": 0,
+    "classes": [
+      "artificer",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f1a5dc6923c70292b3",
+    "slug": "enhance-ability",
+    "englishName": "Enhance Ability",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "bard",
+      "cleric",
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f0a5dc6923c7029282",
+    "slug": "enlarge-reduce",
+    "englishName": "Enlarge/Reduce",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d1a5dc6923c7028e8b",
+    "slug": "ensnaring-strike",
+    "englishName": "Ensnaring Strike",
+    "level": 1,
+    "classes": [
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197d1a5dc6923c7028e84",
+    "slug": "entangle",
+    "englishName": "Entangle",
+    "level": 1,
+    "classes": [
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197bea5dc6923c7028bf9",
+    "slug": "enthrall",
+    "englishName": "Enthrall",
+    "level": 2,
+    "classes": [
+      "bard",
+      "warlock"
+    ]
+  },
+  {
+    "id": "698197b7a5dc6923c7028b04",
+    "slug": "etherealness",
+    "englishName": "Etherealness",
+    "level": 7,
+    "classes": [
+      "bard",
+      "cleric",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d9a5dc6923c7028fa3",
+    "slug": "expeditious-retreat",
+    "englishName": "Expeditious Retreat",
+    "level": 1,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b8a5dc6923c7028b35",
+    "slug": "eyebite",
+    "englishName": "Eyebite",
+    "level": 6,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c0a5dc6923c7028c46",
+    "slug": "fabricate",
+    "englishName": "Fabricate",
+    "level": 4,
+    "classes": [
+      "artificer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f2a5dc6923c70292c8",
+    "slug": "faerie-fire",
+    "englishName": "Faerie Fire",
+    "level": 1,
+    "classes": [
+      "artificer",
+      "bard",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197b3a5dc6923c7028a78",
+    "slug": "faithful-hound",
+    "englishName": "Faithful Hound",
+    "level": 4,
+    "classes": [
+      "artificer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c6a5dc6923c7028d1f",
+    "slug": "false-life",
+    "englishName": "False Life",
+    "level": 1,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f0a5dc6923c7029297",
+    "slug": "fear",
+    "englishName": "Fear",
+    "level": 3,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d4a5dc6923c7028ef4",
+    "slug": "feather-fall",
+    "englishName": "Feather Fall",
+    "level": 1,
+    "classes": [
+      "artificer",
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197dca5dc6923c702900c",
+    "slug": "find-familiar",
+    "englishName": "Find Familiar",
+    "level": 1,
+    "classes": [
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197dca5dc6923c7029005",
+    "slug": "find-steed",
+    "englishName": "Find Steed",
+    "level": 2,
+    "classes": [
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197d7a5dc6923c7028f48",
+    "slug": "find-the-path",
+    "englishName": "Find the Path",
+    "level": 6,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197cda5dc6923c7028e14",
+    "slug": "find-traps",
+    "englishName": "Find Traps",
+    "level": 2,
+    "classes": [
+      "cleric",
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197d4a5dc6923c7028ee6",
+    "slug": "finger-of-death",
+    "englishName": "Finger of Death",
+    "level": 7,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197cfa5dc6923c7028e4c",
+    "slug": "fire-bolt",
+    "englishName": "Fire Bolt",
+    "level": 0,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d0a5dc6923c7028e61",
+    "slug": "fire-shield",
+    "englishName": "Fire Shield",
+    "level": 4,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197cea5dc6923c7028e37",
+    "slug": "fire-storm",
+    "englishName": "Fire Storm",
+    "level": 7,
+    "classes": [
+      "cleric",
+      "druid",
+      "sorcerer"
+    ]
+  },
+  {
+    "id": "698197cfa5dc6923c7028e5a",
+    "slug": "fireball",
+    "englishName": "Fireball",
+    "level": 3,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197cfa5dc6923c7028e45",
+    "slug": "flame-blade",
+    "englishName": "Flame Blade",
+    "level": 2,
+    "classes": [
+      "druid",
+      "sorcerer"
+    ]
+  },
+  {
+    "id": "698197cfa5dc6923c7028e53",
+    "slug": "flame-strike",
+    "englishName": "Flame Strike",
+    "level": 5,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197e0a5dc6923c7029075",
+    "slug": "flaming-sphere",
+    "englishName": "Flaming Sphere",
+    "level": 2,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d5a5dc6923c7028f10",
+    "slug": "flesh-to-stone",
+    "englishName": "Flesh to Stone",
+    "level": 6,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d3a5dc6923c7028eca",
+    "slug": "floating-disk",
+    "englishName": "Floating Disk",
+    "level": 1,
+    "classes": [
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d8a5dc6923c7028f72",
+    "slug": "fly",
+    "englishName": "Fly",
+    "level": 3,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197cda5dc6923c7028dff",
+    "slug": "fog-cloud",
+    "englishName": "Fog Cloud",
+    "level": 1,
+    "classes": [
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197bda5dc6923c7028bf2",
+    "slug": "forbiddance",
+    "englishName": "Forbiddance",
+    "level": 6,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197e5a5dc6923c7029124",
+    "slug": "forcecage",
+    "englishName": "Forcecage",
+    "level": 7,
+    "classes": [
+      "bard",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197daa5dc6923c7028fb8",
+    "slug": "foresight",
+    "englishName": "Foresight",
+    "level": 9,
+    "classes": [
+      "bard",
+      "druid",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e3a5dc6923c70290fa",
+    "slug": "freedom-of-movement",
+    "englishName": "Freedom of Movement",
+    "level": 4,
+    "classes": [
+      "artificer",
+      "bard",
+      "cleric",
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197cba5dc6923c7028db9",
+    "slug": "freezing-sphere",
+    "englishName": "Freezing Sphere",
+    "level": 6,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b7a5dc6923c7028b12",
+    "slug": "gaseous-form",
+    "englishName": "Gaseous Form",
+    "level": 3,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b6a5dc6923c7028ae1",
+    "slug": "gate",
+    "englishName": "Gate",
+    "level": 9,
+    "classes": [
+      "cleric",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b7a5dc6923c7028b19",
+    "slug": "geas",
+    "englishName": "Geas",
+    "level": 5,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d9a5dc6923c7028f9c",
+    "slug": "gentle-repose",
+    "englishName": "Gentle Repose",
+    "level": 2,
+    "classes": [
+      "cleric",
+      "paladin",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b8a5dc6923c7028b27",
+    "slug": "giant-insect",
+    "englishName": "Giant Insect",
+    "level": 4,
+    "classes": [
+      "druid"
+    ]
+  },
+  {
+    "id": "698197b2a5dc6923c7028a55",
+    "slug": "glibness",
+    "englishName": "Glibness",
+    "level": 8,
+    "classes": [
+      "bard",
+      "warlock"
+    ]
+  },
+  {
+    "id": "698197eca5dc6923c7029219",
+    "slug": "globe-of-invulnerability",
+    "englishName": "Globe of Invulnerability",
+    "level": 6,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197eca5dc6923c7029204",
+    "slug": "glyph-of-warding",
+    "englishName": "Glyph of Warding",
+    "level": 3,
+    "classes": [
+      "artificer",
+      "bard",
+      "cleric",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197baa5dc6923c7028b6d",
+    "slug": "goodberry",
+    "englishName": "Goodberry",
+    "level": 1,
+    "classes": [
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197c8a5dc6923c7028d5e",
+    "slug": "grease",
+    "englishName": "Grease",
+    "level": 1,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b6a5dc6923c7028af6",
+    "slug": "greater-invisibility",
+    "englishName": "Greater Invisibility",
+    "level": 4,
+    "classes": [
+      "artificer",
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b6a5dc6923c7028afd",
+    "slug": "greater-restoration",
+    "englishName": "Greater Restoration",
+    "level": 5,
+    "classes": [
+      "artificer",
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197eca5dc6923c702920b",
+    "slug": "guardian-of-faith",
+    "englishName": "Guardian of Faith",
+    "level": 4,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197d2a5dc6923c7028eae",
+    "slug": "guards-and-wards",
+    "englishName": "Guards and Wards",
+    "level": 6,
+    "classes": [
+      "bard",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197cba5dc6923c7028dce",
+    "slug": "guidance",
+    "englishName": "Guidance",
+    "level": 0,
+    "classes": [
+      "artificer",
+      "cleric",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197cba5dc6923c7028dc7",
+    "slug": "guiding-bolt",
+    "englishName": "Guiding Bolt",
+    "level": 1,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197d9a5dc6923c7028f8e",
+    "slug": "gust-of-wind",
+    "englishName": "Gust of Wind",
+    "level": 2,
+    "classes": [
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d1a5dc6923c7028e92",
+    "slug": "hallow",
+    "englishName": "Hallow",
+    "level": 5,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197c1a5dc6923c7028c62",
+    "slug": "hallucinatory-terrain",
+    "englishName": "Hallucinatory Terrain",
+    "level": 4,
+    "classes": [
+      "bard",
+      "druid",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d5a5dc6923c7028f1e",
+    "slug": "harm",
+    "englishName": "Harm",
+    "level": 6,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197f1a5dc6923c70292ba",
+    "slug": "haste",
+    "englishName": "Haste",
+    "level": 3,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c0a5dc6923c7028c4d",
+    "slug": "heal",
+    "englishName": "Heal",
+    "level": 6,
+    "classes": [
+      "cleric",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197c2a5dc6923c7028c93",
+    "slug": "healing-word",
+    "englishName": "Healing Word",
+    "level": 1,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197e1a5dc6923c70290ad",
+    "slug": "heat-metal",
+    "englishName": "Heat Metal",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "bard",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197afa5dc6923c7028a01",
+    "slug": "hellish-rebuke",
+    "englishName": "Hellish Rebuke",
+    "level": 1,
+    "classes": [
+      "warlock"
+    ]
+  },
+  {
+    "id": "698197d4a5dc6923c7028eed",
+    "slug": "heroes-feast",
+    "englishName": "Heroes' Feast",
+    "level": 6,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197b7a5dc6923c7028b20",
+    "slug": "heroism",
+    "englishName": "Heroism",
+    "level": 1,
+    "classes": [
+      "bard",
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197e4a5dc6923c702910f",
+    "slug": "hex",
+    "englishName": "Hex",
+    "level": 1,
+    "classes": [
+      "warlock"
+    ]
+  },
+  {
+    "id": "698197b0a5dc6923c7028a32",
+    "slug": "hideous-laughter",
+    "englishName": "Hideous Laughter",
+    "level": 1,
+    "classes": [
+      "bard",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d2a5dc6923c7028ec3",
+    "slug": "hold-monster",
+    "englishName": "Hold Monster",
+    "level": 5,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d2a5dc6923c7028ebc",
+    "slug": "hold-person",
+    "englishName": "Hold Person",
+    "level": 2,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197afa5dc6923c7028a1d",
+    "slug": "holy-aura",
+    "englishName": "Holy Aura",
+    "level": 8,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197caa5dc6923c7028dab",
+    "slug": "hunters-mark",
+    "englishName": "Hunter's Mark",
+    "level": 1,
+    "classes": [
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197bca5dc6923c7028bc8",
+    "slug": "hypnotic-pattern",
+    "englishName": "Hypnotic Pattern",
+    "level": 3,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c6a5dc6923c7028d0a",
+    "slug": "ice-knife",
+    "englishName": "Ice Knife",
+    "level": 1,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c5a5dc6923c7028cf5",
+    "slug": "ice-storm",
+    "englishName": "Ice Storm",
+    "level": 4,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d0a5dc6923c7028e7d",
+    "slug": "identify",
+    "englishName": "Identify",
+    "level": 1,
+    "classes": [
+      "artificer",
+      "bard",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c1a5dc6923c7028c69",
+    "slug": "illusory-script",
+    "englishName": "Illusory Script",
+    "level": 1,
+    "classes": [
+      "bard",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197bda5dc6923c7028bdd",
+    "slug": "imprisonment",
+    "englishName": "Imprisonment",
+    "level": 9,
+    "classes": [
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b8a5dc6923c7028b2e",
+    "slug": "incendiary-cloud",
+    "englishName": "Incendiary Cloud",
+    "level": 8,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197cba5dc6923c7028dc0",
+    "slug": "inflict-wounds",
+    "englishName": "Inflict Wounds",
+    "level": 1,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197e2a5dc6923c70290d7",
+    "slug": "insect-plague",
+    "englishName": "Insect Plague",
+    "level": 5,
+    "classes": [
+      "cleric",
+      "druid",
+      "sorcerer"
+    ]
+  },
+  {
+    "id": "698197c9a5dc6923c7028d81",
+    "slug": "instant-summons",
+    "englishName": "Instant Summons",
+    "level": 6,
+    "classes": [
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197cba5dc6923c7028dd5",
+    "slug": "invisibility",
+    "englishName": "Invisibility",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b0a5dc6923c7028a2b",
+    "slug": "irresistible-dance",
+    "englishName": "Irresistible Dance",
+    "level": 6,
+    "classes": [
+      "bard",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197dfa5dc6923c7029060",
+    "slug": "jump",
+    "englishName": "Jump",
+    "level": 1,
+    "classes": [
+      "artificer",
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197eca5dc6923c7029212",
+    "slug": "knock",
+    "englishName": "Knock",
+    "level": 2,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c0a5dc6923c7028c38",
+    "slug": "legend-lore",
+    "englishName": "Legend Lore",
+    "level": 5,
+    "classes": [
+      "bard",
+      "cleric",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197cca5dc6923c7028df1",
+    "slug": "lesser-restoration",
+    "englishName": "Lesser Restoration",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197c5a5dc6923c7028cee",
+    "slug": "levitate",
+    "englishName": "Levitate",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e3a5dc6923c70290ec",
+    "slug": "light",
+    "englishName": "Light",
+    "level": 0,
+    "classes": [
+      "artificer",
+      "bard",
+      "cleric",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f0a5dc6923c7029290",
+    "slug": "lightning-bolt",
+    "englishName": "Lightning Bolt",
+    "level": 3,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d6a5dc6923c7028f3a",
+    "slug": "locate-animals-or-plants",
+    "englishName": "Locate Animals or Plants",
+    "level": 2,
+    "classes": [
+      "bard",
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197d7a5dc6923c7028f4f",
+    "slug": "locate-creature",
+    "englishName": "Locate Creature",
+    "level": 4,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d6a5dc6923c7028f41",
+    "slug": "locate-object",
+    "englishName": "Locate Object",
+    "level": 2,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e6a5dc6923c702914e",
+    "slug": "longstrider",
+    "englishName": "Longstrider",
+    "level": 1,
+    "classes": [
+      "artificer",
+      "bard",
+      "druid",
+      "ranger",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c7a5dc6923c7028d42",
+    "slug": "mage-armor",
+    "englishName": "Mage Armor",
+    "level": 1,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c7a5dc6923c7028d3b",
+    "slug": "mage-hand",
+    "englishName": "Mage Hand",
+    "level": 0,
+    "classes": [
+      "artificer",
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c7a5dc6923c7028d49",
+    "slug": "magic-circle",
+    "englishName": "Magic Circle",
+    "level": 3,
+    "classes": [
+      "cleric",
+      "paladin",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c4a5dc6923c7028cc4",
+    "slug": "magic-jar",
+    "englishName": "Magic Jar",
+    "level": 6,
+    "classes": [
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b4a5dc6923c7028aa9",
+    "slug": "magic-missile",
+    "englishName": "Magic Missile",
+    "level": 1,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b5a5dc6923c7028ad3",
+    "slug": "magic-mouth",
+    "englishName": "Magic Mouth",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "bard",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b4a5dc6923c7028ab0",
+    "slug": "magic-weapon",
+    "englishName": "Magic Weapon",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "paladin",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b2a5dc6923c7028a71",
+    "slug": "magnificent-mansion",
+    "englishName": "Magnificent Mansion",
+    "level": 7,
+    "classes": [
+      "bard",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d8a5dc6923c7028f6b",
+    "slug": "major-image",
+    "englishName": "Major Image",
+    "level": 3,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c9a5dc6923c7028d73",
+    "slug": "mass-cure-wounds",
+    "englishName": "Mass Cure Wounds",
+    "level": 5,
+    "classes": [
+      "artificer",
+      "bard",
+      "cleric",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197c8a5dc6923c7028d6c",
+    "slug": "mass-heal",
+    "englishName": "Mass Heal",
+    "level": 9,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197c9a5dc6923c7028d7a",
+    "slug": "mass-healing-word",
+    "englishName": "Mass Healing Word",
+    "level": 3,
+    "classes": [
+      "bard",
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197c8a5dc6923c7028d65",
+    "slug": "mass-suggestion",
+    "englishName": "Mass Suggestion",
+    "level": 6,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c5a5dc6923c7028ce7",
+    "slug": "maze",
+    "englishName": "Maze",
+    "level": 8,
+    "classes": [
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e7a5dc6923c702915c",
+    "slug": "meld-into-stone",
+    "englishName": "Meld into Stone",
+    "level": 3,
+    "classes": [
+      "cleric",
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197daa5dc6923c7028fb1",
+    "slug": "mending",
+    "englishName": "Mending",
+    "level": 0,
+    "classes": [
+      "artificer",
+      "bard",
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197eaa5dc6923c70291d3",
+    "slug": "message",
+    "englishName": "Message",
+    "level": 0,
+    "classes": [
+      "artificer",
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197caa5dc6923c7028da4",
+    "slug": "meteor-swarm",
+    "englishName": "Meteor Swarm",
+    "level": 9,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e9a5dc6923c70291b7",
+    "slug": "mind-blank",
+    "englishName": "Mind Blank",
+    "level": 8,
+    "classes": [
+      "bard",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f0a5dc6923c702929e",
+    "slug": "mind-spike",
+    "englishName": "Mind Spike",
+    "level": 2,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c8a5dc6923c7028d50",
+    "slug": "minor-illusion",
+    "englishName": "Minor Illusion",
+    "level": 0,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b5a5dc6923c7028acc",
+    "slug": "mirage-arcane",
+    "englishName": "Mirage Arcane",
+    "level": 7,
+    "classes": [
+      "bard",
+      "druid",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197bfa5dc6923c7028c31",
+    "slug": "mirror-image",
+    "englishName": "Mirror Image",
+    "level": 2,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197cda5dc6923c7028e06",
+    "slug": "mislead",
+    "englishName": "Mislead",
+    "level": 5,
+    "classes": [
+      "bard",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197efa5dc6923c7029266",
+    "slug": "misty-step",
+    "englishName": "Misty Step",
+    "level": 2,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c8a5dc6923c7028d57",
+    "slug": "modify-memory",
+    "englishName": "Modify Memory",
+    "level": 5,
+    "classes": [
+      "bard",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c6a5dc6923c7028d26",
+    "slug": "moonbeam",
+    "englishName": "Moonbeam",
+    "level": 2,
+    "classes": [
+      "druid"
+    ]
+  },
+  {
+    "id": "698197b9a5dc6923c7028b4a",
+    "slug": "move-earth",
+    "englishName": "Move Earth",
+    "level": 6,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197cca5dc6923c7028dea",
+    "slug": "nondetection",
+    "englishName": "Nondetection",
+    "level": 3,
+    "classes": [
+      "bard",
+      "ranger",
+      "wizard"
+    ]
+  },
+  {
+    "id": "699198d55cdd824d27d668ef",
+    "slug": "pass-without-trace",
+    "englishName": "Pass without Trace",
+    "level": 2,
+    "classes": [
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197dfa5dc6923c7029059",
+    "slug": "passwall",
+    "englishName": "Passwall",
+    "level": 5,
+    "classes": [
+      "bard",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e4a5dc6923c702911d",
+    "slug": "phantasmal-force",
+    "englishName": "Phantasmal Force",
+    "level": 2,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197efa5dc6923c702927b",
+    "slug": "phantasmal-killer",
+    "englishName": "Phantasmal Killer",
+    "level": 4,
+    "classes": [
+      "bard",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f2a5dc6923c70292c1",
+    "slug": "phantom-steed",
+    "englishName": "Phantom Steed",
+    "level": 3,
+    "classes": [
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d5a5dc6923c7028f09",
+    "slug": "planar-ally",
+    "englishName": "Planar Ally",
+    "level": 6,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197d4a5dc6923c7028f02",
+    "slug": "planar-binding",
+    "englishName": "Planar Binding",
+    "level": 5,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d4a5dc6923c7028efb",
+    "slug": "plane-shift",
+    "englishName": "Plane Shift",
+    "level": 7,
+    "classes": [
+      "cleric",
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e3a5dc6923c70290de",
+    "slug": "plant-growth",
+    "englishName": "Plant Growth",
+    "level": 3,
+    "classes": [
+      "bard",
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197b2a5dc6923c7028a63",
+    "slug": "poison-spray",
+    "englishName": "Poison Spray",
+    "level": 0,
+    "classes": [
+      "artificer",
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d7a5dc6923c7028f64",
+    "slug": "polymorph",
+    "englishName": "Polymorph",
+    "level": 4,
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e7a5dc6923c702916a",
+    "slug": "power-word-heal",
+    "englishName": "Power Word Heal",
+    "level": 9,
+    "classes": [
+      "bard",
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197e7a5dc6923c7029171",
+    "slug": "power-word-kill",
+    "englishName": "Power Word Kill",
+    "level": 9,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e7a5dc6923c7029178",
+    "slug": "power-word-stun",
+    "englishName": "Power Word Stun",
+    "level": 8,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c2a5dc6923c7028c9a",
+    "slug": "prayer-of-healing",
+    "englishName": "Prayer of Healing",
+    "level": 2,
+    "classes": [
+      "cleric",
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197c9a5dc6923c7028d88",
+    "slug": "prestidigitation",
+    "englishName": "Prestidigitation",
+    "level": 0,
+    "classes": [
+      "artificer",
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e0a5dc6923c702908a",
+    "slug": "prismatic-spray",
+    "englishName": "Prismatic Spray",
+    "level": 7,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e0a5dc6923c7029083",
+    "slug": "prismatic-wall",
+    "englishName": "Prismatic Wall",
+    "level": 9,
+    "classes": [
+      "bard",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c6a5dc6923c7028d18",
+    "slug": "private-sanctum",
+    "englishName": "Private Sanctum",
+    "level": 4,
+    "classes": [
+      "artificer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e9a5dc6923c70291b0",
+    "slug": "produce-flame",
+    "englishName": "Produce Flame",
+    "level": 0,
+    "classes": [
+      "druid"
+    ]
+  },
+  {
+    "id": "698197dea5dc6923c7029036",
+    "slug": "programmed-illusion",
+    "englishName": "Programmed Illusion",
+    "level": 6,
+    "classes": [
+      "bard",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197dea5dc6923c702903d",
+    "slug": "project-image",
+    "englishName": "Project Image",
+    "level": 7,
+    "classes": [
+      "bard",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197bea5dc6923c7028c0e",
+    "slug": "protection-from-energy",
+    "englishName": "Protection from Energy",
+    "level": 3,
+    "classes": [
+      "artificer",
+      "cleric",
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197bea5dc6923c7028c00",
+    "slug": "protection-from-evil-and-good",
+    "englishName": "Protection from Evil and Good",
+    "level": 1,
+    "classes": [
+      "cleric",
+      "druid",
+      "paladin",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197bfa5dc6923c7028c15",
+    "slug": "protection-from-poison",
+    "englishName": "Protection from Poison",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197d2a5dc6923c7028eb5",
+    "slug": "purify-food-and-drink",
+    "englishName": "Purify Food and Drink",
+    "level": 1,
+    "classes": [
+      "artificer",
+      "cleric",
+      "druid",
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197b4a5dc6923c7028a9b",
+    "slug": "raise-dead",
+    "englishName": "Raise Dead",
+    "level": 5,
+    "classes": [
+      "bard",
+      "cleric",
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197d1a5dc6923c7028e99",
+    "slug": "ray-of-enfeeblement",
+    "englishName": "Ray of Enfeeblement",
+    "level": 2,
+    "classes": [
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c5a5dc6923c7028d03",
+    "slug": "ray-of-frost",
+    "englishName": "Ray of Frost",
+    "level": 0,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c7a5dc6923c7028d2d",
+    "slug": "ray-of-sickness",
+    "englishName": "Ray of Sickness",
+    "level": 1,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e2a5dc6923c70290c9",
+    "slug": "regenerate",
+    "englishName": "Regenerate",
+    "level": 7,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197e2a5dc6923c70290d0",
+    "slug": "reincarnate",
+    "englishName": "Reincarnate",
+    "level": 5,
+    "classes": [
+      "druid"
+    ]
+  },
+  {
+    "id": "698197e8a5dc6923c7029194",
+    "slug": "remove-curse",
+    "englishName": "Remove Curse",
+    "level": 3,
+    "classes": [
+      "cleric",
+      "paladin",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e5a5dc6923c7029132",
+    "slug": "resilient-sphere",
+    "englishName": "Resilient Sphere",
+    "level": 4,
+    "classes": [
+      "artificer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197eaa5dc6923c70291da",
+    "slug": "resistance",
+    "englishName": "Resistance",
+    "level": 0,
+    "classes": [
+      "artificer",
+      "cleric",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197b5a5dc6923c7028ada",
+    "slug": "resurrection",
+    "englishName": "Resurrection",
+    "level": 7,
+    "classes": [
+      "bard",
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197cea5dc6923c7028e30",
+    "slug": "reverse-gravity",
+    "englishName": "Reverse Gravity",
+    "level": 7,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b4a5dc6923c7028aa2",
+    "slug": "revivify",
+    "englishName": "Revivify",
+    "level": 3,
+    "classes": [
+      "artificer",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197f2a5dc6923c70292cf",
+    "slug": "rope-trick",
+    "englishName": "Rope Trick",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e4a5dc6923c7029108",
+    "slug": "sacred-flame",
+    "englishName": "Sacred Flame",
+    "level": 0,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197efa5dc6923c7029274",
+    "slug": "sanctuary",
+    "englishName": "Sanctuary",
+    "level": 1,
+    "classes": [
+      "artificer",
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197d0a5dc6923c7028e76",
+    "slug": "scorching-ray",
+    "englishName": "Scorching Ray",
+    "level": 2,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197eda5dc6923c7029227",
+    "slug": "scrying",
+    "englishName": "Scrying",
+    "level": 5,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197bba5dc6923c7028ba5",
+    "slug": "searing-smite",
+    "englishName": "Searing Smite",
+    "level": 1,
+    "classes": [
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197eda5dc6923c702922e",
+    "slug": "secret-chest",
+    "englishName": "Secret Chest",
+    "level": 4,
+    "classes": [
+      "artificer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b3a5dc6923c7028a8d",
+    "slug": "see-invisibility",
+    "englishName": "See Invisibility",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c6a5dc6923c7028d11",
+    "slug": "seeming",
+    "englishName": "Seeming",
+    "level": 5,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d9a5dc6923c7028f95",
+    "slug": "sending",
+    "englishName": "Sending",
+    "level": 3,
+    "classes": [
+      "bard",
+      "cleric",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c1a5dc6923c7028c5b",
+    "slug": "sequester",
+    "englishName": "Sequester",
+    "level": 7,
+    "classes": [
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197caa5dc6923c7028d9d",
+    "slug": "shapechange",
+    "englishName": "Shapechange",
+    "level": 9,
+    "classes": [
+      "druid",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e0a5dc6923c7029091",
+    "slug": "shatter",
+    "englishName": "Shatter",
+    "level": 2,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f4a5dc6923c702931c",
+    "slug": "shield",
+    "englishName": "Shield",
+    "level": 1,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f5a5dc6923c7029323",
+    "slug": "shield-of-faith",
+    "englishName": "Shield of Faith",
+    "level": 1,
+    "classes": [
+      "cleric",
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197f4a5dc6923c7029307",
+    "slug": "shillelagh",
+    "englishName": "Shillelagh",
+    "level": 0,
+    "classes": [
+      "druid"
+    ]
+  },
+  {
+    "id": "698197e6a5dc6923c7029147",
+    "slug": "shining-smite",
+    "englishName": "Shining Smite",
+    "level": 2,
+    "classes": [
+      "paladin"
+    ]
+  },
+  {
+    "id": "698197f4a5dc6923c7029315",
+    "slug": "shocking-grasp",
+    "englishName": "Shocking Grasp",
+    "level": 0,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197eea5dc6923c702925f",
+    "slug": "silence",
+    "englishName": "Silence",
+    "level": 2,
+    "classes": [
+      "bard",
+      "cleric",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197cca5dc6923c7028de3",
+    "slug": "silent-image",
+    "englishName": "Silent Image",
+    "level": 1,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e6a5dc6923c7029140",
+    "slug": "simulacrum",
+    "englishName": "Simulacrum",
+    "level": 7,
+    "classes": [
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197eaa5dc6923c70291cc",
+    "slug": "sleep",
+    "englishName": "Sleep",
+    "level": 1,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197dfa5dc6923c7029067",
+    "slug": "sleet-storm",
+    "englishName": "Sleet Storm",
+    "level": 3,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197bda5dc6923c7028be4",
+    "slug": "slow",
+    "englishName": "Slow",
+    "level": 3,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f3a5dc6923c70292f9",
+    "slug": "sorcerous-burst",
+    "englishName": "Sorcerous Burst",
+    "level": 0,
+    "classes": [
+      "sorcerer"
+    ]
+  },
+  {
+    "id": "698197eba5dc6923c70291e1",
+    "slug": "spare-the-dying",
+    "englishName": "Spare the Dying",
+    "level": 0,
+    "classes": [
+      "artificer",
+      "cleric",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197e1a5dc6923c7029098",
+    "slug": "speak-with-animals",
+    "englishName": "Speak with Animals",
+    "level": 1,
+    "classes": [
+      "bard",
+      "druid",
+      "ranger",
+      "warlock"
+    ]
+  },
+  {
+    "id": "698197e1a5dc6923c702909f",
+    "slug": "speak-with-dead",
+    "englishName": "Speak with Dead",
+    "level": 3,
+    "classes": [
+      "bard",
+      "cleric",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e1a5dc6923c70290a6",
+    "slug": "speak-with-plants",
+    "englishName": "Speak with Plants",
+    "level": 3,
+    "classes": [
+      "bard",
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197d3a5dc6923c7028ed8",
+    "slug": "spider-climb",
+    "englishName": "Spider Climb",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f4a5dc6923c702930e",
+    "slug": "spike-growth",
+    "englishName": "Spike Growth",
+    "level": 2,
+    "classes": [
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197dba5dc6923c7028fdb",
+    "slug": "spirit-guardians",
+    "englishName": "Spirit Guardians",
+    "level": 3,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197dba5dc6923c7028fd4",
+    "slug": "spiritual-weapon",
+    "englishName": "Spiritual Weapon",
+    "level": 2,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197bfa5dc6923c7028c23",
+    "slug": "starry-wisp",
+    "englishName": "Starry Wisp",
+    "level": 0,
+    "classes": [
+      "bard",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197e8a5dc6923c7029186",
+    "slug": "stinking-cloud",
+    "englishName": "Stinking Cloud",
+    "level": 3,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197daa5dc6923c7028fbf",
+    "slug": "stone-shape",
+    "englishName": "Stone Shape",
+    "level": 4,
+    "classes": [
+      "artificer",
+      "cleric",
+      "druid",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c3a5dc6923c7028ca1",
+    "slug": "stoneskin",
+    "englishName": "Stoneskin",
+    "level": 4,
+    "classes": [
+      "artificer",
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b2a5dc6923c7028a6a",
+    "slug": "storm-of-vengeance",
+    "englishName": "Storm of Vengeance",
+    "level": 9,
+    "classes": [
+      "druid"
+    ]
+  },
+  {
+    "id": "698197b3a5dc6923c7028a94",
+    "slug": "suggestion",
+    "englishName": "Suggestion",
+    "level": 2,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197dba5dc6923c7028fe2",
+    "slug": "summon-dragon",
+    "englishName": "Summon Dragon",
+    "level": 5,
+    "classes": [
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197eaa5dc6923c70291c5",
+    "slug": "sunbeam",
+    "englishName": "Sunbeam",
+    "level": 6,
+    "classes": [
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197eaa5dc6923c70291be",
+    "slug": "sunburst",
+    "englishName": "Sunburst",
+    "level": 8,
+    "classes": [
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e5a5dc6923c7029139",
+    "slug": "symbol",
+    "englishName": "Symbol",
+    "level": 7,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197eda5dc6923c702923c",
+    "slug": "telekinesis",
+    "englishName": "Telekinesis",
+    "level": 5,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "69919ad844cae2c3e5342dd9",
+    "slug": "telepathic-bond",
+    "englishName": "Telepathic Bond",
+    "level": 5,
+    "classes": [
+      "bard",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197eea5dc6923c702924a",
+    "slug": "teleport",
+    "englishName": "Teleport",
+    "level": 7,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c4a5dc6923c7028ce0",
+    "slug": "teleportation-circle",
+    "englishName": "Teleportation Circle",
+    "level": 5,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197eda5dc6923c7029220",
+    "slug": "thaumaturgy",
+    "englishName": "Thaumaturgy",
+    "level": 0,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197b8a5dc6923c7028b3c",
+    "slug": "thunderwave",
+    "englishName": "Thunderwave",
+    "level": 1,
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d1a5dc6923c7028ea0",
+    "slug": "time-stop",
+    "englishName": "Time Stop",
+    "level": 9,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "699196855cdd824d27d668b0",
+    "slug": "tiny-hut",
+    "englishName": "Tiny Hut",
+    "level": 3,
+    "classes": [
+      "bard",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d7a5dc6923c7028f5d",
+    "slug": "tongues",
+    "englishName": "Tongues",
+    "level": 3,
+    "classes": [
+      "bard",
+      "cleric",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197d3a5dc6923c7028edf",
+    "slug": "transport-via-plants",
+    "englishName": "Transport via Plants",
+    "level": 6,
+    "classes": [
+      "druid"
+    ]
+  },
+  {
+    "id": "698197baa5dc6923c7028b74",
+    "slug": "tree-stride",
+    "englishName": "Tree Stride",
+    "level": 5,
+    "classes": [
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197c2a5dc6923c7028c85",
+    "slug": "true-polymorph",
+    "englishName": "True Polymorph",
+    "level": 9,
+    "classes": [
+      "bard",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c2a5dc6923c7028c7e",
+    "slug": "true-resurrection",
+    "englishName": "True Resurrection",
+    "level": 9,
+    "classes": [
+      "cleric",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197c1a5dc6923c7028c77",
+    "slug": "true-seeing",
+    "englishName": "True Seeing",
+    "level": 6,
+    "classes": [
+      "bard",
+      "cleric",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197b3a5dc6923c7028a7f",
+    "slug": "true-strike",
+    "englishName": "True Strike",
+    "level": 0,
+    "classes": [
+      "artificer",
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f3a5dc6923c70292f2",
+    "slug": "tsunami",
+    "englishName": "Tsunami",
+    "level": 8,
+    "classes": [
+      "druid"
+    ]
+  },
+  {
+    "id": "698197cca5dc6923c7028ddc",
+    "slug": "unseen-servant",
+    "englishName": "Unseen Servant",
+    "level": 1,
+    "classes": [
+      "bard",
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c3a5dc6923c7028caf",
+    "slug": "vampiric-touch",
+    "englishName": "Vampiric Touch",
+    "level": 3,
+    "classes": [
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f5a5dc6923c702932a",
+    "slug": "vicious-mockery",
+    "englishName": "Vicious Mockery",
+    "level": 0,
+    "classes": [
+      "bard"
+    ]
+  },
+  {
+    "id": "699198325cdd824d27d668d9",
+    "slug": "vitriolic-sphere",
+    "englishName": "Vitriolic Sphere",
+    "level": 4,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197cea5dc6923c7028e3e",
+    "slug": "wall-of-fire",
+    "englishName": "Wall of Fire",
+    "level": 4,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e5a5dc6923c702912b",
+    "slug": "wall-of-force",
+    "englishName": "Wall of Force",
+    "level": 5,
+    "classes": [
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197eba5dc6923c70291fd",
+    "slug": "wall-of-ice",
+    "englishName": "Wall of Ice",
+    "level": 6,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197c3a5dc6923c7028ca8",
+    "slug": "wall-of-stone",
+    "englishName": "Wall of Stone",
+    "level": 5,
+    "classes": [
+      "artificer",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197eea5dc6923c7029251",
+    "slug": "wall-of-thorns",
+    "englishName": "Wall of Thorns",
+    "level": 6,
+    "classes": [
+      "druid"
+    ]
+  },
+  {
+    "id": "698197bfa5dc6923c7028c1c",
+    "slug": "warding-bond",
+    "englishName": "Warding Bond",
+    "level": 2,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197bba5dc6923c7028b97",
+    "slug": "water-breathing",
+    "englishName": "Water Breathing",
+    "level": 3,
+    "classes": [
+      "artificer",
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197f2a5dc6923c70292d6",
+    "slug": "water-walk",
+    "englishName": "Water Walk",
+    "level": 3,
+    "classes": [
+      "artificer",
+      "cleric",
+      "druid",
+      "ranger",
+      "sorcerer"
+    ]
+  },
+  {
+    "id": "698197d3a5dc6923c7028ed1",
+    "slug": "web",
+    "englishName": "Web",
+    "level": 2,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197bca5dc6923c7028bc1",
+    "slug": "weird",
+    "englishName": "Weird",
+    "level": 9,
+    "classes": [
+      "warlock",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197dfa5dc6923c702906e",
+    "slug": "wind-walk",
+    "englishName": "Wind Walk",
+    "level": 6,
+    "classes": [
+      "cleric",
+      "druid"
+    ]
+  },
+  {
+    "id": "698197eba5dc6923c70291ef",
+    "slug": "wind-wall",
+    "englishName": "Wind Wall",
+    "level": 3,
+    "classes": [
+      "druid",
+      "ranger"
+    ]
+  },
+  {
+    "id": "698197bba5dc6923c7028bac",
+    "slug": "wish",
+    "englishName": "Wish",
+    "level": 9,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ]
+  },
+  {
+    "id": "698197e7a5dc6923c7029163",
+    "slug": "word-of-recall",
+    "englishName": "Word of Recall",
+    "level": 6,
+    "classes": [
+      "cleric"
+    ]
+  },
+  {
+    "id": "698197caa5dc6923c7028d96",
+    "slug": "zone-of-truth",
+    "englishName": "Zone of Truth",
+    "level": 2,
+    "classes": [
+      "bard",
+      "cleric",
+      "paladin"
+    ]
+  }
+]

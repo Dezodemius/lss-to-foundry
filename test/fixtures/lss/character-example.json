@@ -1,0 +1,195 @@
+{
+  "jsonType": "character",
+  "template": "default",
+  "name": { "value": "Сестра Иоланда" },
+  "info": {
+    "charClass": { "name": "charClass", "value": "Cleric", "id": "cleric" },
+    "charSubclass": { "name": "charSubclass", "value": "Life Domain" },
+    "level": { "name": "level", "value": 3 },
+    "background": { "name": "background", "value": "Acolyte" },
+    "playerName": { "name": "playerName", "value": "Аня" },
+    "race": { "name": "race", "value": "Human" },
+    "alignment": { "name": "alignment", "value": "Lawful Good" },
+    "experience": { "name": "experience", "value": 900 },
+    "size": { "value": "medium" }
+  },
+  "subInfo": {
+    "age": { "name": "age", "value": "27" },
+    "height": { "name": "height", "value": "168 см" },
+    "weight": { "name": "weight", "value": "60 кг" },
+    "eyes": { "name": "eyes", "value": "карие" },
+    "skin": { "name": "skin", "value": "смуглая" },
+    "hair": { "name": "hair", "value": "чёрные, коротко острижены" }
+  },
+  "spellsInfo": {
+    "base": { "name": "base", "value": "", "code": "wis" },
+    "save": { "name": "save", "value": "" },
+    "mod": { "name": "mod", "value": "" }
+  },
+  "spells": {
+    "slots-1": { "value": 4, "filled": 1 },
+    "slots-2": { "value": 2, "filled": 0 }
+  },
+  "spellsPact": {},
+  "bonuses": [
+    {
+      "id": "bonus-src-classFeature-life-domain-hp.max-0",
+      "label": "Disciple of Life (доп. HP при исцелении)",
+      "target": "hp.max",
+      "mode": "add",
+      "value": 3,
+      "source": { "kind": "classFeature", "refId": "srd-2024:cleric-life-domain", "label": "Disciple of Life" }
+    },
+    {
+      "id": "bonus-1780000000000-a1b2",
+      "label": "Кольцо защиты",
+      "target": "ac",
+      "mode": "add",
+      "value": 1,
+      "source": { "kind": "item", "label": "Кольцо защиты" }
+    }
+  ],
+  "proficiency": 2,
+  "stats": {
+    "str": { "name": "str", "score": 13 },
+    "dex": { "name": "dex", "score": 10 },
+    "con": { "name": "con", "score": 14 },
+    "int": { "name": "int", "score": 10 },
+    "wis": { "name": "wis", "score": 16 },
+    "cha": { "name": "cha", "score": 12 }
+  },
+  "saves": {
+    "str": { "name": "str", "isProf": false },
+    "dex": { "name": "dex", "isProf": false },
+    "con": { "name": "con", "isProf": true },
+    "int": { "name": "int", "isProf": false },
+    "wis": { "name": "wis", "isProf": true },
+    "cha": { "name": "cha", "isProf": false }
+  },
+  "skills": {
+    "acrobatics": { "name": "acrobatics", "baseStat": "dex" },
+    "animal handling": { "name": "animal handling", "baseStat": "wis" },
+    "arcana": { "name": "arcana", "baseStat": "int" },
+    "athletics": { "name": "athletics", "baseStat": "str", "isProf": true },
+    "deception": { "name": "deception", "baseStat": "cha" },
+    "history": { "name": "history", "baseStat": "int", "isProf": true },
+    "insight": { "name": "insight", "baseStat": "wis", "isProf": true },
+    "intimidation": { "name": "intimidation", "baseStat": "cha" },
+    "investigation": { "name": "investigation", "baseStat": "int" },
+    "medicine": { "name": "medicine", "baseStat": "wis" },
+    "nature": { "name": "nature", "baseStat": "int" },
+    "perception": { "name": "perception", "baseStat": "wis" },
+    "performance": { "name": "performance", "baseStat": "cha" },
+    "persuasion": { "name": "persuasion", "baseStat": "cha", "isProf": true },
+    "religion": { "name": "religion", "baseStat": "int" },
+    "sleight of hand": { "name": "sleight of hand", "baseStat": "dex" },
+    "stealth": { "name": "stealth", "baseStat": "dex" },
+    "survival": { "name": "survival", "baseStat": "wis" }
+  },
+  "vitality": {
+    "hp-current": { "value": 24 },
+    "hp-temp": { "value": 0 },
+    "hp-max": { "value": 24 },
+    "hp-max-bonus": { "value": 0 },
+    "hit-die": { "value": "d8" },
+    "hp-dice-current": { "value": 3 },
+    "hp-dice-multi": {},
+    "darkvision": { "value": 0 },
+    "speed": { "value": "30" },
+    "ac": { "value": "10+[DEX]" },
+    "shield": { "value": true, "mod": "2" },
+    "initiative": { "value": null },
+    "isDying": false,
+    "deathFails": 0,
+    "deathSuccesses": 0
+  },
+  "attunementsList": [
+    { "id": "attunement-1780000000001", "checked": true, "value": "Кольцо защиты" }
+  ],
+  "weaponsList": [
+    {
+      "id": "weapon-1780000000002",
+      "name": { "value": "Булава" },
+      "dmg": { "value": "1к6+[STR]" },
+      "ability": "str",
+      "isProf": true,
+      "dmgType": { "value": "дробящий" }
+    },
+    {
+      "id": "weapon-1780000000003",
+      "name": { "value": "Лёгкий арбалет" },
+      "dmg": { "value": "1к8+[DEX]" },
+      "ability": "dex",
+      "isProf": true,
+      "notes": { "value": "перезарядка, боеприпасы (80/320 фт.)" },
+      "notesVisibility": true
+    }
+  ],
+  "text": {
+    "traits": {
+      "value": {
+        "data": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Channel Divinity: Preserve Life. Восстанавливает HP союзникам." }]
+            },
+            {
+              "type": "paragraph",
+              "content": [{ "type": "resource", "attrs": { "id": "resource-1780000000010", "textName": "traits" } }]
+            }
+          ]
+        }
+      }
+    },
+    "equipment": {
+      "value": {
+        "data": {
+          "type": "doc",
+          "content": [
+            { "type": "paragraph", "content": [{ "type": "text", "text": "Кольчуга, щит, священный символ, набор путешественника." }] }
+          ]
+        }
+      }
+    },
+    "personality": {
+      "value": {
+        "data": {
+          "type": "doc",
+          "content": [
+            { "type": "paragraph", "content": [{ "type": "text", "text": "Спокойна и внимательна к чужой боли." }] }
+          ]
+        }
+      }
+    }
+  },
+  "coins": {
+    "gp": { "value": 15 },
+    "sp": { "value": 8 },
+    "cp": { "value": 0 },
+    "pp": { "value": 0 },
+    "ep": { "value": 0 }
+  },
+  "resources": {
+    "resource-1780000000010": {
+      "id": "resource-1780000000010",
+      "name": "Channel Divinity",
+      "current": 1,
+      "max": 1,
+      "location": "traits",
+      "isShortRest": false,
+      "isLongRest": true
+    }
+  },
+  "conditions": [],
+  "exhaustion": 0,
+  "inspiration": false,
+  "avatar": null,
+  "prof": {
+    "armor-light": { "value": true },
+    "armor-medium": { "value": true },
+    "armor-label": { "value": true },
+    "weapon-simple": { "value": true }
+  }
+}

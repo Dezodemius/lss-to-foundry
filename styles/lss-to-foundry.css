@@ -1,0 +1,170 @@
+/*
+ * LSS to Foundry: import window.
+ * Every selector starts with .lss-to-foundry, so other windows and sheets are not affected.
+ */
+
+.lss-to-foundry .lss-to-foundry__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.lss-to-foundry .lss-to-foundry__banner {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--color-border-light-2);
+    border-radius: 4px;
+}
+
+.lss-to-foundry .lss-to-foundry__banner > i {
+    margin-top: 0.15rem;
+}
+
+.lss-to-foundry .lss-to-foundry__banner.is-error > i {
+    color: var(--color-level-error);
+}
+
+.lss-to-foundry .lss-to-foundry__issues {
+    flex: 1 1 auto;
+    margin: 0;
+    padding-left: 1.1em;
+    font-size: var(--font-size-12);
+    overflow-wrap: anywhere;
+}
+
+.lss-to-foundry .lss-to-foundry__files {
+    margin: 0;
+    font-size: var(--font-size-12);
+    color: var(--color-text-secondary);
+    overflow-wrap: anywhere;
+}
+
+.lss-to-foundry .lss-to-foundry__heading {
+    margin: 0.25rem 0 0;
+    border: none;
+    font-size: var(--font-size-14);
+}
+
+.lss-to-foundry .lss-to-foundry__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-height: 40vh;
+    overflow-y: auto;
+    border: 1px solid var(--color-border-light-2);
+    border-radius: 4px;
+}
+
+.lss-to-foundry .lss-to-foundry__item {
+    padding: 0.4rem 0.6rem;
+    border-bottom: 1px solid var(--color-border-light-2);
+}
+
+.lss-to-foundry .lss-to-foundry__item:last-child {
+    border-bottom: none;
+}
+
+.lss-to-foundry .lss-to-foundry__pick {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.lss-to-foundry .lss-to-foundry__name {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.lss-to-foundry .lss-to-foundry__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.75rem;
+    margin-top: 0.15rem;
+    padding-left: 1.6rem;
+    font-size: var(--font-size-12);
+    color: var(--color-text-secondary);
+}
+
+.lss-to-foundry .lss-to-foundry__file {
+    overflow-wrap: anywhere;
+}
+
+.lss-to-foundry .lss-to-foundry__notes {
+    margin: 0.25rem 0 0 1.6rem;
+    font-size: var(--font-size-12);
+}
+
+.lss-to-foundry .lss-to-foundry__notes > summary {
+    cursor: pointer;
+}
+
+.lss-to-foundry .lss-to-foundry__notes > ul {
+    margin: 0.25rem 0 0;
+    padding-left: 1.1em;
+    overflow-wrap: anywhere;
+}
+
+.lss-to-foundry .lss-to-foundry__grimoire {
+    margin: 0;
+    font-size: var(--font-size-12);
+    color: var(--color-text-secondary);
+}
+
+.lss-to-foundry .lss-to-foundry__counter {
+    align-self: center;
+    margin-right: auto;
+    font-size: var(--font-size-12);
+    color: var(--color-text-secondary);
+}
+
+.lss-to-foundry .lss-to-foundry__progress {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+
+.lss-to-foundry .lss-to-foundry__progress > progress {
+    width: 100%;
+}
+
+.lss-to-foundry .lss-to-foundry__summary {
+    margin: 0;
+    font-weight: 600;
+}
+
+.lss-to-foundry .lss-to-foundry__result-head {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lss-to-foundry .lss-to-foundry__result-head > .lss-to-foundry__name {
+    flex: 1 1 auto;
+    font-weight: 600;
+}
+
+.lss-to-foundry .lss-to-foundry__status {
+    font-size: var(--font-size-12);
+    color: var(--color-text-secondary);
+    white-space: nowrap;
+}
+
+.lss-to-foundry .lss-to-foundry__result.is-ok > .lss-to-foundry__result-head > i {
+    color: var(--color-level-success);
+}
+
+.lss-to-foundry .lss-to-foundry__result.is-error > .lss-to-foundry__result-head > i {
+    color: var(--color-level-error);
+}
+
+.lss-to-foundry .lss-to-foundry__error {
+    margin: 0.25rem 0 0 1.6rem;
+    font-size: var(--font-size-12);
+    color: var(--color-level-error);
+    overflow-wrap: anywhere;
+}

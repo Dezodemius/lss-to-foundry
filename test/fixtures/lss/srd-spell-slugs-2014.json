@@ -1,0 +1,2228 @@
+[
+  {
+    "slug": "acid-arrow",
+    "id": "65d3c16df3d820fa1add45e6",
+    "name": "Кислотная стрела [Acid Arrow]",
+    "level": 2,
+    "classes": ["wizard"]
+  },
+  {
+    "slug": "acid-splash",
+    "id": "65d3c170f3d820fa1add476e",
+    "name": "Брызги кислоты [Acid Splash]",
+    "level": 0,
+    "classes": ["artificer", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "aid",
+    "id": "65d3c169f3d820fa1add42eb",
+    "name": "Подмога [Aid]",
+    "level": 2,
+    "classes": ["artificer", "bard", "cleric", "paladin", "ranger", "shaman"]
+  },
+  {
+    "slug": "alarm",
+    "id": "65d3c172f3d820fa1add485c",
+    "name": "Сигнал тревоги [Alarm]",
+    "level": 1,
+    "classes": ["artificer", "ranger", "wizard"]
+  },
+  {
+    "slug": "alter-self",
+    "id": "65d3c16af3d820fa1add435b",
+    "name": "Смена обличья [Alter Self]",
+    "level": 2,
+    "classes": ["artificer", "shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "animal-friendship",
+    "id": "65d3c16df3d820fa1add45b5",
+    "name": "Дружба с животными [Animal Friendship]",
+    "level": 1,
+    "classes": ["bard", "druid", "ranger", "shaman"]
+  },
+  {
+    "slug": "animal-messenger",
+    "id": "65d3c16af3d820fa1add43e0",
+    "name": "Почтовое животное [Animal Messenger]",
+    "level": 2,
+    "classes": ["bard", "druid", "ranger"]
+  },
+  {
+    "slug": "animal-shapes",
+    "id": "65d3c173f3d820fa1add492e",
+    "name": "Превращение в животных [Animal Shapes]",
+    "level": 8,
+    "classes": ["druid"]
+  },
+  {
+    "slug": "animate-dead",
+    "id": "65d3c170f3d820fa1add4736",
+    "name": "Восставший труп [Animate Dead]",
+    "level": 3,
+    "classes": ["cleric", "wizard"]
+  },
+  {
+    "slug": "animate-objects",
+    "id": "65d3c16bf3d820fa1add4449",
+    "name": "Оживление вещей [Animate Objects]",
+    "level": 5,
+    "classes": ["artificer", "bard", "magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "antilife-shell",
+    "id": "65d3c16bf3d820fa1add43f5",
+    "name": "Преграда жизни [Antilife Shell]",
+    "level": 5,
+    "classes": ["druid", "shaman"]
+  },
+  {
+    "slug": "antimagic-field",
+    "id": "65d3c172f3d820fa1add4863",
+    "name": "Преграда магии [Antimagic Field]",
+    "level": 8,
+    "classes": ["cleric", "wizard"]
+  },
+  {
+    "slug": "antipathy-or-sympathy",
+    "id": "65d3c168f3d820fa1add4186",
+    "name": "Антипатия/симпатия [Antipathy or Sympathy]",
+    "level": 8,
+    "classes": ["bard", "druid", "wizard"]
+  },
+  {
+    "slug": "arcane-eye",
+    "id": "65d3c16ff3d820fa1add46cd",
+    "name": "Магический глаз [Arcane Eye]",
+    "level": 4,
+    "classes": ["artificer", "shaman", "wizard"]
+  },
+  {
+    "slug": "arcane-hand",
+    "id": "65d3c16cf3d820fa1add44ff",
+    "name": "Магическая длань [Arcane Hand]",
+    "level": 5,
+    "classes": ["artificer", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "arcane-lock",
+    "id": "65d3c16bf3d820fa1add4411",
+    "name": "Волшебный замок [Arcane Lock]",
+    "level": 2,
+    "classes": ["artificer", "wizard"]
+  },
+  {
+    "slug": "arcane-sword",
+    "id": "65d3c16ef3d820fa1add4687",
+    "name": "Магический меч [Arcane Sword]",
+    "level": 7,
+    "classes": ["bard", "wizard"]
+  },
+  {
+    "slug": "arcanists-magic-aura",
+    "id": "65d3c171f3d820fa1add481d",
+    "name": "Ложная магия [Arcanist's Magic Aura]",
+    "level": 2,
+    "classes": ["wizard"]
+  },
+  {
+    "slug": "astral-projection",
+    "id": "65d3c175f3d820fa1add4990",
+    "name": "Проекция в астрал [Astral Projection]",
+    "level": 9,
+    "classes": ["cleric", "warlock", "wizard"]
+  },
+  {
+    "slug": "augury",
+    "id": "65d3c173f3d820fa1add48c5",
+    "name": "Гадание [Augury]",
+    "level": 2,
+    "classes": ["cleric", "druid", "shaman", "wizard"]
+  },
+  {
+    "slug": "awaken",
+    "id": "65d3c16ff3d820fa1add472f",
+    "name": "Пробуждение разума [Awaken]",
+    "level": 5,
+    "classes": ["bard", "druid", "shaman"]
+  },
+  {
+    "slug": "bane",
+    "id": "65d3c16bf3d820fa1add441f",
+    "name": "Порча [Bane]",
+    "level": 1,
+    "classes": ["bard", "cleric", "shaman"]
+  },
+  {
+    "slug": "banishment",
+    "id": "65d3c16df3d820fa1add45ed",
+    "name": "Изгнание [Banishment]",
+    "level": 4,
+    "classes": ["cleric", "magus", "paladin", "shaman", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "barkskin",
+    "id": "65d3c16ff3d820fa1add46f7",
+    "name": "Дубовая кора [Barkskin]",
+    "level": 2,
+    "classes": ["druid", "ranger", "shaman"]
+  },
+  {
+    "slug": "beacon-of-hope",
+    "id": "65d3c16cf3d820fa1add44ce",
+    "name": "Маяк надежды [Beacon of Hope]",
+    "level": 3,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "bestow-curse",
+    "id": "65d3c16cf3d820fa1add453e",
+    "name": "Проклятие [Bestow Curse]",
+    "level": 3,
+    "classes": ["bard", "cleric", "wizard"]
+  },
+  {
+    "slug": "black-tentacles",
+    "id": "65d3c168f3d820fa1add41c5",
+    "name": "Чёрные щупальца [Black Tentacles]",
+    "level": 4,
+    "classes": ["wizard"]
+  },
+  {
+    "slug": "blade-barrier",
+    "id": "65d3c168f3d820fa1add4251",
+    "name": "Стена клинков [Blade Barrier]",
+    "level": 6,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "bless",
+    "id": "65d3c16df3d820fa1add45d1",
+    "name": "Благословение [Bless]",
+    "level": 1,
+    "classes": ["cleric", "paladin", "shaman"]
+  },
+  {
+    "slug": "blight",
+    "id": "65d3c16cf3d820fa1add4496",
+    "name": "Усыхание [Blight]",
+    "level": 4,
+    "classes": ["druid", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "blindness-or-deafness",
+    "id": "65d3c168f3d820fa1add419b",
+    "name": "Глухота/слепота [Blindness or Deafness]",
+    "level": 2,
+    "classes": ["bard", "cleric", "magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "blink",
+    "id": "65d3c16df3d820fa1add45ca",
+    "name": "Мерцание [Blink]",
+    "level": 3,
+    "classes": ["artificer", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "blur",
+    "id": "65d3c169f3d820fa1add42dd",
+    "name": "Размытый образ [Blur]",
+    "level": 2,
+    "classes": ["artificer", "magus", "shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "branding-smite",
+    "id": "65d3c16bf3d820fa1add442d",
+    "name": "Клеймящая кара [Branding Smite]",
+    "level": 2,
+    "classes": ["paladin"]
+  },
+  {
+    "slug": "burning-hands",
+    "id": "65d3c173f3d820fa1add48cc",
+    "name": "Огненные ладони [Burning Hands]",
+    "level": 1,
+    "classes": ["magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "call-lightning",
+    "id": "65d3c16ff3d820fa1add46c6",
+    "name": "Призыв молнии [Call Lightning]",
+    "level": 3,
+    "classes": ["druid"]
+  },
+  {
+    "slug": "calm-emotions",
+    "id": "65d3c16cf3d820fa1add4537",
+    "name": "Умиротворение [Calm Emotions]",
+    "level": 2,
+    "classes": ["bard", "cleric"]
+  },
+  {
+    "slug": "chain-lightning",
+    "id": "65d3c16cf3d820fa1add44e3",
+    "name": "Пляшущая молния [Chain Lightning]",
+    "level": 6,
+    "classes": ["sorcerer", "wizard"]
+  },
+  {
+    "slug": "charm-person",
+    "id": "65d3c16df3d820fa1add45f4",
+    "name": "Очарование личности [Charm Person]",
+    "level": 1,
+    "classes": ["bard", "druid", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "chill-touch",
+    "id": "65d3c170f3d820fa1add4759",
+    "name": "Леденящее прикосновение [Chill Touch]",
+    "level": 0,
+    "classes": ["shaman", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "circle-of-death",
+    "id": "65d3c16ff3d820fa1add46e2",
+    "name": "Круг смерти [Circle of Death]",
+    "level": 6,
+    "classes": ["sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "clairvoyance",
+    "id": "65d3c16df3d820fa1add456f",
+    "name": "Подсматривание [Clairvoyance]",
+    "level": 3,
+    "classes": ["bard", "cleric", "shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "clone",
+    "id": "65d3c16df3d820fa1add4568",
+    "name": "Двойник [Clone]",
+    "level": 8,
+    "classes": ["wizard"]
+  },
+  {
+    "slug": "cloudkill",
+    "id": "65d3c16df3d820fa1add455a",
+    "name": "Облако смерти [Cloudkill]",
+    "level": 5,
+    "classes": ["shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "color-spray",
+    "id": "65d3c171f3d820fa1add480f",
+    "name": "Сверкающие брызги [Color Spray]",
+    "level": 1,
+    "classes": ["bard", "magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "command",
+    "id": "65d3c16af3d820fa1add439a",
+    "name": "Приказ [Command]",
+    "level": 1,
+    "classes": ["bard", "cleric", "paladin", "shaman"]
+  },
+  {
+    "slug": "commune",
+    "id": "65d3c16ef3d820fa1add4680",
+    "name": "Общение [Commune]",
+    "level": 5,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "commune-with-nature",
+    "id": "65d3c170f3d820fa1add47ad",
+    "name": "Общение с природой [Commune with Nature]",
+    "level": 5,
+    "classes": ["druid", "ranger", "shaman"]
+  },
+  {
+    "slug": "comprehend-languages",
+    "id": "65d3c16cf3d820fa1add454c",
+    "name": "Понимание языков [Comprehend Languages]",
+    "level": 1,
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "compulsion",
+    "id": "65d3c16af3d820fa1add4385",
+    "name": "Принуждение [Compulsion]",
+    "level": 4,
+    "classes": ["bard"]
+  },
+  {
+    "slug": "cone-of-cold",
+    "id": "65d3c171f3d820fa1add47f3",
+    "name": "Конус холода [Cone of Cold]",
+    "level": 5,
+    "classes": ["druid", "magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "confusion",
+    "id": "65d3c16af3d820fa1add43cb",
+    "name": "Смятение [Confusion]",
+    "level": 4,
+    "classes": ["bard", "druid", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "conjure-animals",
+    "id": "65d3c16cf3d820fa1add449d",
+    "name": "Вызов животных [Conjure Animals]",
+    "level": 3,
+    "classes": ["druid", "ranger"]
+  },
+  {
+    "slug": "conjure-celestial",
+    "id": "65d3c16bf3d820fa1add4465",
+    "name": "Вызов небожителя [Conjure Celestial]",
+    "level": 7,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "conjure-elemental",
+    "id": "65d3c173f3d820fa1add48e8",
+    "name": "Вызов элементаля [Conjure Elemental]",
+    "level": 5,
+    "classes": ["druid", "wizard"]
+  },
+  {
+    "slug": "conjure-fey",
+    "id": "65d3c16ef3d820fa1add4625",
+    "name": "Вызов феи [Conjure Fey]",
+    "level": 6,
+    "classes": ["druid", "warlock"]
+  },
+  {
+    "slug": "conjure-minor-elementals",
+    "id": "65d3c174f3d820fa1add4943",
+    "name": "Вызов малых элементалей [Conjure Minor Elementals]",
+    "level": 4,
+    "classes": ["druid", "wizard"]
+  },
+  {
+    "slug": "conjure-woodland-beings",
+    "id": "65d3c176f3d820fa1add49eb",
+    "name": "Вызов лесных обитателей [Conjure Woodland Beings]",
+    "level": 4,
+    "classes": ["druid", "ranger"]
+  },
+  {
+    "slug": "contact-other-plane",
+    "id": "65d3c170f3d820fa1add47b4",
+    "name": "Связь с иным миром [Contact Other Plane]",
+    "level": 5,
+    "classes": ["warlock", "wizard"]
+  },
+  {
+    "slug": "contagion",
+    "id": "65d3c168f3d820fa1add4235",
+    "name": "Заражение [Contagion]",
+    "level": 5,
+    "classes": ["cleric", "druid", "magus"]
+  },
+  {
+    "slug": "contingency",
+    "id": "65d3c176f3d820fa1add4a00",
+    "name": "Предосторожность [Contingency]",
+    "level": 6,
+    "classes": ["wizard"]
+  },
+  {
+    "slug": "continual-flame",
+    "id": "65d3c16ff3d820fa1add470c",
+    "name": "Вечный огонь [Continual Flame]",
+    "level": 2,
+    "classes": ["artificer", "cleric", "druid", "shaman", "wizard"]
+  },
+  {
+    "slug": "control-water",
+    "id": "65d3c171f3d820fa1add47fa",
+    "name": "Власть над водами [Control Water]",
+    "level": 4,
+    "classes": ["cleric", "druid", "shaman", "wizard"]
+  },
+  {
+    "slug": "control-weather",
+    "id": "65d3c170f3d820fa1add4798",
+    "name": "Власть над погодой [Control Weather]",
+    "level": 8,
+    "classes": ["cleric", "druid", "wizard"]
+  },
+  {
+    "slug": "counterspell",
+    "id": "65d3c168f3d820fa1add41fd",
+    "name": "Контрзаклинание [Counterspell]",
+    "level": 3,
+    "classes": ["magus", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "create-food-and-water",
+    "id": "65d3c168f3d820fa1add41b7",
+    "name": "Сотворение пищи и воды [Create Food and Water]",
+    "level": 3,
+    "classes": ["artificer", "cleric", "paladin"]
+  },
+  {
+    "slug": "create-or-destroy-water",
+    "id": "65d3c173f3d820fa1add48fd",
+    "name": "Сотворение или уничтожение воды [Create or Destroy Water]",
+    "level": 1,
+    "classes": ["cleric", "druid"]
+  },
+  {
+    "slug": "create-undead",
+    "id": "65d3c168f3d820fa1add41b0",
+    "name": "Сотворение нежити [Create Undead]",
+    "level": 6,
+    "classes": ["cleric", "warlock", "wizard"]
+  },
+  {
+    "slug": "creation",
+    "id": "65d3c168f3d820fa1add41da",
+    "name": "Сотворение [Creation]",
+    "level": 5,
+    "classes": ["artificer", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "cure-wounds",
+    "id": "65d3c172f3d820fa1add4871",
+    "name": "Лечение ран [Cure Wounds]",
+    "level": 1,
+    "classes": ["artificer", "bard", "cleric", "druid", "paladin", "ranger", "shaman"]
+  },
+  {
+    "slug": "dancing-lights",
+    "id": "65d3c175f3d820fa1add499e",
+    "name": "Пляшущие огоньки [Dancing Lights]",
+    "level": 0,
+    "classes": ["artificer", "bard", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "darkness",
+    "id": "65d3c173f3d820fa1add4904",
+    "name": "Тьма [Darkness]",
+    "level": 2,
+    "classes": ["magus", "shaman", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "darkvision",
+    "id": "65d3c16af3d820fa1add430e",
+    "name": "Тёмное зрение [Darkvision]",
+    "level": 2,
+    "classes": ["artificer", "druid", "magus", "ranger", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "daylight",
+    "id": "65d3c175f3d820fa1add49c1",
+    "name": "Дневной свет [Daylight]",
+    "level": 3,
+    "classes": ["cleric", "druid", "paladin", "ranger", "shaman", "sorcerer"]
+  },
+  {
+    "slug": "death-ward",
+    "id": "65d3c169f3d820fa1add42e4",
+    "name": "Защита от смерти [Death Ward]",
+    "level": 4,
+    "classes": ["cleric", "magus", "paladin"]
+  },
+  {
+    "slug": "delayed-blast-fireball",
+    "id": "65d3c168f3d820fa1add41a2",
+    "name": "Замедленный огненный шар [Delayed Blast Fireball]",
+    "level": 7,
+    "classes": ["sorcerer", "wizard"]
+  },
+  {
+    "slug": "demiplane",
+    "id": "65d3c173f3d820fa1add48f6",
+    "name": "Демиплан [Demiplane]",
+    "level": 8,
+    "classes": ["sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "detect-evil-and-good",
+    "id": "65d3c168f3d820fa1add4204",
+    "name": "Обнаружение добра и зла [Detect Evil and Good]",
+    "level": 1,
+    "classes": ["cleric", "paladin", "shaman"]
+  },
+  {
+    "slug": "detect-magic",
+    "id": "65d3c16ff3d820fa1add4713",
+    "name": "Обнаружение магии [Detect Magic]",
+    "level": 1,
+    "classes": ["artificer", "bard", "cleric", "druid", "magus", "paladin", "ranger", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "detect-poison-and-disease",
+    "id": "65d3c16cf3d820fa1add44ea",
+    "name": "Обнаружение болезней и яда [Detect Poison and Disease]",
+    "level": 1,
+    "classes": ["cleric", "druid", "paladin", "ranger"]
+  },
+  {
+    "slug": "detect-thoughts",
+    "id": "65d3c16ef3d820fa1add468e",
+    "name": "Обнаружение мыслей [Detect Thoughts]",
+    "level": 2,
+    "classes": ["bard", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "dimension-door",
+    "id": "65d3c16ff3d820fa1add46db",
+    "name": "Переносящая дверь [Dimension Door]",
+    "level": 4,
+    "classes": ["bard", "magus", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "disguise-self",
+    "id": "65d3c16af3d820fa1add4377",
+    "name": "Маскировка [Disguise Self]",
+    "level": 1,
+    "classes": ["artificer", "bard", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "disintegrate",
+    "id": "65d3c16ef3d820fa1add461e",
+    "name": "Распад [Disintegrate]",
+    "level": 6,
+    "classes": ["sorcerer", "wizard"]
+  },
+  {
+    "slug": "dispel-evil-and-good",
+    "id": "65d3c171f3d820fa1add4816",
+    "name": "Рассеивание добра и зла [Dispel Evil and Good]",
+    "level": 5,
+    "classes": ["cleric", "magus", "paladin", "shaman"]
+  },
+  {
+    "slug": "dispel-magic",
+    "id": "65d3c176f3d820fa1add4a1c",
+    "name": "Рассеивание магии [Dispel Magic]",
+    "level": 3,
+    "classes": ["artificer", "bard", "cleric", "druid", "magus", "paladin", "shaman", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "divination",
+    "id": "65d3c16df3d820fa1add4599",
+    "name": "Предсказание [Divination]",
+    "level": 4,
+    "classes": ["cleric", "druid", "shaman", "wizard"]
+  },
+  {
+    "slug": "divine-favor",
+    "id": "65d3c174f3d820fa1add497b",
+    "name": "Божественное благоволение [Divine Favor]",
+    "level": 1,
+    "classes": ["paladin"]
+  },
+  {
+    "slug": "divine-word",
+    "id": "65d3c16ef3d820fa1add45fb",
+    "name": "Божественное слово [Divine Word]",
+    "level": 7,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "dominate-beast",
+    "id": "65d3c170f3d820fa1add473d",
+    "name": "Подчинение зверя [Dominate Beast]",
+    "level": 4,
+    "classes": ["druid", "ranger", "sorcerer"]
+  },
+  {
+    "slug": "dominate-monster",
+    "id": "65d3c16ff3d820fa1add46b1",
+    "name": "Подчинение чудовища [Dominate Monster]",
+    "level": 8,
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "dominate-person",
+    "id": "65d3c173f3d820fa1add48ef",
+    "name": "Подчинение личности [Dominate Person]",
+    "level": 5,
+    "classes": ["bard", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "dream",
+    "id": "65d3c16df3d820fa1add45df",
+    "name": "Вещий сон [Dream]",
+    "level": 5,
+    "classes": ["bard", "shaman", "warlock", "wizard"]
+  },
+  {
+    "slug": "druidcraft",
+    "id": "65d3c16ff3d820fa1add46fe",
+    "name": "Искусство друидов [Druidcraft]",
+    "level": 0,
+    "classes": ["druid"]
+  },
+  {
+    "slug": "earthquake",
+    "id": "65d3c16cf3d820fa1add4522",
+    "name": "Землетрясение [Earthquake]",
+    "level": 8,
+    "classes": ["cleric", "druid", "sorcerer"]
+  },
+  {
+    "slug": "eldritch-blast",
+    "id": "65d3c175f3d820fa1add4997",
+    "name": "Мистический заряд [Eldritch Blast]",
+    "level": 0,
+    "classes": ["warlock"]
+  },
+  {
+    "slug": "enhance-ability",
+    "id": "65d3c16ef3d820fa1add465d",
+    "name": "Улучшение характеристики [Enhance Ability]",
+    "level": 2,
+    "classes": ["artificer", "bard", "cleric", "druid", "ranger", "shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "enlarge-or-reduce",
+    "id": "65d3c168f3d820fa1add41be",
+    "name": "Увеличение/уменьшение [Enlarge or Reduce]",
+    "level": 2,
+    "classes": ["artificer", "bard", "druid", "magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "entangle",
+    "id": "65d3c16bf3d820fa1add4426",
+    "name": "Опутывание [Entangle]",
+    "level": 1,
+    "classes": ["druid", "ranger", "shaman"]
+  },
+  {
+    "slug": "enthrall",
+    "id": "65d3c16bf3d820fa1add4403",
+    "name": "Речь златоуста [Enthrall]",
+    "level": 2,
+    "classes": ["bard", "warlock"]
+  },
+  {
+    "slug": "etherealness",
+    "id": "65d3c168f3d820fa1add4219",
+    "name": "Эфирность [Etherealness]",
+    "level": 7,
+    "classes": ["bard", "cleric", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "expeditious-retreat",
+    "id": "65d3c176f3d820fa1add4a0e",
+    "name": "Поспешное отступление [Expeditious Retreat]",
+    "level": 1,
+    "classes": ["artificer", "magus", "shaman", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "eyebite",
+    "id": "65d3c16ef3d820fa1add4610",
+    "name": "Разящее око [Eyebite]",
+    "level": 6,
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "fabricate",
+    "id": "65d3c16af3d820fa1add4338",
+    "name": "Изготовление [Fabricate]",
+    "level": 4,
+    "classes": ["artificer", "wizard"]
+  },
+  {
+    "slug": "faerie-fire",
+    "id": "65d3c16ef3d820fa1add4617",
+    "name": "Огонь фей [Faerie Fire]",
+    "level": 1,
+    "classes": ["artificer", "bard", "druid", "magus"]
+  },
+  {
+    "slug": "faithful-hound",
+    "id": "65d3c16af3d820fa1add4346",
+    "name": "Верный пёс [Faithful Hound]",
+    "level": 4,
+    "classes": ["artificer", "shaman", "wizard"]
+  },
+  {
+    "slug": "false-life",
+    "id": "65d3c174f3d820fa1add4974",
+    "name": "Псевдожизнь [False Life]",
+    "level": 1,
+    "classes": ["artificer", "shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "fear",
+    "id": "65d3c171f3d820fa1add47ec",
+    "name": "Ужас [Fear]",
+    "level": 3,
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "feather-fall",
+    "id": "65d3c171f3d820fa1add4840",
+    "name": "Падение пёрышком [Feather Fall]",
+    "level": 1,
+    "classes": ["artificer", "bard", "magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "feeblemind",
+    "id": "65d3c16af3d820fa1add4307",
+    "name": "Слабоумие [Feeblemind]",
+    "level": 8,
+    "classes": ["bard", "druid", "warlock", "wizard"]
+  },
+  {
+    "slug": "find-familiar",
+    "id": "65d3c176f3d820fa1add49e4",
+    "name": "Поиск фамильяра [Find Familiar]",
+    "level": 1,
+    "classes": ["shaman", "wizard"]
+  },
+  {
+    "slug": "find-steed",
+    "id": "65d3c16cf3d820fa1add44c0",
+    "name": "Поиск скакуна [Find Steed]",
+    "level": 2,
+    "classes": ["paladin"]
+  },
+  {
+    "slug": "find-the-path",
+    "id": "65d3c16af3d820fa1add43e7",
+    "name": "Поиск пути [Find the Path]",
+    "level": 6,
+    "classes": ["bard", "cleric", "druid"]
+  },
+  {
+    "slug": "find-traps",
+    "id": "65d3c174f3d820fa1add496d",
+    "name": "Поиск ловушек [Find Traps]",
+    "level": 2,
+    "classes": ["cleric", "druid", "ranger"]
+  },
+  {
+    "slug": "finger-of-death",
+    "id": "65d3c16af3d820fa1add43b6",
+    "name": "Перст смерти [Finger of Death]",
+    "level": 7,
+    "classes": ["sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "fire-bolt",
+    "id": "65d3c169f3d820fa1add429e",
+    "name": "Огненный снаряд [Fire Bolt]",
+    "level": 0,
+    "classes": ["artificer", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "fire-shield",
+    "id": "65d3c16af3d820fa1add431c",
+    "name": "Огненный щит [Fire Shield]",
+    "level": 4,
+    "classes": ["druid", "magus", "shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "fire-storm",
+    "id": "65d3c172f3d820fa1add4886",
+    "name": "Огненная буря [Fire Storm]",
+    "level": 7,
+    "classes": ["cleric", "druid", "sorcerer"]
+  },
+  {
+    "slug": "fireball",
+    "id": "65d3c16df3d820fa1add458b",
+    "name": "Огненный шар [Fireball]",
+    "level": 3,
+    "classes": ["magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "flame-blade",
+    "id": "65d3c16df3d820fa1add457d",
+    "name": "Горящий клинок [Flame Blade]",
+    "level": 2,
+    "classes": ["druid", "shaman", "sorcerer"]
+  },
+  {
+    "slug": "flame-strike",
+    "id": "65d3c170f3d820fa1add47a6",
+    "name": "Небесный огонь [Flame Strike]",
+    "level": 5,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "flaming-sphere",
+    "id": "65d3c16cf3d820fa1add44ab",
+    "name": "Пылающий шар [Flaming Sphere]",
+    "level": 2,
+    "classes": ["druid", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "flesh-to-stone",
+    "id": "65d3c172f3d820fa1add4855",
+    "name": "Окаменение [Flesh to Stone]",
+    "level": 6,
+    "classes": ["druid", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "floating-disk",
+    "id": "65d3c176f3d820fa1add4a31",
+    "name": "Парящий диск [Floating Disk]",
+    "level": 1,
+    "classes": ["wizard"]
+  },
+  {
+    "slug": "fly",
+    "id": "65d3c168f3d820fa1add4258",
+    "name": "Полёт [Fly]",
+    "level": 3,
+    "classes": ["artificer", "magus", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "fog-cloud",
+    "id": "65d3c168f3d820fa1add4212",
+    "name": "Туманное облако [Fog Cloud]",
+    "level": 1,
+    "classes": ["druid", "magus", "ranger", "shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "forbiddance",
+    "id": "65d3c16ff3d820fa1add46b8",
+    "name": "Запрет [Forbiddance]",
+    "level": 6,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "forcecage",
+    "id": "65d3c16cf3d820fa1add44b9",
+    "name": "Узилище [Forcecage]",
+    "level": 7,
+    "classes": ["bard", "warlock", "wizard"]
+  },
+  {
+    "slug": "foresight",
+    "id": "65d3c175f3d820fa1add49ba",
+    "name": "Предвидение [Foresight]",
+    "level": 9,
+    "classes": ["bard", "druid", "warlock", "wizard"]
+  },
+  {
+    "slug": "freedom-of-movement",
+    "id": "65d3c170f3d820fa1add479f",
+    "name": "Свобода перемещения [Freedom of Movement]",
+    "level": 4,
+    "classes": ["artificer", "bard", "cleric", "druid", "magus", "ranger", "shaman"]
+  },
+  {
+    "slug": "freezing-sphere",
+    "id": "65d3c16af3d820fa1add43d2",
+    "name": "Ледяной шар [Freezing Sphere]",
+    "level": 6,
+    "classes": ["sorcerer", "wizard"]
+  },
+  {
+    "slug": "gaseous-form",
+    "id": "65d3c172f3d820fa1add4847",
+    "name": "Газообразная форма [Gaseous Form]",
+    "level": 3,
+    "classes": ["shaman", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "gate",
+    "id": "65d3c168f3d820fa1add4194",
+    "name": "Врата [Gate]",
+    "level": 9,
+    "classes": ["cleric", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "geas",
+    "id": "65d3c16bf3d820fa1add43fc",
+    "name": "Обет [Geas]",
+    "level": 5,
+    "classes": ["bard", "cleric", "druid", "paladin", "wizard"]
+  },
+  {
+    "slug": "gentle-repose",
+    "id": "65d3c16df3d820fa1add45c3",
+    "name": "Нетленные останки [Gentle Repose]",
+    "level": 2,
+    "classes": ["cleric", "paladin", "shaman", "wizard"]
+  },
+  {
+    "slug": "giant-insect",
+    "id": "65d3c170f3d820fa1add4752",
+    "name": "Гигантское насекомое [Giant Insect]",
+    "level": 4,
+    "classes": ["druid", "shaman"]
+  },
+  {
+    "slug": "glibness",
+    "id": "65d3c16cf3d820fa1add4553",
+    "name": "Находчивость [Glibness]",
+    "level": 8,
+    "classes": ["bard", "warlock"]
+  },
+  {
+    "slug": "globe-of-invulnerability",
+    "id": "65d3c16cf3d820fa1add4529",
+    "name": "Сфера неуязвимости [Globe of Invulnerability]",
+    "level": 6,
+    "classes": ["sorcerer", "wizard"]
+  },
+  {
+    "slug": "glyph-of-warding",
+    "id": "65d3c16af3d820fa1add43bd",
+    "name": "Охранные руны [Glyph of Warding]",
+    "level": 3,
+    "classes": ["artificer", "bard", "cleric", "wizard"]
+  },
+  {
+    "slug": "goodberry",
+    "id": "65d3c169f3d820fa1add42cf",
+    "name": "Чудо-ягоды [Goodberry]",
+    "level": 1,
+    "classes": ["druid", "ranger"]
+  },
+  {
+    "slug": "grease",
+    "id": "65d3c16af3d820fa1add4393",
+    "name": "Скольжение [Grease]",
+    "level": 1,
+    "classes": ["artificer", "magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "greater-invisibility",
+    "id": "65d3c16bf3d820fa1add443b",
+    "name": "Высшая невидимость [Greater Invisibility]",
+    "level": 4,
+    "classes": ["bard", "magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "greater-restoration",
+    "id": "65d3c16ef3d820fa1add463a",
+    "name": "Высшее восстановление [Greater Restoration]",
+    "level": 5,
+    "classes": ["artificer", "bard", "cleric", "druid", "ranger"]
+  },
+  {
+    "slug": "guardian-of-faith",
+    "id": "65d3c16ff3d820fa1add471a",
+    "name": "Страж веры [Guardian of Faith]",
+    "level": 4,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "guards-and-wards",
+    "id": "65d3c170f3d820fa1add478a",
+    "name": "Стражи [Guards and Wards]",
+    "level": 6,
+    "classes": ["bard", "wizard"]
+  },
+  {
+    "slug": "guidance",
+    "id": "65d3c168f3d820fa1add41ef",
+    "name": "Указание [Guidance]",
+    "level": 0,
+    "classes": ["artificer", "cleric", "druid", "shaman"]
+  },
+  {
+    "slug": "guiding-bolt",
+    "id": "65d3c174f3d820fa1add495f",
+    "name": "Направленный снаряд [Guiding Bolt]",
+    "level": 1,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "gust-of-wind",
+    "id": "65d3c169f3d820fa1add4282",
+    "name": "Порыв ветра [Gust of Wind]",
+    "level": 2,
+    "classes": ["druid", "ranger", "shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "hallow",
+    "id": "65d3c16af3d820fa1add4331",
+    "name": "Святилище [Hallow]",
+    "level": 5,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "hallucinatory-terrain",
+    "id": "65d3c16bf3d820fa1add4488",
+    "name": "Мираж [Hallucinatory Terrain]",
+    "level": 4,
+    "classes": ["bard", "druid", "warlock", "wizard"]
+  },
+  {
+    "slug": "harm",
+    "id": "65d3c171f3d820fa1add4832",
+    "name": "Поражение [Harm]",
+    "level": 6,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "haste",
+    "id": "65d3c16af3d820fa1add43a1",
+    "name": "Ускорение [Haste]",
+    "level": 3,
+    "classes": ["artificer", "magus", "shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "heal",
+    "id": "65d3c170f3d820fa1add4775",
+    "name": "Полное исцеление [Heal]",
+    "level": 6,
+    "classes": ["cleric", "druid"]
+  },
+  {
+    "slug": "healing-word",
+    "id": "65d3c175f3d820fa1add49b3",
+    "name": "Лечащее слово [Healing Word]",
+    "level": 1,
+    "classes": ["bard", "cleric", "druid"]
+  },
+  {
+    "slug": "heat-metal",
+    "id": "65d3c168f3d820fa1add41e1",
+    "name": "Раскалённый металл [Heat Metal]",
+    "level": 2,
+    "classes": ["artificer", "bard", "druid", "shaman"]
+  },
+  {
+    "slug": "hellish-rebuke",
+    "id": "65d3c16cf3d820fa1add44c7",
+    "name": "Адское возмездие [Hellish Rebuke]",
+    "level": 1,
+    "classes": ["warlock"]
+  },
+  {
+    "slug": "heroes-feast",
+    "id": "65d3c16ef3d820fa1add4648",
+    "name": "Пир героев [Heroes' Feast]",
+    "level": 6,
+    "classes": ["bard", "cleric", "druid"]
+  },
+  {
+    "slug": "heroism",
+    "id": "65d3c175f3d820fa1add49cf",
+    "name": "Героизм [Heroism]",
+    "level": 1,
+    "classes": ["bard", "paladin", "shaman"]
+  },
+  {
+    "slug": "hideous-laughter",
+    "id": "65d3c176f3d820fa1add49f2",
+    "name": "Жуткий смех [Hideous Laughter]",
+    "level": 1,
+    "classes": ["bard", "wizard"]
+  },
+  {
+    "slug": "hold-monster",
+    "id": "65d3c174f3d820fa1add4935",
+    "name": "Удержание чудовища [Hold Monster]",
+    "level": 5,
+    "classes": ["bard", "magus", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "hold-person",
+    "id": "65d3c16cf3d820fa1add44f1",
+    "name": "Удержание личности [Hold Person]",
+    "level": 2,
+    "classes": ["bard", "cleric", "druid", "magus", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "holy-aura",
+    "id": "65d3c16df3d820fa1add45ae",
+    "name": "Аура святости [Holy Aura]",
+    "level": 8,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "hunters-mark",
+    "id": "65d3c170f3d820fa1add474b",
+    "name": "Метка охотника [Hunter's Mark]",
+    "level": 1,
+    "classes": ["ranger"]
+  },
+  {
+    "slug": "hypnotic-pattern",
+    "id": "65d3c16df3d820fa1add4561",
+    "name": "Гипнотический узор [Hypnotic Pattern]",
+    "level": 3,
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "ice-storm",
+    "id": "65d3c171f3d820fa1add4808",
+    "name": "Град [Ice Storm]",
+    "level": 4,
+    "classes": ["druid", "magus", "shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "identify",
+    "id": "65d3c16cf3d820fa1add4545",
+    "name": "Опознание [Identify]",
+    "level": 1,
+    "classes": ["artificer", "bard", "magus", "wizard"]
+  },
+  {
+    "slug": "illusory-script",
+    "id": "65d3c170f3d820fa1add4760",
+    "name": "Невидимое письмо [Illusory Script]",
+    "level": 1,
+    "classes": ["bard", "warlock", "wizard"]
+  },
+  {
+    "slug": "imprisonment",
+    "id": "65d3c16df3d820fa1add45a0",
+    "name": "Заточение [Imprisonment]",
+    "level": 9,
+    "classes": ["warlock", "wizard"]
+  },
+  {
+    "slug": "incendiary-cloud",
+    "id": "65d3c168f3d820fa1add418d",
+    "name": "Воспламеняющаяся туча [Incendiary Cloud]",
+    "level": 8,
+    "classes": ["druid", "sorcerer"]
+  },
+  {
+    "slug": "inflict-wounds",
+    "id": "65d3c16af3d820fa1add42f9",
+    "name": "Нанесение ран [Inflict Wounds]",
+    "level": 1,
+    "classes": ["cleric", "shaman"]
+  },
+  {
+    "slug": "insect-plague",
+    "id": "65d3c168f3d820fa1add424a",
+    "name": "Нашествие насекомых [Insect Plague]",
+    "level": 5,
+    "classes": ["cleric", "druid", "sorcerer"]
+  },
+  {
+    "slug": "instant-summons",
+    "id": "65d3c169f3d820fa1add4297",
+    "name": "Появление [Instant Summons]",
+    "level": 6,
+    "classes": ["wizard"]
+  },
+  {
+    "slug": "invisibility",
+    "id": "65d3c172f3d820fa1add48b7",
+    "name": "Невидимость [Invisibility]",
+    "level": 2,
+    "classes": ["artificer", "bard", "magus", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "irresistible-dance",
+    "id": "65d3c168f3d820fa1add41a9",
+    "name": "Неудержимая пляска [Irresistible Dance]",
+    "level": 6,
+    "classes": ["bard", "wizard"]
+  },
+  {
+    "slug": "jump",
+    "id": "65d3c173f3d820fa1add490b",
+    "name": "Прыжок [Jump]",
+    "level": 1,
+    "classes": ["artificer", "druid", "magus", "ranger", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "knock",
+    "id": "65d3c170f3d820fa1add4767",
+    "name": "Открывание [Knock]",
+    "level": 2,
+    "classes": ["bard", "magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "legend-lore",
+    "id": "65d3c169f3d820fa1add42ba",
+    "name": "Знание легенд [Legend Lore]",
+    "level": 5,
+    "classes": ["bard", "cleric", "wizard"]
+  },
+  {
+    "slug": "lesser-restoration",
+    "id": "65d3c171f3d820fa1add4824",
+    "name": "Малое восстановление [Lesser Restoration]",
+    "level": 2,
+    "classes": ["artificer", "bard", "cleric", "druid", "paladin", "ranger"]
+  },
+  {
+    "slug": "levitate",
+    "id": "65d3c16ef3d820fa1add464f",
+    "name": "Левитация [Levitate]",
+    "level": 2,
+    "classes": ["artificer", "magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "light",
+    "id": "65d3c173f3d820fa1add4919",
+    "name": "Свет [Light]",
+    "level": 0,
+    "classes": ["artificer", "bard", "cleric", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "lightning-bolt",
+    "id": "65d3c172f3d820fa1add48b0",
+    "name": "Молния [Lightning Bolt]",
+    "level": 3,
+    "classes": ["magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "locate-animals-or-plants",
+    "id": "65d3c16cf3d820fa1add44b2",
+    "name": "Поиск животных или растений [Locate Animals or Plants]",
+    "level": 2,
+    "classes": ["bard", "druid", "ranger"]
+  },
+  {
+    "slug": "locate-creature",
+    "id": "65d3c170f3d820fa1add4783",
+    "name": "Поиск существа [Locate Creature]",
+    "level": 4,
+    "classes": ["bard", "cleric", "druid", "paladin", "ranger", "wizard"]
+  },
+  {
+    "slug": "locate-object",
+    "id": "65d3c16ff3d820fa1add4705",
+    "name": "Поиск предмета [Locate Object]",
+    "level": 2,
+    "classes": ["bard", "cleric", "druid", "paladin", "ranger", "wizard"]
+  },
+  {
+    "slug": "longstrider",
+    "id": "65d3c16bf3d820fa1add4418",
+    "name": "Скороход [Longstrider]",
+    "level": 1,
+    "classes": ["artificer", "bard", "druid", "ranger", "shaman", "wizard"]
+  },
+  {
+    "slug": "mage-armor",
+    "id": "65d3c16af3d820fa1add434d",
+    "name": "Доспехи мага [Mage Armor]",
+    "level": 1,
+    "classes": ["magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "mage-hand",
+    "id": "65d3c16af3d820fa1add43a8",
+    "name": "Волшебная рука [Mage Hand]",
+    "level": 0,
+    "classes": ["artificer", "bard", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "magic-circle",
+    "id": "65d3c16af3d820fa1add4300",
+    "name": "Магический круг [Magic Circle]",
+    "level": 3,
+    "classes": ["cleric", "magus", "paladin", "warlock", "wizard"]
+  },
+  {
+    "slug": "magic-jar",
+    "id": "65d3c171f3d820fa1add47d7",
+    "name": "Волшебный сосуд [Magic Jar]",
+    "level": 6,
+    "classes": ["wizard"]
+  },
+  {
+    "slug": "magic-missile",
+    "id": "65d3c16bf3d820fa1add446c",
+    "name": "Волшебная стрела [Magic Missile]",
+    "level": 1,
+    "classes": ["magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "magic-mouth",
+    "id": "65d3c169f3d820fa1add4266",
+    "name": "Волшебные уста [Magic Mouth]",
+    "level": 2,
+    "classes": ["artificer", "bard", "wizard"]
+  },
+  {
+    "slug": "magic-weapon",
+    "id": "65d3c171f3d820fa1add47de",
+    "name": "Магическое оружие [Magic Weapon]",
+    "level": 2,
+    "classes": ["artificer", "magus", "paladin", "ranger", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "magnificent-mansion",
+    "id": "65d3c176f3d820fa1add4a23",
+    "name": "Великолепный особняк [Magnificent Mansion]",
+    "level": 7,
+    "classes": ["bard", "wizard"]
+  },
+  {
+    "slug": "major-image",
+    "id": "65d3c16df3d820fa1add45d8",
+    "name": "Образ [Major Image]",
+    "level": 3,
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "mass-cure-wounds",
+    "id": "65d3c177f3d820fa1add4a38",
+    "name": "Множественное лечение ран [Mass Cure Wounds]",
+    "level": 5,
+    "classes": ["bard", "cleric", "druid"]
+  },
+  {
+    "slug": "mass-heal",
+    "id": "65d3c16ff3d820fa1add46d4",
+    "name": "Множественное полное исцеление [Mass Heal]",
+    "level": 9,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "mass-healing-word",
+    "id": "65d3c16df3d820fa1add45bc",
+    "name": "Множественное лечащее слово [Mass Healing Word]",
+    "level": 3,
+    "classes": ["bard", "cleric"]
+  },
+  {
+    "slug": "mass-suggestion",
+    "id": "65d3c174f3d820fa1add4982",
+    "name": "Множественное внушение [Mass Suggestion]",
+    "level": 6,
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "maze",
+    "id": "65d3c175f3d820fa1add49a5",
+    "name": "Лабиринт [Maze]",
+    "level": 8,
+    "classes": ["wizard"]
+  },
+  {
+    "slug": "meld-into-stone",
+    "id": "65d3c16af3d820fa1add43af",
+    "name": "Слияние с камнем [Meld Into Stone]",
+    "level": 3,
+    "classes": ["cleric", "druid", "ranger", "shaman"]
+  },
+  {
+    "slug": "mending",
+    "id": "65d3c168f3d820fa1add425f",
+    "name": "Починка [Mending]",
+    "level": 0,
+    "classes": ["artificer", "bard", "cleric", "druid", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "message",
+    "id": "65d3c16ff3d820fa1add46f0",
+    "name": "Сообщение [Message]",
+    "level": 0,
+    "classes": ["artificer", "bard", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "meteor-swarm",
+    "id": "65d3c16ef3d820fa1add4656",
+    "name": "Метеоритный дождь [Meteor Swarm]",
+    "level": 9,
+    "classes": ["sorcerer", "wizard"]
+  },
+  {
+    "slug": "mind-blank",
+    "id": "65d3c16ef3d820fa1add4641",
+    "name": "Сокрытие разума [Mind Blank]",
+    "level": 8,
+    "classes": ["bard", "wizard"]
+  },
+  {
+    "slug": "minor-illusion",
+    "id": "65d3c169f3d820fa1add427b",
+    "name": "Малая иллюзия [Minor Illusion]",
+    "level": 0,
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "mirage-arcane",
+    "id": "65d3c169f3d820fa1add42c1",
+    "name": "Таинственный мираж [Mirage Arcane]",
+    "level": 7,
+    "classes": ["bard", "druid", "wizard"]
+  },
+  {
+    "slug": "mirror-image",
+    "id": "65d3c172f3d820fa1add487f",
+    "name": "Отражения [Mirror Image]",
+    "level": 2,
+    "classes": ["bard", "magus", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "mislead",
+    "id": "65d3c174f3d820fa1add494a",
+    "name": "Фальшивый двойник [Mislead]",
+    "level": 5,
+    "classes": ["bard", "warlock", "wizard"]
+  },
+  {
+    "slug": "misty-step",
+    "id": "65d3c16bf3d820fa1add4434",
+    "name": "Туманный шаг [Misty Step]",
+    "level": 2,
+    "classes": ["magus", "shaman", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "modify-memory",
+    "id": "65d3c173f3d820fa1add48e1",
+    "name": "Изменение памяти [Modify Memory]",
+    "level": 5,
+    "classes": ["bard", "wizard"]
+  },
+  {
+    "slug": "moonbeam",
+    "id": "65d3c175f3d820fa1add49ac",
+    "name": "Лунный луч [Moonbeam]",
+    "level": 2,
+    "classes": ["druid", "shaman"]
+  },
+  {
+    "slug": "move-earth",
+    "id": "65d3c16cf3d820fa1add4530",
+    "name": "Движение почвы [Move Earth]",
+    "level": 6,
+    "classes": ["druid", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "nondetection",
+    "id": "65d3c170f3d820fa1add4791",
+    "name": "Необнаружимость [Nondetection]",
+    "level": 3,
+    "classes": ["bard", "ranger", "shaman", "wizard"]
+  },
+  {
+    "slug": "pass-without-trace",
+    "id": "65d3c16ef3d820fa1add4672",
+    "name": "Бесследное передвижение [Pass without Trace]",
+    "level": 2,
+    "classes": ["druid", "ranger", "shaman"]
+  },
+  {
+    "slug": "passwall",
+    "id": "65d3c173f3d820fa1add4920",
+    "name": "Создание прохода [Passwall]",
+    "level": 5,
+    "classes": ["wizard"]
+  },
+  {
+    "slug": "phantasmal-killer",
+    "id": "65d3c171f3d820fa1add47c2",
+    "name": "Воображаемый убийца [Phantasmal Killer]",
+    "level": 4,
+    "classes": ["bard", "wizard"]
+  },
+  {
+    "slug": "phantom-steed",
+    "id": "65d3c171f3d820fa1add47e5",
+    "name": "Призрачный скакун [Phantom Steed]",
+    "level": 3,
+    "classes": ["wizard"]
+  },
+  {
+    "slug": "planar-ally",
+    "id": "65d3c169f3d820fa1add4289",
+    "name": "Планарный союзник [Planar Ally]",
+    "level": 6,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "planar-binding",
+    "id": "65d3c170f3d820fa1add4744",
+    "name": "Планарные узы [Planar Binding]",
+    "level": 5,
+    "classes": ["bard", "cleric", "druid", "shaman", "warlock", "wizard"]
+  },
+  {
+    "slug": "plane-shift",
+    "id": "65d3c16cf3d820fa1add44dc",
+    "name": "Уход в иной мир [Plane Shift]",
+    "level": 7,
+    "classes": ["cleric", "druid", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "poison-spray",
+    "id": "65d3c169f3d820fa1add42d6",
+    "name": "Ядовитые брызги [Poison Spray]",
+    "level": 0,
+    "classes": ["artificer", "druid", "shaman", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "polymorph",
+    "id": "65d3c169f3d820fa1add42f2",
+    "name": "Превращение [Polymorph]",
+    "level": 4,
+    "classes": ["bard", "druid", "magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "power-word-kill",
+    "id": "65d3c16cf3d820fa1add4514",
+    "name": "Слово силы: Смерть [Power Word Kill]",
+    "level": 9,
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "power-word-stun",
+    "id": "65d3c16bf3d820fa1add4481",
+    "name": "Слово силы: Оглушение [Power Word Stun]",
+    "level": 8,
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "prayer-of-healing",
+    "id": "65d3c171f3d820fa1add4839",
+    "name": "Молебен лечения [Prayer of Healing]",
+    "level": 2,
+    "classes": ["cleric", "paladin"]
+  },
+  {
+    "slug": "prestidigitation",
+    "id": "65d3c174f3d820fa1add4958",
+    "name": "Фокусы [Prestidigitation]",
+    "level": 0,
+    "classes": ["artificer", "bard", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "prismatic-spray",
+    "id": "65d3c16af3d820fa1add4370",
+    "name": "Радужные брызги [Prismatic Spray]",
+    "level": 7,
+    "classes": ["bard", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "prismatic-wall",
+    "id": "65d3c16cf3d820fa1add44a4",
+    "name": "Радужная стена [Prismatic Wall]",
+    "level": 9,
+    "classes": ["bard", "wizard"]
+  },
+  {
+    "slug": "private-sanctum",
+    "id": "65d3c168f3d820fa1add41e8",
+    "name": "Кабинет [Private Sanctum]",
+    "level": 4,
+    "classes": ["artificer", "wizard"]
+  },
+  {
+    "slug": "produce-flame",
+    "id": "65d3c16bf3d820fa1add4457",
+    "name": "Сотворение пламени [Produce Flame]",
+    "level": 0,
+    "classes": ["druid", "shaman"]
+  },
+  {
+    "slug": "programmed-illusion",
+    "id": "65d3c168f3d820fa1add4227",
+    "name": "Заданная иллюзия [Programmed Illusion]",
+    "level": 6,
+    "classes": ["bard", "wizard"]
+  },
+  {
+    "slug": "project-image",
+    "id": "65d3c172f3d820fa1add4878",
+    "name": "Проекция [Project Image]",
+    "level": 7,
+    "classes": ["bard", "wizard"]
+  },
+  {
+    "slug": "protection-from-energy",
+    "id": "65d3c16cf3d820fa1add4506",
+    "name": "Защита от энергии [Protection from Energy]",
+    "level": 3,
+    "classes": ["artificer", "cleric", "druid", "magus", "ranger", "shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "protection-from-evil-and-good",
+    "id": "65d3c168f3d820fa1add422e",
+    "name": "Защита от добра и зла [Protection from Evil and Good]",
+    "level": 1,
+    "classes": ["cleric", "druid", "paladin", "shaman", "warlock", "wizard"]
+  },
+  {
+    "slug": "protection-from-poison",
+    "id": "65d3c173f3d820fa1add4927",
+    "name": "Защита от яда [Protection from Poison]",
+    "level": 2,
+    "classes": ["artificer", "cleric", "druid", "magus", "paladin", "ranger", "shaman"]
+  },
+  {
+    "slug": "purify-food-and-drink",
+    "id": "65d3c16cf3d820fa1add448f",
+    "name": "Очищение пищи и питья [Purify Food and Drink]",
+    "level": 1,
+    "classes": ["artificer", "cleric", "druid", "paladin"]
+  },
+  {
+    "slug": "raise-dead",
+    "id": "65d3c172f3d820fa1add489b",
+    "name": "Оживление [Raise Dead]",
+    "level": 5,
+    "classes": ["bard", "cleric", "paladin"]
+  },
+  {
+    "slug": "ray-of-enfeeblement",
+    "id": "65d3c16cf3d820fa1add450d",
+    "name": "Луч слабости [Ray of Enfeeblement]",
+    "level": 2,
+    "classes": ["magus", "warlock", "wizard"]
+  },
+  {
+    "slug": "ray-of-frost",
+    "id": "65d3c168f3d820fa1add420b",
+    "name": "Луч холода [Ray of Frost]",
+    "level": 0,
+    "classes": ["artificer", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "regenerate",
+    "id": "65d3c16bf3d820fa1add445e",
+    "name": "Регенерация [Regenerate]",
+    "level": 7,
+    "classes": ["bard", "cleric", "druid"]
+  },
+  {
+    "slug": "reincarnate",
+    "id": "65d3c16ff3d820fa1add46bf",
+    "name": "Реинкарнация [Reincarnate]",
+    "level": 5,
+    "classes": ["druid", "shaman"]
+  },
+  {
+    "slug": "remove-curse",
+    "id": "65d3c175f3d820fa1add49d6",
+    "name": "Снятие проклятья [Remove Curse]",
+    "level": 3,
+    "classes": ["cleric", "paladin", "shaman", "warlock", "wizard"]
+  },
+  {
+    "slug": "resilient-sphere",
+    "id": "65d3c169f3d820fa1add42a5",
+    "name": "Упругий шар [Resilient Sphere]",
+    "level": 4,
+    "classes": ["artificer", "wizard"]
+  },
+  {
+    "slug": "resistance",
+    "id": "65d3c172f3d820fa1add488d",
+    "name": "Сопротивление [Resistance]",
+    "level": 0,
+    "classes": ["artificer", "cleric", "druid"]
+  },
+  {
+    "slug": "resurrection",
+    "id": "65d3c16df3d820fa1add4592",
+    "name": "Воскрешение [Resurrection]",
+    "level": 7,
+    "classes": ["bard", "cleric"]
+  },
+  {
+    "slug": "reverse-gravity",
+    "id": "65d3c168f3d820fa1add41d3",
+    "name": "Изменение тяготения [Reverse Gravity]",
+    "level": 7,
+    "classes": ["druid", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "revivify",
+    "id": "65d3c16ef3d820fa1add466b",
+    "name": "Возрождение [Revivify]",
+    "level": 3,
+    "classes": ["artificer", "cleric", "druid", "paladin", "ranger"]
+  },
+  {
+    "slug": "rope-trick",
+    "id": "65d3c16df3d820fa1add4584",
+    "name": "Трюк с верёвкой [Rope Trick]",
+    "level": 2,
+    "classes": ["artificer", "wizard"]
+  },
+  {
+    "slug": "sacred-flame",
+    "id": "65d3c169f3d820fa1add42ac",
+    "name": "Священное пламя [Sacred Flame]",
+    "level": 0,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "sanctuary",
+    "id": "65d3c171f3d820fa1add47c9",
+    "name": "Убежище [Sanctuary]",
+    "level": 1,
+    "classes": ["artificer", "cleric", "shaman"]
+  },
+  {
+    "slug": "scorching-ray",
+    "id": "65d3c176f3d820fa1add49dd",
+    "name": "Палящий луч [Scorching Ray]",
+    "level": 2,
+    "classes": ["magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "scrying",
+    "id": "65d3c16af3d820fa1add4362",
+    "name": "Наблюдение [Scrying]",
+    "level": 5,
+    "classes": ["bard", "cleric", "druid", "magus", "shaman", "warlock", "wizard"]
+  },
+  {
+    "slug": "secret-chest",
+    "id": "65d3c16af3d820fa1add4354",
+    "name": "Потайной сундук [Secret Chest]",
+    "level": 4,
+    "classes": ["wizard"]
+  },
+  {
+    "slug": "see-invisibility",
+    "id": "65d3c172f3d820fa1add4894",
+    "name": "Видение невидимого [See Invisibility]",
+    "level": 2,
+    "classes": ["artificer", "bard", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "seeming",
+    "id": "65d3c176f3d820fa1add4a07",
+    "name": "Притворство [Seeming]",
+    "level": 5,
+    "classes": ["bard", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "sending",
+    "id": "65d3c16ef3d820fa1add4602",
+    "name": "Послание [Sending]",
+    "level": 3,
+    "classes": ["bard", "cleric", "wizard"]
+  },
+  {
+    "slug": "sequester",
+    "id": "65d3c16ff3d820fa1add4728",
+    "name": "Изоляция [Sequester]",
+    "level": 7,
+    "classes": ["wizard"]
+  },
+  {
+    "slug": "shapechange",
+    "id": "65d3c16ef3d820fa1add462c",
+    "name": "Полное превращение [Shapechange]",
+    "level": 9,
+    "classes": ["druid", "wizard"]
+  },
+  {
+    "slug": "shatter",
+    "id": "65d3c175f3d820fa1add49c8",
+    "name": "Дребезги [Shatter]",
+    "level": 2,
+    "classes": ["bard", "magus", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "shield",
+    "id": "65d3c172f3d820fa1add486a",
+    "name": "Щит [Shield]",
+    "level": 1,
+    "classes": ["magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "shield-of-faith",
+    "id": "65d3c172f3d820fa1add48be",
+    "name": "Щит веры [Shield of Faith]",
+    "level": 1,
+    "classes": ["cleric", "paladin", "shaman"]
+  },
+  {
+    "slug": "shillelagh",
+    "id": "65d3c16bf3d820fa1add4442",
+    "name": "Дубинка [Shillelagh]",
+    "level": 0,
+    "classes": ["druid", "shaman"]
+  },
+  {
+    "slug": "shocking-grasp",
+    "id": "65d3c168f3d820fa1add41f6",
+    "name": "Электрошок [Shocking Grasp]",
+    "level": 0,
+    "classes": ["artificer", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "silence",
+    "id": "65d3c16ff3d820fa1add46a3",
+    "name": "Тишина [Silence]",
+    "level": 2,
+    "classes": ["bard", "cleric", "ranger"]
+  },
+  {
+    "slug": "silent-image",
+    "id": "65d3c16af3d820fa1add438c",
+    "name": "Безмолвный образ [Silent Image]",
+    "level": 1,
+    "classes": ["bard", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "simulacrum",
+    "id": "65d3c172f3d820fa1add48a2",
+    "name": "Подобие [Simulacrum]",
+    "level": 7,
+    "classes": ["wizard"]
+  },
+  {
+    "slug": "sleep",
+    "id": "65d3c16af3d820fa1add437e",
+    "name": "Усыпление [Sleep]",
+    "level": 1,
+    "classes": ["bard", "magus", "shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "sleet-storm",
+    "id": "65d3c174f3d820fa1add493c",
+    "name": "Метель [Sleet Storm]",
+    "level": 3,
+    "classes": ["druid", "magus", "shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "slow",
+    "id": "65d3c16ef3d820fa1add4664",
+    "name": "Замедление [Slow]",
+    "level": 3,
+    "classes": ["bard", "magus", "shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "spare-the-dying",
+    "id": "65d3c173f3d820fa1add4912",
+    "name": "Уход за умирающим [Spare the Dying]",
+    "level": 0,
+    "classes": ["artificer", "cleric", "shaman"]
+  },
+  {
+    "slug": "speak-with-animals",
+    "id": "65d3c16ff3d820fa1add4721",
+    "name": "Разговор с животными [Speak with Animals]",
+    "level": 1,
+    "classes": ["bard", "druid", "ranger"]
+  },
+  {
+    "slug": "speak-with-dead",
+    "id": "65d3c16ef3d820fa1add469c",
+    "name": "Разговор с мёртвыми [Speak with Dead]",
+    "level": 3,
+    "classes": ["bard", "cleric", "shaman", "wizard"]
+  },
+  {
+    "slug": "speak-with-plants",
+    "id": "65d3c168f3d820fa1add41cc",
+    "name": "Разговор с растениями [Speak with Plants]",
+    "level": 3,
+    "classes": ["bard", "druid", "ranger"]
+  },
+  {
+    "slug": "spider-climb",
+    "id": "65d3c174f3d820fa1add4989",
+    "name": "Паук [Spider Climb]",
+    "level": 2,
+    "classes": ["artificer", "magus", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "spike-growth",
+    "id": "65d3c16af3d820fa1add433f",
+    "name": "Шипы [Spike Growth]",
+    "level": 2,
+    "classes": ["druid", "ranger", "shaman"]
+  },
+  {
+    "slug": "spirit-guardians",
+    "id": "65d3c16bf3d820fa1add4450",
+    "name": "Духовные стражи [Spirit Guardians]",
+    "level": 3,
+    "classes": ["cleric", "shaman"]
+  },
+  {
+    "slug": "spiritual-weapon",
+    "id": "65d3c16bf3d820fa1add440a",
+    "name": "Божественное оружие [Spiritual Weapon]",
+    "level": 2,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "stinking-cloud",
+    "id": "65d3c176f3d820fa1add4a2a",
+    "name": "Зловонное облако [Stinking Cloud]",
+    "level": 3,
+    "classes": ["bard", "shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "stone-shape",
+    "id": "65d3c16af3d820fa1add4369",
+    "name": "Изменение формы камня [Stone Shape]",
+    "level": 4,
+    "classes": ["artificer", "cleric", "druid", "wizard"]
+  },
+  {
+    "slug": "stoneskin",
+    "id": "65d3c16af3d820fa1add43c4",
+    "name": "Каменная кожа [Stoneskin]",
+    "level": 4,
+    "classes": ["druid", "magus", "ranger", "shaman", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "storm-of-vengeance",
+    "id": "65d3c170f3d820fa1add477c",
+    "name": "Гроза гнева [Storm of Vengeance]",
+    "level": 9,
+    "classes": ["druid"]
+  },
+  {
+    "slug": "suggestion",
+    "id": "65d3c16af3d820fa1add43ee",
+    "name": "Внушение [Suggestion]",
+    "level": 2,
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "sunbeam",
+    "id": "65d3c16af3d820fa1add43d9",
+    "name": "Солнечный луч [Sunbeam]",
+    "level": 6,
+    "classes": ["cleric", "druid", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "sunburst",
+    "id": "65d3c172f3d820fa1add48a9",
+    "name": "Солнечный ожог [Sunburst]",
+    "level": 8,
+    "classes": ["cleric", "druid", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "symbol",
+    "id": "65d3c16af3d820fa1add4315",
+    "name": "Знак [Symbol]",
+    "level": 7,
+    "classes": ["bard", "cleric", "druid", "wizard"]
+  },
+  {
+    "slug": "telekinesis",
+    "id": "65d3c16ef3d820fa1add4679",
+    "name": "Телекинез [Telekinesis]",
+    "level": 5,
+    "classes": ["sorcerer", "wizard"]
+  },
+  {
+    "slug": "telepathic-bond",
+    "id": "65d3c16df3d820fa1add45a7",
+    "name": "Ментальная связь [Telepathic Bond]",
+    "level": 5,
+    "classes": ["bard", "wizard"]
+  },
+  {
+    "slug": "teleport",
+    "id": "65d3c176f3d820fa1add49f9",
+    "name": "Телепортация [Teleport]",
+    "level": 7,
+    "classes": ["bard", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "teleportation-circle",
+    "id": "65d3c16cf3d820fa1add44d5",
+    "name": "Круг телепортации [Teleportation Circle]",
+    "level": 5,
+    "classes": ["bard", "magus", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "thaumaturgy",
+    "id": "65d3c171f3d820fa1add482b",
+    "name": "Чудотворство [Thaumaturgy]",
+    "level": 0,
+    "classes": ["cleric", "shaman"]
+  },
+  {
+    "slug": "thunderwave",
+    "id": "65d3c16ff3d820fa1add46e9",
+    "name": "Волна грома [Thunderwave]",
+    "level": 1,
+    "classes": ["bard", "druid", "magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "time-stop",
+    "id": "65d3c171f3d820fa1add4801",
+    "name": "Остановка времени [Time Stop]",
+    "level": 9,
+    "classes": ["sorcerer", "wizard"]
+  },
+  {
+    "slug": "tiny-hut",
+    "id": "65d3c16bf3d820fa1add447a",
+    "name": "Хижина [Tiny Hut]",
+    "level": 3,
+    "classes": ["bard", "shaman", "wizard"]
+  },
+  {
+    "slug": "tongues",
+    "id": "65d3c176f3d820fa1add4a15",
+    "name": "Языки [Tongues]",
+    "level": 3,
+    "classes": ["bard", "cleric", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "transport-via-plants",
+    "id": "65d3c174f3d820fa1add4966",
+    "name": "Путешествие через растения [Transport via Plants]",
+    "level": 6,
+    "classes": ["druid"]
+  },
+  {
+    "slug": "tree-stride",
+    "id": "65d3c171f3d820fa1add47d0",
+    "name": "Древесный путь [Tree Stride]",
+    "level": 5,
+    "classes": ["druid", "ranger"]
+  },
+  {
+    "slug": "true-polymorph",
+    "id": "65d3c16af3d820fa1add432a",
+    "name": "Истинное превращение [True Polymorph]",
+    "level": 9,
+    "classes": ["bard", "warlock", "wizard"]
+  },
+  {
+    "slug": "true-resurrection",
+    "id": "65d3c16af3d820fa1add4323",
+    "name": "Истинное воскрешение [True Resurrection]",
+    "level": 9,
+    "classes": ["cleric", "druid"]
+  },
+  {
+    "slug": "true-seeing",
+    "id": "65d3c169f3d820fa1add4274",
+    "name": "Истинное зрение [True Seeing]",
+    "level": 6,
+    "classes": ["bard", "cleric", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "true-strike",
+    "id": "65d3c174f3d820fa1add4951",
+    "name": "Меткий удар [True Strike]",
+    "level": 0,
+    "classes": ["bard", "sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "unseen-servant",
+    "id": "65d3c16ff3d820fa1add46aa",
+    "name": "Невидимый слуга [Unseen Servant]",
+    "level": 1,
+    "classes": ["bard", "warlock", "wizard"]
+  },
+  {
+    "slug": "vampiric-touch",
+    "id": "65d3c16ef3d820fa1add4633",
+    "name": "Прикосновение вампира [Vampiric Touch]",
+    "level": 3,
+    "classes": ["sorcerer", "warlock", "wizard"]
+  },
+  {
+    "slug": "vicious-mockery",
+    "id": "65d3c16ef3d820fa1add4695",
+    "name": "Злая насмешка [Vicious Mockery]",
+    "level": 0,
+    "classes": ["bard"]
+  },
+  {
+    "slug": "wall-of-fire",
+    "id": "65d3c16cf3d820fa1add451b",
+    "name": "Огненная стена [Wall of Fire]",
+    "level": 4,
+    "classes": ["druid", "magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "wall-of-force",
+    "id": "65d3c168f3d820fa1add4220",
+    "name": "Силовая стена [Wall of Force]",
+    "level": 5,
+    "classes": ["magus", "wizard"]
+  },
+  {
+    "slug": "wall-of-ice",
+    "id": "65d3c16bf3d820fa1add4473",
+    "name": "Ледяная стена [Wall of Ice]",
+    "level": 6,
+    "classes": ["wizard"]
+  },
+  {
+    "slug": "wall-of-stone",
+    "id": "65d3c172f3d820fa1add484e",
+    "name": "Каменная стена [Wall of Stone]",
+    "level": 5,
+    "classes": ["artificer", "druid", "magus", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "wall-of-thorns",
+    "id": "65d3c173f3d820fa1add48d3",
+    "name": "Терновая стена [Wall of Thorns]",
+    "level": 6,
+    "classes": ["druid"]
+  },
+  {
+    "slug": "warding-bond",
+    "id": "65d3c169f3d820fa1add42c8",
+    "name": "Охраняющая связь [Warding Bond]",
+    "level": 2,
+    "classes": ["cleric", "paladin"]
+  },
+  {
+    "slug": "water-breathing",
+    "id": "65d3c16df3d820fa1add4576",
+    "name": "Подводное дыхание [Water Breathing]",
+    "level": 3,
+    "classes": ["artificer", "druid", "ranger", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "water-walk",
+    "id": "65d3c169f3d820fa1add42b3",
+    "name": "Хождение по воде [Water Walk]",
+    "level": 3,
+    "classes": ["artificer", "cleric", "druid", "ranger", "sorcerer"]
+  },
+  {
+    "slug": "web",
+    "id": "65d3c173f3d820fa1add48da",
+    "name": "Паутина [Web]",
+    "level": 2,
+    "classes": ["artificer", "sorcerer", "wizard"]
+  },
+  {
+    "slug": "weird",
+    "id": "65d3c168f3d820fa1add4243",
+    "name": "Смертный ужас [Weird]",
+    "level": 9,
+    "classes": ["warlock", "wizard"]
+  },
+  {
+    "slug": "wind-walk",
+    "id": "65d3c171f3d820fa1add47bb",
+    "name": "Хождение по ветру [Wind Walk]",
+    "level": 6,
+    "classes": ["druid"]
+  },
+  {
+    "slug": "wind-wall",
+    "id": "65d3c16cf3d820fa1add44f8",
+    "name": "Стена ветров [Wind Wall]",
+    "level": 3,
+    "classes": ["druid", "magus", "ranger", "shaman"]
+  },
+  {
+    "slug": "wish",
+    "id": "65d3c168f3d820fa1add423c",
+    "name": "Исполнение желаний [Wish]",
+    "level": 9,
+    "classes": ["sorcerer", "wizard"]
+  },
+  {
+    "slug": "word-of-recall",
+    "id": "65d3c169f3d820fa1add426d",
+    "name": "Слово возврата [Word of Recall]",
+    "level": 6,
+    "classes": ["cleric"]
+  },
+  {
+    "slug": "zone-of-truth",
+    "id": "65d3c169f3d820fa1add4290",
+    "name": "Область истины [Zone of Truth]",
+    "level": 2,
+    "classes": ["bard", "cleric", "paladin"]
+  }
+]
