@@ -1,0 +1,104 @@
+name: Release module
+
+on:
+  push:
+    tags:
+      - '**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    if: github.event.deleted == false
+    runs-on: windows-latest
+    timeout-minutes: 15
+    env:
+      RELEASE_TAG: ${{ github.ref_name }}
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Check out the tagged commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Require the tagged commit to belong to main
+        shell: pwsh
+        run: |
+          git fetch origin '+refs/heads/main:refs/remotes/origin/main'
+          if ($LASTEXITCODE -ne 0) { throw 'Cannot fetch main.' }
+          git merge-base --is-ancestor HEAD origin/main
+          if ($LASTEXITCODE -ne 0) {
+            throw 'The tagged commit is not in main. Merge it into main before pushing a release tag.'
+          }
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
+      - name: Package the module
+        shell: pwsh
+        run: |
+          $manifest = Get-Content -LiteralPath module.json -Raw | ConvertFrom-Json
+          $repositoryUrl = "$env:GITHUB_SERVER_URL/$env:GITHUB_REPOSITORY"
+          $tagPath = [Uri]::EscapeDataString($env:RELEASE_TAG)
+          $manifest.version = $env:RELEASE_TAG
+          $manifest.url = $repositoryUrl
+          $manifest.manifest = "$repositoryUrl/releases/latest/download/module.json"
+          $manifest.download = "$repositoryUrl/releases/download/$tagPath/module.zip"
+
+          $stage = Join-Path $env:RUNNER_TEMP 'module-release'
+          New-Item -ItemType Directory -Path $stage -ErrorAction Stop | Out-Null
+          foreach ($folder in @('scripts', 'styles', 'templates', 'lang', 'data')) {
+            Copy-Item -LiteralPath $folder -Destination $stage -Recurse -ErrorAction Stop
+          }
+          $json = ($manifest | ConvertTo-Json -Depth 100) -replace '\r?\n', "`r`n"
+          $manifestPath = Join-Path $stage 'module.json'
+          [IO.File]::WriteAllText($manifestPath, $json + "`r`n", [Text.UTF8Encoding]::new($false))
+
+          New-Item -ItemType Directory -Path dist -ErrorAction Stop | Out-Null
+          Copy-Item -LiteralPath $manifestPath -Destination dist/module.json
+          Add-Type -AssemblyName System.IO.Compression.FileSystem
+          [IO.Compression.ZipFile]::CreateFromDirectory($stage, (Join-Path $PWD 'dist/module.zip'))
+          $archive = [IO.Compression.ZipFile]::OpenRead((Join-Path $PWD 'dist/module.zip'))
+          try {
+            foreach ($path in @('module.json', 'scripts/main.mjs', 'styles/lss-to-foundry.css', 'templates/import-app.hbs', 'lang/ru.json', 'lang/en.json', 'data/lss-dnd5e-ids.json', 'data/srd-spell-index-2014.json', 'data/srd-spell-index-2024.json')) {
+              if (-not $archive.GetEntry($path)) { throw "Missing archive entry: $path" }
+            }
+            $reader = [IO.StreamReader]::new($archive.GetEntry('module.json').Open())
+            try { $packedManifest = $reader.ReadToEnd() | ConvertFrom-Json }
+            finally { $reader.Dispose() }
+            if ($packedManifest.version -cne $env:RELEASE_TAG -or $packedManifest.download -cne $manifest.download) {
+              throw 'The packaged manifest does not match this release.'
+            }
+          } finally { $archive.Dispose() }
+
+      - name: Publish the release after uploading both assets
+        shell: pwsh
+        run: |
+          $releases = gh api --paginate "repos/$env:GH_REPO/releases" --jq '.[] | select(.tag_name == env.RELEASE_TAG) | {draft: .draft}'
+          if ($LASTEXITCODE -ne 0) { throw 'Cannot inspect existing releases.' }
+          if ($releases) {
+            $existing = $releases | ConvertFrom-Json
+            if (-not $existing.draft) { throw 'This tag already has a published release. Create a new tag.' }
+          } else {
+            gh release create $env:RELEASE_TAG --verify-tag --draft --title $env:RELEASE_TAG --notes 'Install using the attached module.json manifest.'
+            if ($LASTEXITCODE -ne 0) { throw 'Cannot create the release draft.' }
+          }
+          gh release upload $env:RELEASE_TAG dist/module.json dist/module.zip --clobber
+          if ($LASTEXITCODE -ne 0) { throw 'Cannot upload release assets; the release remains a draft.' }
+          gh release edit $env:RELEASE_TAG --draft=false --latest --title $env:RELEASE_TAG
+          if ($LASTEXITCODE -ne 0) { throw 'Cannot publish the release.' }
